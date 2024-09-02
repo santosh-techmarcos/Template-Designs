@@ -45,7 +45,8 @@ button:focus, .form-control:focus, input:focus {outline: none;}
 }
 .theme-text{color: var(--T4-prime);}
 .theme-bg{background-color: var(--T4-prime);}
-.outer-container{max-width: 1600px;}
+.outer-container{max-width: 1600px; padding: 0 40px;}
+.inner-container{max-width: 1200px; margin: 0 auto;}
 .sec-pd{
   padding: 50px 0;
 }
@@ -90,8 +91,6 @@ p.text-sm-light{text-align: center; max-width: 657px; margin: 10px auto;}
 .file-wrapper{
   position: relative;
   width: 100%;
-  max-width: 787px;
-  height: 460px;
   border-radius: 20px;
   overflow: hidden;
   border: 8px solid var(--light);
@@ -138,10 +137,9 @@ p.text-sm-light{text-align: center; max-width: 657px; margin: 10px auto;}
 }
 .banner-sec .theme-btn-lg { font-size: 20px; }
 
-.wrapper{max-width: 218px;}
 
 .banner-timmer .timer {
-  max-width: 300px;
+  /* max-width: 300px; */
   margin: 0 auto;
   overflow: hidden;
 }
@@ -541,4 +539,17 @@ border-radius: 0;
   margin: 20px 0;
   padding: 10px 20px;
   color: var(--light);
+}
+
+@media all and (max-width:1400px) {
+  
+}
+
+
+@media all and (max-width:680px) {
+  .bonus-sec svg{width: 150px;}
+}
+
+@media all and (max-width:420px) {
+ .outer-container{padding: 0 15px;}
 }
