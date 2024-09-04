@@ -1,0 +1,75 @@
+/* Open sans font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --light : #fff;
+  --darkblue: #0E4287;
+  --lightgreen: #1DBDA3;
+  --alter-l-green: #0E8773;
+  --text-dark: #1D1D1D;
+  --alter-dark : #646F79;
+
+}
+html , body{height: 100%;  font-family: Raleway !important; line-height: 1.6; font-optical-sizing: auto;  font-weight: normal; font-style: normal;}
+p,h1,h2,h3,h4,h5,h6{margin-bottom: 0;}
+a{text-decoration: none;}
+
+.lg-container{max-width: 1300px; margin: 0 auto;}
+.md-container{width: 100%; max-width: 1000px; margin: 0 auto;}
+.container-full{max-width: 100%;}
+
+.sec-py-lg{padding: 80px 0;}
+.sec-py-md{padding: 60px 0;}
+
+.bg-blue{background-color: var(--darkblue);}
+
+/* buttons */
+.theme-btn{ text-decoration: none; font-size: 18px; border-radius: 0; padding: 20px 40px; font-weight: 500;}
+.btn-blue{background-color: var(--darkblue); color: var(--light);}
+.btn-light{background-color: var(--light); color: var(--darkblue);}
+.btn-green{background-color: var(--lightgreen); color: var(--light);}
+.btn-green.alter{background-color: var(--alter-l-green); color: var(--light);}
+
+/* Btn hover */
+
+.btn-blue:hover{background-color: #154e99 !important; color: lightblue;}
+.btn-green:hover{background-color: #1a917d !important; color: lightcyan; }
+
+.theme-text{color: var(--lightgreen);}
+.text-blue{color: var(--darkblue);}
+/* typography */
+.head-lg{font-size: 56px; color: var(--text-dark);}
+.head-md{font-size: 40px; color: var(--text-dark);}
+.head-sm{font-size: 20px;}
+.head-md.alter{font-size: 25px;}
+
+.text-md{font-size: 18px; color: var(--text-dark);}
+.text-md.alter{font-size: 18px; color: var(--alter-dark); font-family: "Open Sans";}
+
+
+.flex-wrapper{display: flex;}
+.top-bar{padding:20px 0; display: flex; align-items: center; justify-content: space-between;}
+.top-bar .flex-wrapper{align-items: center; justify-content: space-between;}
+
+.img-wrapper{max-width: 630px; height: 630px;}
+.imgFix{width: 100%; height: 100%; object-fit: cover;}
+
+.circle-border{width: 60px; height: 60px; border: 1px solid var(--darkblue); border-radius: 50%;}
+.content p{width: 80%;}
+
+.bg-shadow::before{
+  content: "";
+  top: -100px;
+  right: 0;
+  width: 45%;
+  height: 110%;
+  background-color: #f1f4f8;
+  position: absolute;
+  z-index: -1;
+}
