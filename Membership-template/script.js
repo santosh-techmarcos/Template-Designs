@@ -1,33 +1,50 @@
-$(".slider").slick({
-
-  // normal options...
-  infinite: false,
-
-  // the magic
-  responsive: [{
-
+$('.whatsapp-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  nextArrow: '#Whatsapp-next',
+  prevArrow: '#Whatsapp-prev',
+  responsive: [
+    {
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
-        infinite: true
+        slidesToScroll: 3,
       }
-
-    }, {
-
+    },
+    {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
-        dots: true
+        slidesToScroll: 2
       }
-
-    }, {
-
-      breakpoint: 300,
-      settings: "unslick" // destroys slick
-
-    }]
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 
+
+// Tesimonial
+$('.slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  nextArrow: '#next-testimonial',
+  prevArrow: '#prev-testimonial',
+});
 
 $('.logo-slider').slick({
   dots: false,
@@ -35,6 +52,7 @@ $('.logo-slider').slick({
   speed: 300,
   slidesToShow: 5,
   slidesToScroll: 1,
+  arrows:false,
   responsive: [
     {
       breakpoint: 1024,
@@ -65,6 +83,24 @@ $('.logo-slider').slick({
   ]
 });
 
-$( function() {
-  $( "#accordion" ).accordion();
-} );
+
+$(document).ready(function() {
+  // Activate the first accordion section by default
+  $('.acc-container .acc:nth-child(1) .acc-head').addClass('active');
+  $('.acc-container .acc:nth-child(1) .acc-content').slideDown();
+
+  // Handle click events on accordion headers
+  $('.acc-head').on('click', function() {
+    // If the clicked header is not already active
+    if (!$(this).hasClass('active')) {
+      // Close all contents and remove 'active' from all headers
+      $('.acc-content').slideUp();
+      $('.acc-head').removeClass('active');
+
+      // Open the clicked one and add 'active'
+      $(this).siblings('.acc-content').slideDown();
+      $(this).addClass('active');
+    }
+    // If it's already active, do nothing to ensure one remains open
+  });
+});
