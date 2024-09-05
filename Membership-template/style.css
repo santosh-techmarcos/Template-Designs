@@ -236,10 +236,11 @@ a{text-decoration: none;}
 .img-wrapper-sm::before{
   content: "";
   position: absolute;
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-color: rgba(29, 98, 189, 0.089);
-  right: -50px;
-  top: -50px;
+  right: -38px;
+  top: -35px;
 }
+.mt-10{margin-top: 4rem;}

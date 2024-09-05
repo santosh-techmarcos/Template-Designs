@@ -64,3 +64,7 @@ $('.logo-slider').slick({
     // instead of a settings object
   ]
 });
+
+$( function() {
+  $( "#accordion" ).accordion();
+} );
