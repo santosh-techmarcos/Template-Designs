@@ -18,3 +18,9 @@ $(document).ready(function() {
       heightStyle: "content"
   });
 });
+
+
+$('.rotor-group').each(function() {
+  $(this).append($(this).find('.rotor-group-heading'));
+});
+
