@@ -15,13 +15,6 @@ $('.whatsapp-slider').slick({
       }
     },
     {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
@@ -42,6 +35,8 @@ $('.slider').slick({
   speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
   nextArrow: '#next-testimonial',
   prevArrow: '#prev-testimonial',
 });
@@ -53,6 +48,8 @@ $('.logo-slider').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
   arrows:false,
+  autoplay: true,
+  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 1024,
@@ -66,15 +63,13 @@ $('.logo-slider').slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 3,
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -104,3 +99,66 @@ $(document).ready(function() {
     // If it's already active, do nothing to ensure one remains open
   });
 });
+
+
+// Locomotive js
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('#locomotive-scroll'),
+  smooth: true,
+  smartphone:true,
+  tablet:true,
+});
+
+// AOS Animetions
+AOS.init();
+
+let observer = new IntersectionObserver( (entries, observer) => {  entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('aos-animate'); }else{ entry.target.classList.remove('aos-animate'); } }); }); document.querySelectorAll('[data-aos]').forEach(aosElem => { observer.observe(aosElem) });
+
+
+
+
+
+
+
+  // Function to animate the number increment
+  function animateNumber(item) {
+    const target = parseInt($(item).attr('data-target')); 
+    const current = parseInt($(item).text());
+    $({ count: current }).animate({ count: target }, {
+      duration: 2000, 
+      easing: 'swing',
+      step: function() {
+        $(item).text(Math.floor(this.count)); 
+      },
+      complete: function() {
+        $(item).text(this.count); 
+      }
+    });
+  }
+
+  function isInViewport(element) {
+    const elementTop = $(element).offset().top;
+    const elementBottom = elementTop + $(element).outerHeight();
+    const viewportTop = $(window).scrollTop();
+    const viewportBottom = viewportTop + $(window).height();
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+  }
+
+  $(window).on('scroll', function() {
+    $('.stat-number').each(function() {
+      if (isInViewport(this) && !$(this).hasClass('counted')) {
+        $(this).addClass('counted'); 
+        animateNumber(this); 
+      }
+    });
+  });
+
+  // Optionally trigger the animation on page load for visible elements
+  $(document).ready(function() {
+    $('.stat-number').each(function() {
+      if (isInViewport(this)) {
+        $(this).addClass('counted');
+        animateNumber(this);
+      }
+    });
+  });

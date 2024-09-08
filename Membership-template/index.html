@@ -21,10 +21,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+    <!-- Gsap Scroll Trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Locomotive js scroll -->
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Main style -->
     <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
+  <main id="locomotive-scroll" class="pb-2" >
     <section>
       <div class="top-bar bg-blue">
         <div class="md-container px-4">
@@ -43,7 +53,7 @@
                   <h1 class="head-lg fw-bold">Unlock Your Full Potential with Exclusive Membership Packages</h1>
                   <p class="text-md alter fw-light my-4">Choose from our range of membership options to receive tailored coaching, exclusive resources, and a supportive community that drives your success.</p>
                   <div class="flex-wrapper align-items-center gap-5">
-                    <a class="theme-btn btn-blue" href="#" title="Explore Packages">Explore Packages</a>
+                    <a class="theme-btn btn-blue shine btn-anim " href="#" title="Explore Packages">Explore Packages</a>
                     <div class="flex-wrapper align-items-center gap-3">
                       <a href="#" title="Play">
                         <span class="circle-border btn d-flex align-items-center justify-content-center">
@@ -56,7 +66,7 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-6">
-                <div class="img-wrapper">
+                <div class="img-wrapper" data-aos="fade-left" data-aos-duration="1500">
                   <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/db38/2d27/93b6d4652a4c68f87b6e4dea1c3c5941?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZM1l6VtxEIxCjCXh9WPzMU6Lf9qSxGXj39bpVZ3IEBoZgH0utxwP8UpiSSeZ6dBIotNJlP~2MpanIv5OIYyO87teFT4I09a87E9tGnHWiFOofrpC~1nceL5kYA0zthLeyM9DJFHvCpapXB4oNFRsLAm954zRk2fGebPZXckBAIbfIuAmOCdKWejWVUpp6iHO1fFyru1smrih7~TvCpdw1I0hVHWYTpuDXyR8O42iTOt6VAzzfBYmnsyIoxAxU2agdMs1G5GgipTZFZKwQWShNuGabAPW5sdNp-4lDaSOjsmjCFJvsRWyjvD6vzxSVx-JkhaZlyo4NFf4Ngv~PQee~A__" alt="Girl in office dress" width="1381" height="919">
                 </div>
               </div>
@@ -72,25 +82,25 @@
       <h2 class="head-sm text-green">Client Testimonials</h2>
       <p class="head-md fw-bold mb-3">Real Stories of Transformation and Success</p>
       <div class="whatsapp-slider">
-        <div class="slide">
+        <div class="slide" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="300">
           <div class="p-2">
             <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/af13/0cba/70c6e61fc628c827229aaee31a478ccb?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C19zii~VRtDFvXrIvgmJIdTs3ckJC1ync8sNW1oWBnmdV2V7F4~wcceZG8NTW3sM2XlelUeadkox5tFRJB1nY-Sn7J3gh0j7KoQtSbg~mtYTruiuAfxe-2ADHw2sXfH4wFF~1TwCHx~O3yYI~~21ZzClu7X6m8kmSbMPa4jlqNqvX4n65MzfqeJtMLnaCz9NeHJ-jl7DOBTL5FmelacIXPOny48CdPPbYf6EJ4egsotWtSl~xVCwg~Umt473Dcxj6gAXbHA57EKuT3eooFdDEU-l84t5VWx1UX7wznV4D-e3WskkB~Tw0B1rhFosZn5EASoyaHAfIdGGhOQ2ZXGR2w__" width="516" height="911" alt="Whatsapp chat">
           </div>
         </div>
 
-        <div class="slide">
+        <div class="slide" data-aos="flip-right" data-aos-easing="linear" data-aos-duration="1200" data-aos-offset="400">
           <div class="p-2">
             <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/af13/0cba/70c6e61fc628c827229aaee31a478ccb?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C19zii~VRtDFvXrIvgmJIdTs3ckJC1ync8sNW1oWBnmdV2V7F4~wcceZG8NTW3sM2XlelUeadkox5tFRJB1nY-Sn7J3gh0j7KoQtSbg~mtYTruiuAfxe-2ADHw2sXfH4wFF~1TwCHx~O3yYI~~21ZzClu7X6m8kmSbMPa4jlqNqvX4n65MzfqeJtMLnaCz9NeHJ-jl7DOBTL5FmelacIXPOny48CdPPbYf6EJ4egsotWtSl~xVCwg~Umt473Dcxj6gAXbHA57EKuT3eooFdDEU-l84t5VWx1UX7wznV4D-e3WskkB~Tw0B1rhFosZn5EASoyaHAfIdGGhOQ2ZXGR2w__" width="516" height="911" alt="Whatsapp chat">
           </div>
         </div>
 
-        <div class="slide">
+        <div class="slide" data-aos="flip-left" data-aos-duration="1400" data-aos-offset="500">
           <div class="p-2">
             <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/af13/0cba/70c6e61fc628c827229aaee31a478ccb?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C19zii~VRtDFvXrIvgmJIdTs3ckJC1ync8sNW1oWBnmdV2V7F4~wcceZG8NTW3sM2XlelUeadkox5tFRJB1nY-Sn7J3gh0j7KoQtSbg~mtYTruiuAfxe-2ADHw2sXfH4wFF~1TwCHx~O3yYI~~21ZzClu7X6m8kmSbMPa4jlqNqvX4n65MzfqeJtMLnaCz9NeHJ-jl7DOBTL5FmelacIXPOny48CdPPbYf6EJ4egsotWtSl~xVCwg~Umt473Dcxj6gAXbHA57EKuT3eooFdDEU-l84t5VWx1UX7wznV4D-e3WskkB~Tw0B1rhFosZn5EASoyaHAfIdGGhOQ2ZXGR2w__" width="516" height="911" alt="Whatsapp chat">
           </div>
         </div>
 
-        <div class="slide">
+        <div class="slide" data-aos="flip-right" data-aos-duration="1600" data-aos-offset="600">
           <div class="p-2">
             <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/af13/0cba/70c6e61fc628c827229aaee31a478ccb?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C19zii~VRtDFvXrIvgmJIdTs3ckJC1ync8sNW1oWBnmdV2V7F4~wcceZG8NTW3sM2XlelUeadkox5tFRJB1nY-Sn7J3gh0j7KoQtSbg~mtYTruiuAfxe-2ADHw2sXfH4wFF~1TwCHx~O3yYI~~21ZzClu7X6m8kmSbMPa4jlqNqvX4n65MzfqeJtMLnaCz9NeHJ-jl7DOBTL5FmelacIXPOny48CdPPbYf6EJ4egsotWtSl~xVCwg~Umt473Dcxj6gAXbHA57EKuT3eooFdDEU-l84t5VWx1UX7wznV4D-e3WskkB~Tw0B1rhFosZn5EASoyaHAfIdGGhOQ2ZXGR2w__" width="516" height="911" alt="Whatsapp chat">
           </div>
@@ -134,43 +144,43 @@
       <p class="head-md fw-bold mb-4">Celebrating the Achievements of Our Clients</p>
       <div class="row g-3 justify-content-center">
         <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6">
-          <div class="card-img">
+          <div class="card-img" data-aos="zoom-in" data-aos-duration="700">
             <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/99c8/94d4/8b42bccd756296f043672ac7f5c4c927?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RRxRN1nld3O3bG~oKQK714MUrhwxs4uRVIYZwdQoN9lE~CTZfpMvvMejDPMAaQSNYdzAx7PMrQb5thK5bcNwsjqwxjUwJt15rqcgpER0vvUpqqToYrDRLYuWmpx4sXJtsPbvmoVfTE~V1w4FZt4nYwnZV0tN-eFLzJXUtu-~9KeSaiDLmmDivm9KcDoDA0Q8qsDY4Tawh7pZZEmt8~iMccmV-vXkMwsJkXRhjFbXRQIW1A39GK-vcMWGoyqOPJrBKzKLmBkkCyN~S0HAT5Hi6IRFY6XK4ABrUAb4S9UXRMawsd~gJE1wvEudyOxqpofjWhr1Z7G0l6HVzTaT2ttW6Q__"  width="275" height="183" alt="Study in classroom">
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6">
-          <div class="card-img">
+          <div class="card-img" data-aos="zoom-in-up" data-aos-duration="500">
             <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/320d/cd88/c1b93e21f921e3b4ff42b9e3ed4e70d4?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VVSR3SDvedttPioxwKUAdjbu~be1WS~3gahCnw65224BxTL8UjoCv1KbV57EddikX159GgH44~1xP146hMEIUBI6wvqLFLatDz2NBTO3hUYkXn8dAk1YB0VVnXOehKlBlojE0dR3iDAuvZxgSImNzjO8wH70P0pZVclI0gxkv7sOF4kvSk7Sxy4eNtiq2d8gR8pGdRJPlLn8hneC2apio9xDbAF6weeMr77dB4krCeKRjcCNZ~DDoRn5UF2Kl7IvU2EXXNW5PNwGDSJtPVeRDzRwoIN7-QzHjSO3lcL9DraWJS32DhXbajJ7BZZ47c0BnjRygElKkP2D1HKMmQdyMA__" width="600" height="433" alt="Audience">
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6">
-          <div class="card-img">
+          <div class="card-img" data-aos="zoom-in" data-aos-duration="700">
             <img src="https://s3-alpha-sig.figma.com/img/9c39/d4e0/198e835b40bc3b8dda998ecf4620a09f?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jR2NmhLTLazjYhu2mUY~C1mHl~AG89Rpc6YMLWT6ZxvJE7CcueEK~uj6-j6q1ur62JZdv~q2LZvxrdgtVy7Clv4FUl1Oc3bbvBx80Z0lpyMpGa57GGws5ko1WPJWSz0X1JP6~BmF7QCLVFTrc1KGShDPrqUVke2qg75zrrLHC-a4oewjxmqzUjVo6fuctRa6BCvpCE48FmHZd9kxr~VymzXTWwqiadbwFmyuAsQjaXEWQmnLn5cU7y~lK~yNvhOPhJmBozqXMeeRLro54Yn9Vyz4AohmVb8o4wJ345glJ1dYX3UHTgS3hlGUIws~QOVb8keGq305kvwq-GNnoCaQsg__" width="1444" height="809" alt="Video Confrence" class="imgFix">
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6">
-          <div class="card-img">
+          <div class="card-img" data-aos="zoom-in-up" data-aos-duration="500">
             <img src="https://s3-alpha-sig.figma.com/img/c3fa/eaa1/af365f208826a2357cd4d995f49a574a?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oekxIjHtQjK2llnY65ONxQevYO0oRbQvKmr1ZvxFkqwVVjz8UYMDt1yP6MxAt2YLofG51ZmOUAalVxXbLXKLpwZfTMBi8ggmH6uZKAbzvqThtublBbW7G8hM8EG~EtDrKeuL0G1APUnGqgwQHVS3uCTdddGasRsBWLxhIccg544-S2AwHkaXRKbNSTjY58suBF8Gcf0F-4gdZHDlMV9WRf0jISGcG-0cySqA9lq2J1evyrtGAvAEHOphBNqa4QLTFoVAE~wBHvO52JeguzkXdlWBRKeoLXTF2Ea2i3reixnbwscvdhh0sfo9h6LTfXeyCQUs1uoJwe3KhBCtnDixYg__" width="391" height="280" alt="Audience" class="imgFix">
           </div>
         </div>
 
         <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6">
-          <div class="card-img">
+          <div class="card-img" data-aos="zoom-in">
             <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/9a35/5504/da1a9f2d0e5f6d0465eda52ae839c093?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jVS1SPYGWnUsX~sJ930D4G5xLQcKxZF9pQANB8U8WQllnS1l9z6RLgRdYfEWgt7gsxMf4RydVmVx0bUvVBZ02PDXBwzmY0i9vVIi4pP5Ww45XqaTgSGLcXZgxvaBIhW-QGGzHImku~9H24EUa0bvlWkofXrj0YDeP5fByeB40oERgrdQsd8JdWznKOKTLpnHOfQODC1jrKv5v6Nq0UvAJoDtwB7OJcdNH7PkrWwTSEp4xyN8W7J8aBmfszqBp6qgeJh655SqRcWVHVUdo-zDx4ZBsHYj8fzXUCZ4bRCONuiqYYSjEjoKfOP8zNreJ0hQ9yCmT1HtFbILWbsK93Gf8Q__"  width="993" height="662" alt="Auditorium">
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6">
-          <div class="card-img">
+          <div class="card-img" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="600" >
             <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/2b68/1303/a43192a4549a9996239f7eeb364071dc?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UOGfqGkyani7UpbuvUwUZPa0ZFFsIPk-ht7PN6VL8DTlWrlCvLQGUhd~CgOLk1d1X6aTSrIjTzwSBHOmkcVXEF17TJz2ldjBUgZ3U8FOPzvR5IuJsTsQfa7RgvR3f7YUQVMjG32jCHyODMWmGVqwTzMb9YRRA~umSRZZk247XhYsac~dljg9FJpxkWmXBUnxDYgVHy4MvYI3lpbg2G0HZHvmljm7ZBW3kYaDgcQzEYdR02W08jIpskdbYKSKVXOx2ET9-WE2Afuic~4xayP~G3lQvZ7XKFSs82jmFHLdLGdlmLV-Wz8RaL8gd1w-rGEjqb14eYQi8rZhb4wfd8Lxog__" width="993" height="560" alt="Video call">
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6">
-          <div class="card-img">
+          <div class="card-img" data-aos="zoom-in" >
             <img src="https://s3-alpha-sig.figma.com/img/cdd2/1ad4/18f7885c5f9274d816ee3cac9e525a6a?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=greNq6lVM6je99bovch5FhlrQh75c-dvEOAMPrYTFaZzvKLveMvR5g7Vgxzli3QlsJQgqUlC6pxRASdo5VoLWJabWvzmeOHc0eAzQ1TMJa-gZxBPnGpwTTqyYF~o80FdZPlf9ShcLdT-2-B4-kZNF6DH2fQW4kSTAihpw8aujSR~0jza6S7jUqtr7NdxySpgW3xzuXHEfX6im4udqVqmHbkMs3B11EYqGKCPJmB0zg0b0dEYMbkbqn~Aso33Z3AqocJp4Jj7fOgRVwtgSUPpxARO6jnrCOuGUUSbmGG6zJ1f3TrehJirJs3o9lVZ8lHQi5d0GQqxpFwLTsw87WI0Hw__" width="612" height="408" alt="Confrence" class="imgFix">
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6">
-          <div class="card-img">
+          <div class="card-img" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="600">
             <img src="https://s3-alpha-sig.figma.com/img/8406/e876/db381b40e12dec9d46d4c8136587d728?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZaIFoplrip~FVvU164TYl4p9lBN-04nA~K3jNM30rJ37qi4lXXTXirtBT2lTz2LZq0gonNtrqQw0qQwxciuwWB5xgKfyYWl9o0HpTiI3dyNZCG0HPB-IQxfaABy0NxW9LjTanQx-P10q88W36np0HMwDLOYQUU9J-N5umOKnGKlSz1ks92sN8Q6BxzeviRfMvjU3cIAgcDPtbm4KcIBCVh3YeMdZZHAoAYQaq38aHOd-U~BD0qkYJdaR-u3OSr72lsDVUYmsafvaJVmqFVwtgTF42FG-feBWwm-BCVzshmjVu9hv2pU6LWbgpMr49akH7IgicqBQXUyX1OJQkNKY2A__" width="300" height="200" alt="Watch television" class="imgFix">
           </div>
         </div>
@@ -186,21 +196,21 @@
     <section class="sec-py-lg">
     <div class="md-container">
       <div class="row g-5 justify-content-center">
-        <div class="col-lg-6 col-md-6">
+        <div class="col-lg-6 col-md-6" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="1000">
           <div class="content">
             <h2 class="head-sm text-green">Client Testimonials</h2>
             <p class="head-md fw-bold">Real Stories of Transformation and Success</p>
-            <div class="d-flex gap-3">
+            <div class="d-flex justify-content-md-between gap-3 mt-5">
               <button class="circle-border btn alter" type="button" id="next-testimonial" title="Previous"><i class="fa-solid fa-arrow-left"></i></button>
               <button class="circle-border btn alter" type="button" id="prev-testimonial" title="Next"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6">
+        <div class="col-lg-6 col-md-6"  data-aos="fade-left" data-aos-duration="1500" data-aos-offset="1000">
           <div class="testimonial-wrapper">
             <div class="slider">
 
-              <div class="slide testimoial">
+              <div class="slide testimoial" data-duration="5000">
                 <div class="d-flex align-items-center justify-content-between">
                   <span class="quote">
                       <svg width="43" height="36" viewBox="0 0 43 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -229,7 +239,7 @@
                 </div>
               </div>
 
-              <div class="slide testimoial">
+              <div class="slide testimoial" data-duration="5000">
                 <div class="d-flex align-items-center justify-content-between">
                   <span class="quote">
                       <svg width="43" height="36" viewBox="0 0 43 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -258,7 +268,7 @@
                 </div>
               </div>
 
-              <div class="slide testimoial">
+              <div class="slide testimoial" data-duration="5000">
                 <div class="d-flex align-items-center justify-content-between">
                   <span class="quote">
                       <svg width="43" height="36" viewBox="0 0 43 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -303,7 +313,7 @@
       <div class="lg-container">
         <div class="row g-4">
 
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
             <div class="my-card alter">
               <span>
                 <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -316,7 +326,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
             <div class="my-card alter">
               <span>
                 <svg width="38" height="48" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -328,7 +338,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
             <div class="my-card alter">
               <span>
                 <svg width="43" height="47" viewBox="0 0 43 47" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -340,7 +350,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"  data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
             <div class="my-card alter">
               <span>
                 <svg width="50" height="43" viewBox="0 0 50 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -352,7 +362,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"  data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
             <div class="my-card alter">
               <span>
                 <svg width="39" height="44" viewBox="0 0 39 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -364,7 +374,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"  data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
             <div class="my-card alter">
               <span>
                 <svg width="34" height="42" viewBox="0 0 34 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -378,7 +388,7 @@
 
         </div>
         <div class="mt-5 text-center">
-          <a class="theme-btn btn-blue alter btn" href="#" title="Enroll Now">Enroll Now</a>
+          <a class="theme-btn btn-blue alter btn shine btn-anim" href="#" title="Enroll Now">Enroll Now</a>
         </div>
       </div>
     </section>
@@ -390,7 +400,7 @@
         <p class="head-md fw-bold mb-5">Hear Directly from Our Clients About Their Transformational Journeys</p>
         <div class="row g-4 justify-content-center align-items-center">
 
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-right" data-aos-easing="linear" data-aos-offset="1000">
             <div class="video-container-sm">
               <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/8691/c5e9/84c192429a58e76c86b592a6364efcd1?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ErY~CYMmh~UQ46c2KWGFvTIAxFkP9ELkpNGRW4ZJe9bhDre5-RrtoGTOXgVSLGbRAGNfe6xNsNCM-fV-xpO6myTq4ggQ2zzRJ-az2WirJ59OFjZTIm7DtgKqCRQR362Sf2bG-Mg1y7K2Fg~flWGblbI1c1IDJtkHGOA6spKWO78Sy3~yguGcwugWh6itbNVdE1FgqN1D9aDieNpkjozv0ew3eBMd7QIeqBVEX0RawtGbcl2QI6RfWKxR3-mgkUwTdLOtxOHOnHA6THFPIATssuwit6aHUe54vR9WEp5I77rjr9ag~DWqDGyzgAM49tR9a99V8Tpp0hBQDxe~KKBN2Q__" width="1280" height="720" alt="">
               <div class="control-container">
@@ -403,7 +413,7 @@
             </div>
           </div>
           
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-left" tdata-aos-easing="linear" data-aos-offset="1000">
             <div class="video-container-sm">
               <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/1c62/0695/83af4a634e7701caf74fa8e4d6d44b6f?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZS1sJorR7XsKyJfwuTDg65wkvlExmW64D5LkBXlObNopaMlr1uWLs0pK4F4Z2p67jGRAvg1A8XNoFS1V-6uQuGM7Y29slsK1Y4JkshZTnS9R~qem55c80lkyR8ng35GJMXzG1FWQFYRYIlWrRAlF7x~QVlsg6x91tdK4miCT7b5qrAM6JxStorSIPAQgZT21qB-okFacssIyRI6KW0lCEY3nnx1jjEYPU1xvECHsiy5XfEU9mGAMAWM~oz5PahNyKJrHBntU4xyprhGPVSU41996Ou-LJ5ilKO~KgpHMt14GT~WCtuBzn8MNqazrA-F-E3IvlxN6~Yxg2VIcZda8pA__" width="686" height="386" alt="">
               <div class="control-container">
@@ -416,7 +426,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-right" data-aos-easing="linear" data-aos-offset="1000">
             <div class="video-container-sm">
               <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/6905/7529/7cf12af575f791ac25bc69e8b5c7e79e?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Yi0VXtT-Mw7rqhQ1ksIFYX1uSQdxvGYcTP~JuuaazojagUCHpUvuReamIm59rq4TztDf38abu1Iu8qCtuFfPIe57oO1JNMU4mFMIX5Lyr6WoS4O-Mt20AJh3K0SD2cHlTCJzNpSzrixWoZMJAny3JHwH8SU2WSYh9~-MJzIe1pPEd9c1EjArubtnK4d9QvpWcg5TLgljBed~jQFP5s-li7J5xa2f2rFbqpb9twN~Mk0oZCWew1eLNkMep29smVKrWljYVB6lZxNKammz-dKxGFfn2EfFqWsxxZlz7Wa6XrKpfUOVLxGiWxKePjDi5WMuHUmgaA1kAJT9Luz7ie0WTQ__" width="640" height="340" alt="">
               <div class="control-container">
@@ -429,7 +439,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-left" data-aos-easing="linear" data-aos-offset="1000">
             <div class="video-container-sm">
               <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/c571/a572/e3382f11150aeeb8b6397521690e608d?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wtvrd0t8XDUPGzq-2gZYngpMf5ASmHAT4BZDM8IEauJu1VLmFFiuCKNyORxnrvM3V9EJ6llk9riAv001iYJiuiPNKq2cb2MzBrq-m~vi-3cAnCxL1wX~QYEw05IkYjT2Dk8sp-cWQuf4D7DuLfNzzdw8X2pU0b33yWE9i9Y1bNN--kph1EgKW-pxqOKtgg~zmkZIq5zcZ~KfmDgJjqqdSI-4peKCtf-S0QsL3Cm9TdOjYKfIVuPL1~cr8nBzJPpjPm8DdVXpAj8oxo5lF8xCmqqAMMcIEzZ518-YpwdBVtYaHMknc49hHDQF35tSH2Twan7D2-dTba7IqcCm9cTywQ__" width="996" height="664" alt="">
               <div class="control-container">
@@ -444,7 +454,7 @@
 
         </div>
         <div class="mt-5 text-center">
-          <a class="theme-btn btn-blue alter btn" href="#" title="Know More">Know More</a>
+          <a class="theme-btn btn-blue alter btn shine btn-anim" href="#" title="Know More">Know More</a>
         </div>
       </div>
     </section>
@@ -453,7 +463,7 @@
     <section class="sec-py-md">
       <div class="lg-container">
         <div class="row g-5 justify-content-between">
-          <div class="col-lg-6 col-md-6 px-5">
+          <div class="col-lg-6 col-md-6 px-5" data-aos="zoom-in-right" data-aos-easing="linear">
             <div class="squre_img squre position-relative">
               <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/d97c/248f/af17350ade2b8e4b27834d8a1256ea67?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ko294kf2ory2-up9mQxWkXHjT69iShTSKQYhoNM3Whoz0Grj~4u-No0WaPeN3EuUXO-TOcu7F8JRhal5rbLKXDb6AfSxi9Oz~IXrux0N6LbwYdDtJs~0Ih1RL5tofZXqlSwt8tO~I1MBNZ1s00oF8U~djgtgG5AxSHyN5W5aSf5~BjwoQ-XY~sMvx3cCUBiMH7Od3Bra4PHeSsgm7k82xDH98MKzNKKHKz9tCXorELXs9NCucXasMpy5WLjPclW2Voq-Q6rbjPdfotAp6dAzvavP73nIop9mKg5F2~wV7ynn3UIIAm~fkLPhgBREmT2gjaRW6r4mXLNBUeUHN7loEA__" width="616" height="919" alt="Women with smile">
             </div>
@@ -498,8 +508,8 @@
       </div>
       <div class="md-container mt-5">
         <div class="row g-4 justify-content-center">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 h-100">
-            <div class="stick-hover">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
+            <div class="stick-hover h-100">
               <div class="my-card">
                 <span>
                   <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -515,8 +525,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 h-100">
-            <div class="stick-hover">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
+            <div class="stick-hover h-100">
               <div class="my-card">
                 <span>
                   <svg width="60" height="54" viewBox="0 0 60 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -534,8 +544,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 h-100">
-            <div class="stick-hover">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
+            <div class="stick-hover h-100">
               <div class="my-card">
                 <span>
                   <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -558,7 +568,7 @@
           </div>
         </div>
         <div class="mt-5 text-center">
-          <a class="theme-btn btn-green alter btn" href="#" title="Enroll Now">Enroll Now!</a>
+          <a class="theme-btn btn-green alter btn shine btn-anim" href="#" title="Enroll Now">Enroll Now!</a>
         </div>
       </div>
     </section>
@@ -572,7 +582,7 @@
       </div>
       <div class="lg-container mt-5">
         <div class="row g-4 justify-content-center">
-          <div class="col-lg-4 col-12 col-md-6">
+          <div class="col-lg-4 col-12 col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             <div class="wrapper">
               <div class="star d-flex align-items-center justify-content-center">
                 <i class="fa-solid fa-star"></i>
@@ -618,12 +628,12 @@
               </div>
 
               <div>
-                <a class="theme-btn alter btn btn-blue w-100" href="#" title="Join Now">Join Now</a>
+                <a class="theme-btn alter btn btn-blue w-100 shine btn-anim" href="#" title="Join Now">Join Now</a>
               </div>
             
             </div>
           </div>
-          <div class="col-lg-4 col-12 col-md-6">
+          <div class="col-lg-4 col-12 col-md-6" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             <div class="wrapper">
               <div class="star d-flex align-items-center justify-content-center">
                 <i class="fa-solid fa-star"></i>
@@ -669,12 +679,12 @@
               </div>
 
               <div>
-                <a class="theme-btn alter btn btn-blue w-100" href="#" title="Join Now">Join Now</a>
+                <a class="theme-btn alter btn btn-blue w-100 shine btn-anim" href="#" title="Join Now">Join Now</a>
               </div>
             
             </div>
           </div>
-          <div class="col-lg-4 col-12 col-md-12">
+          <div class="col-lg-4 col-12 col-md-12" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             <div class="wrapper">
               <div class="star d-flex align-items-center justify-content-center">
                 <i class="fa-solid fa-star"></i>
@@ -720,7 +730,7 @@
               </div>
 
               <div>
-                <a class="theme-btn alter btn btn-blue w-100" href="#" title="Join Now">Join Now</a>
+                <a class="theme-btn alter btn btn-blue w-100 shine btn-anim" href="#" title="Join Now">Join Now</a>
               </div>
             
             </div>
@@ -792,7 +802,7 @@
         </div>
       </div>
       <div class="d-flex align-items-center justify-content-center">
-        <a class="theme-btn btn-blue" href="#" title="Get Started Now!">Get Started Now!</a>
+        <a class="theme-btn btn-blue shine btn-anim" href="#" title="Get Started Now!">Get Started Now!</a>
       </div>
     </section>
 
@@ -837,7 +847,7 @@
               <p class="head-md fw-bold">Simple Steps to Start Your Transformation</p>
               <p class="text-sm alter fw-light my-2">We’ve designed an easy and seamless onboarding process to ensure you feel supported and confident as you begin your coaching journey with us. Follow these simple steps to get started.</p>
               <div class="mt-5">
-                <a class="btn theme-btn btn-blue" href="#" title="Let’s Begin">Let’s Begin</a>
+                <a class="btn theme-btn btn-blue shine btn-anim" href="#" title="Let’s Begin">Let’s Begin</a>
               </div>
             </div>
           </div>
@@ -850,23 +860,24 @@
       <p class="text-center text-md text-white my-2">Proven Success and Positive Change</p>
       <div class="md-container mt-5">
         <div class="flex-wrapper justify-content-between gap-3 flex-wrap">
+
           <div class="text-center text-white">
-            <span class="text-2xl">500+</span>
+            <span class="text-2xl stat-number" data-count="500">500+</span>
             <p class="text-md alter text-white">Individuals Empowered</p>
           </div>
 
           <div class="text-center text-white">
-            <span class="text-2xl">98%</span>
+            <span class="text-2xl stat-number" data-count="500">98%</span>
             <p class="text-md alter text-white">High Satisfaction</p>
           </div>
 
           <div class="text-center text-white">
-            <span class="text-2xl">10+</span>
+            <span class="text-2xl stat-number" data-count="500">10+</span>
             <p class="text-md alter text-white">Years of Experience</p>
           </div>
 
           <div class="text-center text-white">
-            <span class="text-2xl">200+</span>
+            <span class="text-2xl stat-number" data-count="500">200+</span>
             <p class="text-md alter text-white">Real Stories</p>
           </div>
 
@@ -878,14 +889,14 @@
       <div class="md-container">
         <h2 class="head-md text-white text-center">Discover Your Path to Personal Growth</h2>
         <p class="text-md alter text-white my-3 text-center">Watch Our Video to Learn How We Can Help You Transform Your Life</p>
-        <div class="video-container position-relative my-5">
+        <div class="video-container position-relative my-5" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
           <img src="https://s3-alpha-sig.figma.com/img/ac49/3185/5985de718696aba00280a28090ffce8c?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NqK2cZ-t0pEwNEtriu74ft0IcaqZNAe7sIC8kVt2EFd4vPaTNm-0ijJiiHAYMCH7KU~lAL~ewk6YYAniEFQzfYEzaaugvy5mxUQ6CElut3BdSnfIMLnECzmCdjoKVoLMoFYlPvMAQSEK1YKGmIQR5YdE~XTQRjDh3Qwka64YaHzSl7d0q7K7xD-wiA4kECEJ8Dno1XCxogE1v9X0uiZAYzZBjeW4585goVruYKVFCFOvxpXrtIgoBpBz950ineFcTrFxLP8LioUmaZw4bFXYGq0J0UsRzVmdVC~poNq4LJ~PmgPHXyAfIVKubLkcWSukzf5OEpG3qlHHSiNGO2uHnA__" width="996" height="664" alt="Discussion">
           <div class="control-container">
             <button type="button" title="Play" class="play-btn"><i class="fa-solid fa-play"></i></button>
           </div>
         </div>
         <div class="mt-5 text-center">
-          <a class="btn theme-btn btn-light" href="#" title="Let’s Begin">Let’s Begin</a>
+          <a class="btn theme-btn btn-light shine btn-anim" href="#" title="Let’s Begin">Let’s Begin</a>
         </div>
       </div>
     </section>
@@ -895,14 +906,14 @@
         <h2 class="head-md fw-semibold text-center">Frequently Asked Questions</h2>
         <p class="text-md alter text-center my-2">Find Answers to Your Questions About Our Coaching Services</p>
         <div class="row mt-10 justify-content-between">
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
             <div class="img-wrapper-sm">
               <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/b840/4002/5180c6f25494f2dcba87ea960272d2b4?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GbAEEYVzXlEbAi02tdehvfxtxUxphtxIdJPegKH3RryFaHojqNBq8YMiJZ6mTgcVxbUwUmQBPNz63mXs2LYaERQNEBXVcXkuwSdJQUrStosxhq04joAY57KkPGCH-4KEmIfbZwGPC288YwfvoQ5c2W11eJpIDMB~1kwJx4SdVDRwLtLqsBjBx66Wa6DTrr4MVfNGnHpms0D3a6UiDgy4FhHJYrhHLBBRCFUr2OmMoSp7HgsOo2j9s6OZpcR1KtYSnAZNxG8wxszo-EhKwTToBmqnDhzp-OAJMV2czhKmfUMa7A8hLHCct~k7cRzpOAjJAFYLUuIp2DR5waaxN5QIlw__" width="996" height="664"  alt="Women with annaucment">
             </div>
           </div>
           <div class="col-lg-7">
             <div class="acc-container">
-              <div class="acc">
+              <div class="acc" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                 <div class="acc-head">
                   <h3 class="head-sm">What is Life Coaching?</h3>
                 </div>
@@ -911,7 +922,7 @@
                 </div>
               </div>
             
-              <div class="acc">
+              <div class="acc" data-aos="fade-left" data-aos-duration="900" data-aos-easing="ease-out-cubic">
                 <div class="acc-head">
                   <h3 class="head-sm">How Can Life Coaching Help Me?</h3>
                 </div>
@@ -920,7 +931,7 @@
                 </div>
               </div>
             
-              <div class="acc">
+              <div class="acc" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-out-cubic">
                 <div class="acc-head">
                   <h3 class="head-sm">What Should I Expect During a Coaching Session?</h3>
                 </div>
@@ -929,7 +940,7 @@
                 </div>
               </div>
 
-              <div class="acc">
+              <div class="acc" data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-out-cubic">
                 <div class="acc-head">
                   <h3 class="head-sm">How Long Are Coaching Sessions?</h3>
                 </div>
@@ -938,7 +949,7 @@
                 </div>
               </div>
 
-              <div class="acc">
+              <div class="acc" data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-out-cubic">
                 <div class="acc-head">
                   <h3 class="head-sm">How Many Sessions Will I Need?</h3>
                 </div>
@@ -991,7 +1002,7 @@
                     </div>
                   </div>
                   <div class="mt-3">
-                    <button type="submit" class="theme-btn btn-light border-0 btn" title="Enroll Now!">Enroll Now!</button>
+                    <button type="submit" class="theme-btn btn-light border-0 btn shine btn-anim" title="Enroll Now!">Enroll Now!</button>
                   </div>
                 </form>
               </div>
@@ -1012,7 +1023,7 @@
       <form action="#" method="post" class="form-wrapper">
         <div class="input-group">
           <input type="email" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <button class="btn theme-btn btn-blue" type="submit" id="button-addon2" title="Sent"><i class="fa-solid fa-arrow-right-long"></i></button>
+          <button class="btn theme-btn btn-blue shine btn-anim" type="submit" id="button-addon2" title="Sent"><i class="fa-solid fa-arrow-right-long"></i></button>
         </div>
       </form>
     </div>
@@ -1023,15 +1034,17 @@
             <p class="text-md alter text-white">Offer Expires in : 11:20 min</p>
             <p class="f2 text-white cross-text"> <span class="fw-bold display-3">$99</span> <span class="head-md alter text-white">$999</span> </p>
           </div>
-          <a href="#" class="theme-btn btn btn-light text-green" title="JOIN NOW!">JOIN NOW!</a>
+          <a href="#" class="theme-btn btn btn-light text-green shine btn-anim" title="JOIN NOW!">JOIN NOW!</a>
         </div>
       </div>
     </div>
-
+  </main>
      <!-- Slick slider jquery -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Locomotive js -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <!-- Main js -->
     <script src="script.js"></script>
   </body>
