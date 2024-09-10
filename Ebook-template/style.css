@@ -28,7 +28,31 @@ a{text-decoration: none;}
 }
 
 
+/* Animations */
+#loder{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1vw 0;
+  background-color: #010101;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 
+#loder2{
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 0vh;
+  background-color: rgb(201, 99, 99);
+}
 /* Typography */
 /* 80px */ .head-xl{font-size: 5rem;}
 /* 50px */ .head-lg{ font-size: 3.125rem; font-weight: 600;}
@@ -88,6 +112,13 @@ a{text-decoration: none;}
 .user-info .avtar{width: 40px; height: 40px; border-radius: 50%; overflow: hidden;}
 .ranks{color: var(--orange);}
 
+.landing-sec{
+  width: 100%;
+  height: 100vh;
+  padding: 20px 40px;
+
+}
+.brand-logo{ width: max-content; margin: 0 auto;}
 /* Slider */
 .slick-prev, .slick-next {
   font-size: 18px;

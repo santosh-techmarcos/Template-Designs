@@ -99,3 +99,38 @@ $(document).ready(function() {
       heightStyle: "content"
   });
 });
+
+// Locomotive 
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('#locomotive-scroll'),
+  smooth: true,
+  smartphone:true,
+  tablet:true,
+});
+
+
+// Gsap Settings
+function startAnim(){
+    const tl = gsap.timeline({default: {ease: 'power4.out', duration: .7}});
+    tl.to('#loder',{
+      scaleY: 0,
+      height:0,
+      transformOrigin: 'top',
+      duration: 1.2,
+      ease: 'power4.inOut'
+  } , "-=.3")
+  .to('#loder2',{
+      height: "100vh",
+      duration:1,
+      ease: 'power4.inOut',
+  }, "-=.9")
+  .to('#loder2',{
+      height:0,
+      top: 0,
+      duration:.7,
+      ease:'power4.inOut',
+  },"-=.4")
+}
+
+startAnim()
+
