@@ -34,9 +34,6 @@ $('.slider').slick({
       }
     }
   ]
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-
 });
 
 
@@ -76,26 +73,57 @@ $('.video-slider').slick({
       }
     }
   ]
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
 
 });
 
-// Inject svg icon
+// Logo slider
+$('.logo-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  arrows:false,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
+});
 
+// Inject svg icon
 $(document).ready(function() {
   var svgIcon = '<span><svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 7.83L5.59 13.42L7 12L1.42 6.42M21.83 0L11.25 10.59L7.09 6.42L5.66 7.83L11.25 13.42L23.25 1.42M17.59 1.42L16.18 0L9.83 6.35L11.25 7.76L17.59 1.42Z" fill="#4E705F"/></svg></span>';
-
   // Append SVG icon to each li
   $('.theme-checklist li').each(function() {
     $(this).prepend(svgIcon);
   });
 });
 
-
+// Accordion
 $(document).ready(function() {
   $("#accordion").accordion({
-      icons: false, // Disable default jQuery UI icons
+      icons: false,
       heightStyle: "content"
   });
 });
@@ -116,21 +144,40 @@ function startAnim(){
       scaleY: 0,
       height:0,
       transformOrigin: 'top',
-      duration: 1.2,
+      duration: 2,
       ease: 'power4.inOut'
   } , "-=.3")
-  .to('#loder2',{
-      height: "100vh",
-      duration:1,
-      ease: 'power4.inOut',
-  }, "-=.9")
-  .to('#loder2',{
-      height:0,
-      top: 0,
-      duration:.7,
-      ease:'power4.inOut',
-  },"-=.4")
+  .from("#loder", {
+    opacity:1,
+    duration:1,
+
+  })
 }
 
-startAnim()
+function mobileRotation(){
+  const t2 = gsap.timeline({default: {ease: 'power4.out' , duration: .6}})
+  t2.from('.mobile', {
+    rotateZ:0,
+    transformOrigin: 'bottom left',
+    duration:1.2,
+    ease:'power4.inOut',
+    stragger:true
+  })
+  t2.from('.circle-modal',{
+    opacity:0,
+    x:-100,
+    duration:.5,
+    ease:'power4.inOut',
+  })
+  t2.from('.best-seller-stemp', {
+    opacity: 0,
+    scale: 7, 
+    z: 100,       
+    duration: .3,
+    ease: 'power4.inOut',
+  })
 
+
+}
+
+mobileRotation();
