@@ -7,7 +7,7 @@
 /* Manrope */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 *{box-sizing: border-box;}
-html , body{height: 100%; font-family: "Outfit"; line-height: 1.6 ; font-optical-sizing: auto; font-size: 16px;  font-weight: normal; font-style: normal; box-sizing: border-box;}
+html , body{height: 100%; max-width: 100vw; overflow-x: hidden; font-family: "Outfit"; line-height: 1.6 ; font-optical-sizing: auto; font-size: 16px;  font-weight: normal; font-style: normal; box-sizing: border-box;}
 p,h1,h2,h3,h4,h5,h6{margin-bottom: 0;}
 a{text-decoration: none;}
 
@@ -76,6 +76,24 @@ a{text-decoration: none;}
 .btn-md.alter{padding: 20px 50px;}
 .btn-sm{padding: 20px 30px;}
 .btn-sm.alter{width: 100%; padding: 15px;}
+/* Mouse */
+#cursor{
+  pointer-events: none;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 99;
+  border: 1px solid #719a86a1;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  background-color: rgba(255, 255, 255, 0.082);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+  
+}
 /* Timer */
 .timer{display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;}
 .time-box{background-color: var(--dark-green); color: var(--light); min-width: 80px; height: 80px; border-radius: 4px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
@@ -94,11 +112,11 @@ a{text-decoration: none;}
   padding: 20px 40px;
 
 }
-.book-bg{width: fit-content; height: fit-content;}
-.book-bg svg { max-width: 600px;} 
-.books-content{position: relative; margin-top: -500px;}
+.book-bg{position: relative; margin: 0 auto; width: fit-content; height: fit-content;}
+.book-bg .booksimg { max-width: 600px;} 
+.books-content{position: absolute; top: 11%; left: 36%; transform: translateX(-50%);}
 .mobile .mobile-body{max-width: 300px; height: auto; max-height: 500px;}
-.mobile{position: absolute; width: fit-content; height: fit-content; left: 15vw;}
+.mobile{position: absolute; width: fit-content; height: fit-content;}
 .mobile-screen{width: 91%; height: 80% !important; bottom: 47px; left: 13px;}
 
 .mobile:nth-child(2){transform: rotateZ(-10deg); transform-origin: bottom left;}
@@ -109,6 +127,7 @@ a{text-decoration: none;}
 .circle-modal .circle-img{width: 30px; height: 30px; border-radius: 50%; overflow: hidden; border: 1px solid var(--light);}
 .circle-modal .circle-img:nth-child(1){margin-right: -10px;}
 .circle-modal .circle-img:nth-child(2){margin-right: -10px;}
+.responsive{width: fit-content;}
 /* Company logo slider */
 .c-logo{height: 60px;}
 .c-logo img{
@@ -308,12 +327,21 @@ padding-left: 20px;
 }
 
 /* Responsive */
+@media all and (max-width:1400px) {
+  .book-bg .booksimg { max-width: 500px;} 
+  .mobile .mobile-body{max-width: 250px;}
+  .mobile-screen { height: 81% !important; left: 12px; top: 33px;}
+  .circle-modal { bottom: 16%; left: -56%; padding: 10px; font-size: 14px;}
+}
 @media all and (max-width:1300px) {
   .banner { max-width: 295px; max-height: 342px;}
 
 }
 @media all and (max-width:1200px) {
   .banner-wrapper{margin-left: -6vw;}
+/* .book-bg .booksimg { max-width: 600px;}  */
+  /* .mobile .mobile-body{max-width: 250px;} */
+  .mobile-screen { height: 81% !important; left: 12px; top: 33px;}
 }
 
 @media all and (max-width:991px) {
@@ -327,6 +355,8 @@ padding-left: 20px;
   .btn-sm {padding: 16px 30px;}
   .btn-md.alter { padding: 12px 25px;}
   .rounded-box{margin-bottom: unset;}
+  .book-bg{margin-top: 80px;}
+  .responsive{margin: 0 auto;}
 }
 @media all and (max-width:767px) {
   .sec-p-lg{padding: 50px 30px;}
@@ -345,6 +375,8 @@ padding-left: 20px;
   .banner-icon.alter svg{width: 20px; height: 16px;}
   .video-wrapper {max-height: 300px; height: 66vw;}
   .gain-sec .content{padding: 25px 20px;}
+  .head-xl{font-size: 4rem; text-align: center;}
+  .book-bg{margin-top: 60px;}
 }
 
 @media all and (max-width:576px) {
@@ -377,9 +409,15 @@ padding-left: 20px;
   .banner-md.alter .text-xs.alter {font-size: 14px;}
   .banner-md.alter.banner-content .text-xs.alter.f1 {font-size: 10px;}
   .rounded-box .px-4{padding: 0 !important;}
+  .book-bg .booksimg { max-width: 400px;} 
+  .mobile .mobile-body{max-width: 200px;}
+  .mobile-screen {left: 9px; top: 29px;}
+  .head-xl{font-size: 3rem; text-align: center;}
+  .book-bg{margin-top: 40px;}
 }
 
 @media all and (max-width:480px) {
+  .head-xl{font-size: 3rem;}
   .banner { max-width: 156px; max-height: 200px;}
   .banner-md {
     padding: 35px 50px;
@@ -388,5 +426,5 @@ padding-left: 20px;
     max-height: 330px;
     margin: 0 auto;
 }
-
+    .book-bg .booksimg{visibility: hidden;}
 }

@@ -136,24 +136,6 @@ const scroll = new LocomotiveScroll({
   tablet:true,
 });
 
-
-// Gsap Settings
-function startAnim(){
-    const tl = gsap.timeline({default: {ease: 'power4.out', duration: .7}});
-    tl.to('#loder',{
-      scaleY: 0,
-      height:0,
-      transformOrigin: 'top',
-      duration: 2,
-      ease: 'power4.inOut'
-  } , "-=.3")
-  .from("#loder", {
-    opacity:1,
-    duration:1,
-
-  })
-}
-
 function mobileRotation(){
   const t2 = gsap.timeline({default: {ease: 'power4.out' , duration: .6}})
   t2.from('.mobile', {
@@ -177,7 +159,31 @@ function mobileRotation(){
     ease: 'power4.inOut',
   })
 
-
 }
 
 mobileRotation();
+// Follower
+function circleFllower(){
+  var circle = document.querySelector('#cursor')
+  window.addEventListener("mousemove" , (dets)=>{
+      gsap.to(circle , {
+          left: dets.clientX,
+          top: dets.clientY,
+          duration:.5,
+      })
+  })
+  document.querySelectorAll('a , button, i').forEach((elem)=>{
+      elem.addEventListener("mouseenter" , ()=>{
+          gsap.to(circle ,{
+              scale:2,
+              duration:.5
+          })
+      })
+      elem.addEventListener("mouseleave" , ()=>{
+          gsap.to(circle ,{
+              scale:1
+          })
+      })
+  })
+}
+circleFllower();
