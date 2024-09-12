@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 $('.slider').slick({
   dots: false,
   infinite: false,
@@ -129,12 +131,14 @@ $(document).ready(function() {
 });
 
 // Locomotive 
+// Locomotive js
 const scroll = new LocomotiveScroll({
   el: document.querySelector('#locomotive-scroll'),
   smooth: true,
   smartphone:true,
   tablet:true,
 });
+
 
 function mobileRotation(){
   const t2 = gsap.timeline({default: {ease: 'power4.out' , duration: .6}})
@@ -187,3 +191,26 @@ function circleFllower(){
   })
 }
 circleFllower();
+
+let t3 = gsap.timeline()
+t3.from('#fade-right h2', {
+  y:100,
+  opacity:0,
+  duration:.3,
+  ease:'powerOut4'
+})
+t3.from('#fade-right .text-md', {
+  y:100,
+  opacity:0,
+  duration:.4,
+  ease:'powerOut4'
+})
+t3.from('.timer .time-box', {
+  x:-1000,
+  rotateZ:-360,
+  borderRadius:50,
+  duration:1,
+  ease:'powerOut4',
+  stragger:true
+
+})
