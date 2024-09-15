@@ -204,6 +204,35 @@ function circleFllower(){
   })
 }
 circleFllower();
+// SVG path animation on mouse move
+function svgPathAnimation() {
+  const svgElement = document.querySelector('.svg-line');
+  const svgPath = svgElement.querySelector('path');
+  const initialPath = 'M 0 50 Q 0 50, 1300 50';
+  const curveHeight = 100;
+  const svgRect = svgElement.getBoundingClientRect();
+
+  svgElement.addEventListener('mousemove', (event) => {
+    const svgX = event.clientX - svgRect.left;
+    const mouseY = event.clientY - svgRect.top;
+    const lineY = 60;
+    const curveY = Math.min(curveHeight, Math.max(-curveHeight, (lineY - mouseY) * 2));
+    gsap.to(svgPath, {
+      attr: { d: `M 0 50 Q ${svgX} ${lineY + curveY}, 1300 50` },
+      duration: 0.5
+    });
+  });
+
+  svgElement.addEventListener('mouseleave', () => {
+    gsap.to(svgPath, {
+      attr: { d: initialPath },
+      duration: 0.5,
+      ease: "elastic.out(2,0.3)"
+    });
+  });
+}
+
+svgPathAnimation();
 
 let t3 = gsap.timeline({
   scrollTrigger: {
