@@ -82,12 +82,56 @@ body{background: #f1f4f8;}
 .navigation-wrapper{position: relative; padding: 0; list-style: none; display: flex;}
 .navigation-wrapper .my-link{color: var(--dark-color); padding: 10px; font-size: 14px; font-weight: 400;}
 .navigation-wrapper .my-link + i{font-size: 10px; color: var(--dark-alpha);}
+.preview-img{width: 100%; height: 100%; overflow: hidden;}
+.slider-for .preview-img{border-radius: 10px;}
+.slider-nav .preview-img{ border-radius: 5px;}
+.preview-img img{width: 100%; height: 100%; object-fit: ;}
+/* Ensure the slider-nav container has no extra padding */
+.slick-list.draggable{padding: 0 !important;}
+.slider-nav {
+  padding: 0; /* Remove padding if any */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Style for each slide in the navigation slider */
+.slider-nav .slick-slide {
+  margin: 0 5px; /* Adjust space between images; smaller value for tighter fit */
+  width: 100%; /* Ensure full width is used */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Optional: Adjust slider-nav width if necessary */
+.slider-nav {
+  width: calc(100% + 10px); /* Adjust based on margin value; +10px for extra space */
+  margin: 0 -5px; /* Adjust based on margin value; -5px to compensate for added space */
+}
+
+/* Ensure that navigation slides are not clipped */
+.slick-slide {
+  overflow: hidden; /* Prevent overflow issues */
+}
+/* Base style for all navigation images */
+.slider-nav .slick-slide img {
+  opacity: 0.7; /* Set default opacity for all images */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+}
+
+/* Full opacity for active slide */
+.slider-nav .slick-current img {
+  opacity: 1; /* Fully visible for the active slide */
+}
 /* Footer */
 .brand-logo{width: fit-content;}
 .links-group{
   list-style: none;
   display: flex;
   justify-content: flex-end;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
 }
 .social-icons .my-link{color: var(--dark-color);}
 @media all and (max-width:991px) {
