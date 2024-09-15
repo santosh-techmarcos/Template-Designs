@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- jQuery and jQuery UI CDN -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <!-- Jquery cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
  
@@ -32,18 +31,18 @@
           </div>
           <ul class="links-group gap-3">
             <li>
-              <a class="avtar">
+              <a class="avtar" title="Avtar">
                 <img class="img-fluid" src="./icons/avtar.svg" alt="Avtar">
                 </svg>          
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" title="Like">
                 <img class="img-fluid" src="./icons/heart.svg" alt="">
               </a>
-            </li>
+            </li> 
             <li>
-              <a href="#">
+              <a href="#" title="My Cart">
                 <img class="img-fluid" src="./icons/shoping cart.svg" alt="">
               </a>
             </li>
@@ -53,11 +52,12 @@
       </nav>
     </header>
 
+    <!-- Nested link sec -->
     <section class="bg-gredient">
       <div class="lg-container sec-px">
         <div class="py-3">
           <ul class="navigation-wrapper">
-            <li><a class="my-link" href="#">Home</a> <i class="fa-solid fa-chevron-right"></i></li>
+            <li><a class="my-link" href="file:///P:/TECHMARCOS/Template-Designs/Marketplace/index.html">Home</a> <i class="fa-solid fa-chevron-right"></i></li>
             <li><a class="my-link" href="#">Landing Pages</a> <i class="fa-solid fa-chevron-right"></i></li>
             <li><a class="my-link" href="#">Avada</a></li>
           </ul>
@@ -67,9 +67,20 @@
     
     <section class="sec-px">
       <div class="lg-container">
+        <div class="my-4 d-flex align-items-center justify-content-between">
+          <h1 class="text-lg fw-semibol">Avada | Website Builder For WordPress & eCommerce</h1>
+          <a href="#buy" class="theme-btn" title="LIve Preview">
+            <span>
+              <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.560368 6.7165C0.590992 6.64738 1.33212 5.00325 2.97974 3.35562C5.17512 1.16025 7.948 0 11 0C14.052 0 16.8249 1.16025 19.0203 3.35562C20.6679 5.00325 21.4125 6.65 21.4396 6.7165C21.4794 6.80602 21.5 6.9029 21.5 7.00087C21.5 7.09885 21.4794 7.19573 21.4396 7.28525C21.409 7.35437 20.6679 8.99763 19.0203 10.6453C16.8249 12.8398 14.052 14 11 14C7.948 14 5.17512 12.8398 2.97974 10.6453C1.33212 8.99763 0.590992 7.35437 0.560368 7.28525C0.520567 7.19573 0.5 7.09885 0.5 7.00087C0.5 6.9029 0.520567 6.80602 0.560368 6.7165ZM11 12.6C13.6933 12.6 16.0461 11.6209 17.9939 9.69063C18.793 8.89583 19.473 7.98956 20.0125 7C19.4732 6.0103 18.7932 5.104 17.9939 4.30937C16.0461 2.37913 13.6933 1.4 11 1.4C8.30675 1.4 5.95387 2.37913 4.00612 4.30937C3.20542 5.10387 2.52401 6.01015 1.98312 7C2.61399 8.17775 5.36237 12.6 11 12.6ZM11 2.8C11.8307 2.8 12.6427 3.04633 13.3334 3.50783C14.0241 3.96933 14.5624 4.62528 14.8803 5.39273C15.1982 6.16018 15.2814 7.00466 15.1193 7.81938C14.9572 8.6341 14.5572 9.38247 13.9699 9.96985C13.3825 10.5572 12.6341 10.9572 11.8194 11.1193C11.0047 11.2814 10.1602 11.1982 9.39273 10.8803C8.62528 10.5624 7.96933 10.0241 7.50783 9.3334C7.04632 8.64271 6.8 7.83068 6.8 7C6.80116 5.88645 7.24403 4.81883 8.03143 4.03143C8.81883 3.24403 9.88645 2.80116 11 2.8ZM11 9.8C11.5538 9.8 12.0951 9.63578 12.5556 9.32811C13.0161 9.02045 13.3749 8.58315 13.5869 8.07151C13.7988 7.55988 13.8542 6.99689 13.7462 6.45375C13.6382 5.9106 13.3715 5.41169 12.9799 5.0201C12.5883 4.62851 12.0894 4.36184 11.5463 4.2538C11.0031 4.14576 10.4401 4.20121 9.92849 4.41314C9.41685 4.62506 8.97955 4.98395 8.67188 5.4444C8.36422 5.90486 8.2 6.44621 8.2 7C8.2 7.74261 8.495 8.4548 9.0201 8.9799C9.5452 9.505 10.2574 9.8 11 9.8Z"/>
+              </svg>                      
+            </span>
+            LIve Preview
+          </a>
+        </div>
         <div class="row">
-          <div class="col-sm-8">
-            <h1 class="text-lg fw-semibol my-4">Avada | Website Builder For WordPress & eCommerce</h1>
+          <!-- Preview template -->
+          <div class="col-lg-8">
             <div class="wrapper">
               <!-- Main slider -->
               <div class="slider-for">
@@ -115,6 +126,258 @@
                 </div>
               </div>
               
+            </div>
+
+            <!-- Buttons  -->
+            <div class="d-flex align-items-center justify-content-between py-2">
+              <div>
+                <p class="fw-semibold">Avada | Website Builder For WordPress & eCommerce</p>
+                <p class="text-sm alter">Life Coach | Digital Marketing | Wordpress</p>
+              </div>
+              <a href="#buy" class="theme-btn" title="LIve Preview">
+                <span>
+                  <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.560368 6.7165C0.590992 6.64738 1.33212 5.00325 2.97974 3.35562C5.17512 1.16025 7.948 0 11 0C14.052 0 16.8249 1.16025 19.0203 3.35562C20.6679 5.00325 21.4125 6.65 21.4396 6.7165C21.4794 6.80602 21.5 6.9029 21.5 7.00087C21.5 7.09885 21.4794 7.19573 21.4396 7.28525C21.409 7.35437 20.6679 8.99763 19.0203 10.6453C16.8249 12.8398 14.052 14 11 14C7.948 14 5.17512 12.8398 2.97974 10.6453C1.33212 8.99763 0.590992 7.35437 0.560368 7.28525C0.520567 7.19573 0.5 7.09885 0.5 7.00087C0.5 6.9029 0.520567 6.80602 0.560368 6.7165ZM11 12.6C13.6933 12.6 16.0461 11.6209 17.9939 9.69063C18.793 8.89583 19.473 7.98956 20.0125 7C19.4732 6.0103 18.7932 5.104 17.9939 4.30937C16.0461 2.37913 13.6933 1.4 11 1.4C8.30675 1.4 5.95387 2.37913 4.00612 4.30937C3.20542 5.10387 2.52401 6.01015 1.98312 7C2.61399 8.17775 5.36237 12.6 11 12.6ZM11 2.8C11.8307 2.8 12.6427 3.04633 13.3334 3.50783C14.0241 3.96933 14.5624 4.62528 14.8803 5.39273C15.1982 6.16018 15.2814 7.00466 15.1193 7.81938C14.9572 8.6341 14.5572 9.38247 13.9699 9.96985C13.3825 10.5572 12.6341 10.9572 11.8194 11.1193C11.0047 11.2814 10.1602 11.1982 9.39273 10.8803C8.62528 10.5624 7.96933 10.0241 7.50783 9.3334C7.04632 8.64271 6.8 7.83068 6.8 7C6.80116 5.88645 7.24403 4.81883 8.03143 4.03143C8.81883 3.24403 9.88645 2.80116 11 2.8ZM11 9.8C11.5538 9.8 12.0951 9.63578 12.5556 9.32811C13.0161 9.02045 13.3749 8.58315 13.5869 8.07151C13.7988 7.55988 13.8542 6.99689 13.7462 6.45375C13.6382 5.9106 13.3715 5.41169 12.9799 5.0201C12.5883 4.62851 12.0894 4.36184 11.5463 4.2538C11.0031 4.14576 10.4401 4.20121 9.92849 4.41314C9.41685 4.62506 8.97955 4.98395 8.67188 5.4444C8.36422 5.90486 8.2 6.44621 8.2 7C8.2 7.74261 8.495 8.4548 9.0201 8.9799C9.5452 9.505 10.2574 9.8 11 9.8Z"/>
+                  </svg>                      
+                </span>
+                LIve Preview
+              </a>
+            </div>
+            
+            <!-- Tab -->
+             <div class="tab-container bg-light">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="description" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Description</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="reviews" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Reviews</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <!-- Descriptions content -->
+                <div class="tab-pane fade show active" id="home" role="tabpanel">
+                  <p class="light fw-normal">Avada 7.11 is live! This feature-rich version introduces a wide range of new design options and tons of new features. We have introduced Multi-Step Avada Forms, Pixel Width & Flex Grow for Columns, and Mailchimp tag/group support. In addition, you can now create a WooCommerce thank you page when designing a site with the Avada Setup Wizard, improvements to the Prebuilt Website Import process, text stroke styling, ToTop button styling, and so much more.</p>
+                  <h3 class="text-lg fw-semibold mb-3 mt-4">Product Features</h3>
+                  <ul class="list" id="feature-list">
+                    <li>Elementor Page Builder: Front End Page Creation</li>
+                    <li>30+ Powerful Custom Widgets For Elementor</li>
+                    <li>Responsive Design & Retina Ready</li>
+                    <li>Header More Options</li>
+                    <li>Revolution Slider</li>
+                    <li>Portfolio Layout</li>
+                    <li>Creative Design</li>
+                    <li>Friendly Design & Code</li>
+                    <li>Clean Design & Clean Code</li>
+                    <li>Fully Mobile Responsive</li>
+                    <li>SEO Friendly</li>
+                    <li>Advance Theme Options</li>
+                    <li>Theme Color Management</li>
+                    <li>Custom 404 Page</li>
+                    <li>Google Maps</li>
+                    <li>Coded And SEO in Mins</li>
+                    <li>+ Many More Features</li>
+                    <li>More Features Coming Soon</li>
+                  </ul>                  
+                </div>
+                
+                <!-- Reviews content -->
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="reviews">
+                  Reviews
+                </div>
+              </div>
+             </div>
+          </div>
+          <!-- Preview template end -->
+           <!-- Buy now -->
+          <div class="col-lg-4">
+            <div class="my-card">
+              <div class="mycard-content">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="dropdown">
+                    <button class="dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Regular License <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-lg"><span class="light">$29</span> <span class="fw-bold">$10</span></p>
+                </div>
+                <ul class="custom-list light text-sm">
+                  <li><i class="fa-solid fa-circle-check"></i> Quality checked by TechMarcos</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Future updates</li>
+                  <li><i class="fa-solid fa-circle-check"></i> 6 months support from Ninetheme </li>
+                </ul>
+                <form action="#" method="post" class="buy-now-sec">
+                  <div class="form-check mt-3 mb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label text-sm light" for="flexCheckIndeterminate">Extend support to 12 months</label>
+                    <span class="light text-sm px-2">$29</span>
+                    <span class="text-sm fw-semibold">$10</span>
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control custom-input" placeholder="Enter Coupon Code" aria-label="Enter Coupon Code" aria-describedby="button-addon2">
+                    <button class="link-btn btn" type="button" id="button-addon2">Apply</button>
+                  </div>
+                  <div class="mt-3">
+                    <button type="submit" class="theme-btn alter" title="LIve Preview">
+                      <span>
+                        <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.5 0.928373C0.5 0.682153 0.597813 0.446017 0.77192 0.271914C0.946027 0.0978101 1.18217 0 1.42839 0H2.24166C3.59155 0 4.36768 0.87824 4.81702 1.75462C5.12339 2.35435 5.34435 3.08591 5.52817 3.72092H24.6438C24.9307 3.721 25.2137 3.78757 25.4705 3.9154C25.7274 4.04323 25.9511 4.22884 26.1242 4.45766C26.2972 4.68649 26.4149 4.95231 26.468 5.23426C26.521 5.5162 26.508 5.80661 26.43 6.0827L23.6522 15.877C23.4313 16.6541 22.9629 17.3379 22.3183 17.8248C21.6736 18.3116 20.8877 18.575 20.0798 18.5749H10.6492C9.83457 18.5752 9.04246 18.3076 8.39489 17.8134C7.74733 17.3191 7.28024 16.6257 7.06559 15.8399L5.87353 11.4673L5.85497 11.4078L3.94248 4.91295L3.7568 4.28722C3.57112 3.64479 3.40772 3.07663 3.16263 2.59944C2.8674 2.02385 2.59631 1.85675 2.24166 1.85675H1.42839C1.18217 1.85675 0.946027 1.75893 0.77192 1.58483C0.597813 1.41073 0.5 1.17459 0.5 0.928373ZM7.64491 10.9065L8.85739 15.3553C8.96488 15.748 9.1985 16.0945 9.52227 16.3415C9.84603 16.5884 10.242 16.722 10.6492 16.7218H20.0816C20.4854 16.7214 20.878 16.5894 21.2 16.3459C21.522 16.1023 21.7558 15.7604 21.866 15.372L24.6438 5.57766H6.07592L7.64491 10.9065ZM13.5031 23.2149C13.5031 23.9535 13.2096 24.6619 12.6873 25.1843C12.165 25.7066 11.4566 26 10.7179 26C9.97921 26 9.27079 25.7066 8.74847 25.1843C8.22615 24.6619 7.93271 23.9535 7.93271 23.2149C7.93271 22.4762 8.22615 21.7678 8.74847 21.2455C9.27079 20.7232 9.97921 20.4298 10.7179 20.4298C11.4566 20.4298 12.165 20.7232 12.6873 21.2455C13.2096 21.7678 13.5031 22.4762 13.5031 23.2149ZM11.6463 23.2149C11.6463 22.9687 11.5485 22.7325 11.3744 22.5584C11.2003 22.3843 10.9641 22.2865 10.7179 22.2865C10.4717 22.2865 10.2355 22.3843 10.0614 22.5584C9.8873 22.7325 9.78949 22.9687 9.78949 23.2149C9.78949 23.4611 9.8873 23.6972 10.0614 23.8713C10.2355 24.0454 10.4717 24.1433 10.7179 24.1433C10.9641 24.1433 11.2003 24.0454 11.3744 23.8713C11.5485 23.6972 11.6463 23.4611 11.6463 23.2149ZM22.787 23.2149C22.787 23.9535 22.4935 24.6619 21.9712 25.1843C21.4489 25.7066 20.7405 26 20.0018 26C19.2631 26 18.5547 25.7066 18.0324 25.1843C17.5101 24.6619 17.2166 23.9535 17.2166 23.2149C17.2166 22.4762 17.5101 21.7678 18.0324 21.2455C18.5547 20.7232 19.2631 20.4298 20.0018 20.4298C20.7405 20.4298 21.4489 20.7232 21.9712 21.2455C22.4935 21.7678 22.787 22.4762 22.787 23.2149ZM20.9302 23.2149C20.9302 22.9687 20.8324 22.7325 20.6583 22.5584C20.4842 22.3843 20.248 22.2865 20.0018 22.2865C19.7556 22.2865 19.5194 22.3843 19.3453 22.5584C19.1712 22.7325 19.0734 22.9687 19.0734 23.2149C19.0734 23.4611 19.1712 23.6972 19.3453 23.8713C19.5194 24.0454 19.7556 24.1433 20.0018 24.1433C20.248 24.1433 20.4842 24.0454 20.6583 23.8713C20.8324 23.6972 20.9302 23.4611 20.9302 23.2149Z" fill="white"/>
+                        </svg>                                                
+                      </span>
+                      Buy now
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Buy now end -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Also like sec -->
+     <section class="sec-p-md">
+      <div class="lg-container">
+        <h2 class="text-lg mb-4">You may alos like</h2>
+        <div class="row g-4">
+
+          <div class="col-md-4 col-sm-6">
+            <div class="my-card">
+              <div class="thumbnail-wrapper">
+                <img class="img-fluid" src="./thumbnails/spacial-program.png" alt="Special program">
+              </div>
+              <div class="mycard-content alter">
+                <p class="fw-semibold text-truncate">Avada | Website Builder For WordPress & eCommerce</p>
+                <p class="text-sm alter light text-truncate">Life Coach | Digital Marketing | Wordpress</p>
+                <!-- Price and ranks -->
+                <div class="my-1 d-flex align-items-center justify-content-between">
+                  <span class="ranks alter">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="rank-text">4.9</span>
+                  </span>
+                  <p class="head-md"><span class="light">$29</span> <span class="fw-bold head-md alter">$10</span></p>
+                </div>
+                <!-- buttons -->
+                <div class="">
+                  <a href="file:///P:/TECHMARCOS/Template-Designs/Marketplace/template-detials.html" class="theme-btn w-100 align-items-center justify-content-center" title="LIve Preview">
+                    <span>
+                      <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.560368 6.7165C0.590992 6.64738 1.33212 5.00325 2.97974 3.35562C5.17512 1.16025 7.948 0 11 0C14.052 0 16.8249 1.16025 19.0203 3.35562C20.6679 5.00325 21.4125 6.65 21.4396 6.7165C21.4794 6.80602 21.5 6.9029 21.5 7.00087C21.5 7.09885 21.4794 7.19573 21.4396 7.28525C21.409 7.35437 20.6679 8.99763 19.0203 10.6453C16.8249 12.8398 14.052 14 11 14C7.948 14 5.17512 12.8398 2.97974 10.6453C1.33212 8.99763 0.590992 7.35437 0.560368 7.28525C0.520567 7.19573 0.5 7.09885 0.5 7.00087C0.5 6.9029 0.520567 6.80602 0.560368 6.7165ZM11 12.6C13.6933 12.6 16.0461 11.6209 17.9939 9.69063C18.793 8.89583 19.473 7.98956 20.0125 7C19.4732 6.0103 18.7932 5.104 17.9939 4.30937C16.0461 2.37913 13.6933 1.4 11 1.4C8.30675 1.4 5.95387 2.37913 4.00612 4.30937C3.20542 5.10387 2.52401 6.01015 1.98312 7C2.61399 8.17775 5.36237 12.6 11 12.6ZM11 2.8C11.8307 2.8 12.6427 3.04633 13.3334 3.50783C14.0241 3.96933 14.5624 4.62528 14.8803 5.39273C15.1982 6.16018 15.2814 7.00466 15.1193 7.81938C14.9572 8.6341 14.5572 9.38247 13.9699 9.96985C13.3825 10.5572 12.6341 10.9572 11.8194 11.1193C11.0047 11.2814 10.1602 11.1982 9.39273 10.8803C8.62528 10.5624 7.96933 10.0241 7.50783 9.3334C7.04632 8.64271 6.8 7.83068 6.8 7C6.80116 5.88645 7.24403 4.81883 8.03143 4.03143C8.81883 3.24403 9.88645 2.80116 11 2.8ZM11 9.8C11.5538 9.8 12.0951 9.63578 12.5556 9.32811C13.0161 9.02045 13.3749 8.58315 13.5869 8.07151C13.7988 7.55988 13.8542 6.99689 13.7462 6.45375C13.6382 5.9106 13.3715 5.41169 12.9799 5.0201C12.5883 4.62851 12.0894 4.36184 11.5463 4.2538C11.0031 4.14576 10.4401 4.20121 9.92849 4.41314C9.41685 4.62506 8.97955 4.98395 8.67188 5.4444C8.36422 5.90486 8.2 6.44621 8.2 7C8.2 7.74261 8.495 8.4548 9.0201 8.9799C9.5452 9.505 10.2574 9.8 11 9.8Z"/>
+                      </svg>                      
+                    </span>
+                    LIve Preview
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="my-card">
+              <div class="thumbnail-wrapper">
+                <img class="img-fluid" src="./thumbnails/spacial-program.png" alt="Special program">
+              </div>
+              <div class="mycard-content alter">
+                <p class="fw-semibold text-truncate">Avada | Website Builder For WordPress & eCommerce</p>
+                <p class="text-sm alter light text-truncate">Life Coach | Digital Marketing | Wordpress</p>
+                <!-- Price and ranks -->
+                <div class="my-1 d-flex align-items-center justify-content-between">
+                  <span class="ranks alter">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="rank-text">4.9</span>
+                  </span>
+                  <p class="head-md"><span class="light">$29</span> <span class="fw-bold head-md alter">$10</span></p>
+                </div>
+                <!-- buttons -->
+                <div class="">
+                  <a href="file:///P:/TECHMARCOS/Template-Designs/Marketplace/template-detials.html" class="theme-btn w-100 align-items-center justify-content-center" title="LIve Preview">
+                    <span>
+                      <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.560368 6.7165C0.590992 6.64738 1.33212 5.00325 2.97974 3.35562C5.17512 1.16025 7.948 0 11 0C14.052 0 16.8249 1.16025 19.0203 3.35562C20.6679 5.00325 21.4125 6.65 21.4396 6.7165C21.4794 6.80602 21.5 6.9029 21.5 7.00087C21.5 7.09885 21.4794 7.19573 21.4396 7.28525C21.409 7.35437 20.6679 8.99763 19.0203 10.6453C16.8249 12.8398 14.052 14 11 14C7.948 14 5.17512 12.8398 2.97974 10.6453C1.33212 8.99763 0.590992 7.35437 0.560368 7.28525C0.520567 7.19573 0.5 7.09885 0.5 7.00087C0.5 6.9029 0.520567 6.80602 0.560368 6.7165ZM11 12.6C13.6933 12.6 16.0461 11.6209 17.9939 9.69063C18.793 8.89583 19.473 7.98956 20.0125 7C19.4732 6.0103 18.7932 5.104 17.9939 4.30937C16.0461 2.37913 13.6933 1.4 11 1.4C8.30675 1.4 5.95387 2.37913 4.00612 4.30937C3.20542 5.10387 2.52401 6.01015 1.98312 7C2.61399 8.17775 5.36237 12.6 11 12.6ZM11 2.8C11.8307 2.8 12.6427 3.04633 13.3334 3.50783C14.0241 3.96933 14.5624 4.62528 14.8803 5.39273C15.1982 6.16018 15.2814 7.00466 15.1193 7.81938C14.9572 8.6341 14.5572 9.38247 13.9699 9.96985C13.3825 10.5572 12.6341 10.9572 11.8194 11.1193C11.0047 11.2814 10.1602 11.1982 9.39273 10.8803C8.62528 10.5624 7.96933 10.0241 7.50783 9.3334C7.04632 8.64271 6.8 7.83068 6.8 7C6.80116 5.88645 7.24403 4.81883 8.03143 4.03143C8.81883 3.24403 9.88645 2.80116 11 2.8ZM11 9.8C11.5538 9.8 12.0951 9.63578 12.5556 9.32811C13.0161 9.02045 13.3749 8.58315 13.5869 8.07151C13.7988 7.55988 13.8542 6.99689 13.7462 6.45375C13.6382 5.9106 13.3715 5.41169 12.9799 5.0201C12.5883 4.62851 12.0894 4.36184 11.5463 4.2538C11.0031 4.14576 10.4401 4.20121 9.92849 4.41314C9.41685 4.62506 8.97955 4.98395 8.67188 5.4444C8.36422 5.90486 8.2 6.44621 8.2 7C8.2 7.74261 8.495 8.4548 9.0201 8.9799C9.5452 9.505 10.2574 9.8 11 9.8Z"/>
+                      </svg>                      
+                    </span>
+                    LIve Preview
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="my-card">
+              <div class="thumbnail-wrapper">
+                <img class="img-fluid" src="./thumbnails/spacial-program.png" alt="Special program">
+              </div>
+              <div class="mycard-content alter">
+                <p class="fw-semibold text-truncate">Avada | Website Builder For WordPress & eCommerce</p>
+                <p class="text-sm alter light text-truncate">Life Coach | Digital Marketing | Wordpress</p>
+                <!-- Price and ranks -->
+                <div class="my-1 d-flex align-items-center justify-content-between">
+                  <span class="ranks alter">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="rank-text">4.9</span>
+                  </span>
+                  <p class="head-md"><span class="light">$29</span> <span class="fw-bold head-md alter">$10</span></p>
+                </div>
+                <!-- buttons -->
+                <div class="">
+                  <a href="file:///P:/TECHMARCOS/Template-Designs/Marketplace/template-detials.html" class="theme-btn w-100 align-items-center justify-content-center" title="LIve Preview">
+                    <span>
+                      <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.560368 6.7165C0.590992 6.64738 1.33212 5.00325 2.97974 3.35562C5.17512 1.16025 7.948 0 11 0C14.052 0 16.8249 1.16025 19.0203 3.35562C20.6679 5.00325 21.4125 6.65 21.4396 6.7165C21.4794 6.80602 21.5 6.9029 21.5 7.00087C21.5 7.09885 21.4794 7.19573 21.4396 7.28525C21.409 7.35437 20.6679 8.99763 19.0203 10.6453C16.8249 12.8398 14.052 14 11 14C7.948 14 5.17512 12.8398 2.97974 10.6453C1.33212 8.99763 0.590992 7.35437 0.560368 7.28525C0.520567 7.19573 0.5 7.09885 0.5 7.00087C0.5 6.9029 0.520567 6.80602 0.560368 6.7165ZM11 12.6C13.6933 12.6 16.0461 11.6209 17.9939 9.69063C18.793 8.89583 19.473 7.98956 20.0125 7C19.4732 6.0103 18.7932 5.104 17.9939 4.30937C16.0461 2.37913 13.6933 1.4 11 1.4C8.30675 1.4 5.95387 2.37913 4.00612 4.30937C3.20542 5.10387 2.52401 6.01015 1.98312 7C2.61399 8.17775 5.36237 12.6 11 12.6ZM11 2.8C11.8307 2.8 12.6427 3.04633 13.3334 3.50783C14.0241 3.96933 14.5624 4.62528 14.8803 5.39273C15.1982 6.16018 15.2814 7.00466 15.1193 7.81938C14.9572 8.6341 14.5572 9.38247 13.9699 9.96985C13.3825 10.5572 12.6341 10.9572 11.8194 11.1193C11.0047 11.2814 10.1602 11.1982 9.39273 10.8803C8.62528 10.5624 7.96933 10.0241 7.50783 9.3334C7.04632 8.64271 6.8 7.83068 6.8 7C6.80116 5.88645 7.24403 4.81883 8.03143 4.03143C8.81883 3.24403 9.88645 2.80116 11 2.8ZM11 9.8C11.5538 9.8 12.0951 9.63578 12.5556 9.32811C13.0161 9.02045 13.3749 8.58315 13.5869 8.07151C13.7988 7.55988 13.8542 6.99689 13.7462 6.45375C13.6382 5.9106 13.3715 5.41169 12.9799 5.0201C12.5883 4.62851 12.0894 4.36184 11.5463 4.2538C11.0031 4.14576 10.4401 4.20121 9.92849 4.41314C9.41685 4.62506 8.97955 4.98395 8.67188 5.4444C8.36422 5.90486 8.2 6.44621 8.2 7C8.2 7.74261 8.495 8.4548 9.0201 8.9799C9.5452 9.505 10.2574 9.8 11 9.8Z"/>
+                      </svg>                      
+                    </span>
+                    LIve Preview
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+     </section>
+
+     <!-- News letter sec -->
+     <section class="sec-py pb-0">
+      <div class="bg-gredient-dark">
+        <div class="sec-px">
+          <div class="md-container">
+            <div class="row">
+              <div class="col-sm-5 order-2 order-sm-1">
+                <div class="banner">
+                  <img class="img-fluid" src="./girl.png" alt="Girl with smile">
+                </div>
+              </div>
+              <div class="col-sm-7 order-1 order-sm-2 py-5 text-white">
+                <div class="content-wrapper">
+                  <h2 class="head-lg">Stay Updated with the Latest Digital Products</h2>
+                  <p class="text-md alter my-3">Get exclusive offers, product updates, and design tips delivered straight to your inbox.</p>
+                  <div class="input-group custom-input">
+                    <input type="email" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary btn-sm" type="button" id="button-addon2">Subscribe now</button>
+                  </div>
+                  <span class="text-sm alter">No spam, only valuable insights and offers. Unsubscribe anytime.</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
