@@ -1,4 +1,29 @@
 gsap.registerPlugin(ScrollTrigger);
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector("#locomotive-scroll"),
+  smooth: true,
+  lerp:.03
+});
+// each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+locoScroll.on("scroll", ScrollTrigger.update);
+
+// tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
+ScrollTrigger.scrollerProxy("#locomotive-scroll", {
+  scrollTop(value) {
+    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+  }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+  getBoundingClientRect() {
+    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+  },
+  // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+  pinType: document.querySelector("#locomotive-scroll").style.transform ? "transform" : "fixed"
+});
+
+// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+ScrollTrigger.refresh();
 
 $('.slider').slick({
   dots: false,
@@ -129,17 +154,6 @@ $(document).ready(function() {
       heightStyle: "content"
   });
 });
-
-// Locomotive 
-// Locomotive js
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('#locomotive-scroll'),
-  smooth: true,
-  smartphone:true,
-  tablet:true,
-});
-
-
 function mobileRotation(){
   const t2 = gsap.timeline({default: {ease: 'power4.out' , duration: .6}})
   t2.from('.mobile', {
@@ -164,7 +178,6 @@ function mobileRotation(){
   })
 
 }
-
 mobileRotation();
 // Follower
 function circleFllower(){
@@ -192,25 +205,66 @@ function circleFllower(){
 }
 circleFllower();
 
-let t3 = gsap.timeline()
-t3.from('#fade-right h2', {
-  y:100,
-  opacity:0,
-  duration:.3,
-  ease:'powerOut4'
-})
-t3.from('#fade-right .text-md', {
-  y:100,
-  opacity:0,
-  duration:.4,
-  ease:'powerOut4'
-})
-t3.from('.timer .time-box', {
-  x:-1000,
-  rotateZ:-360,
-  borderRadius:50,
-  duration:1,
-  ease:'powerOut4',
-  stragger:true
+let t3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#fade-right",
+    start: "top 80%",
+    end:"bottom 30%",
+    scroller:'#locomotive-scroll',
+    scrub:3,
+  }
+});
 
+t3.from('#fade-right h2', {
+  y: 100,
+  opacity: 0,
+  duration: 0.3,
+  ease: 'power4.out'
 })
+.from('#fade-right .text-md', {
+  y: 100,
+  opacity: 0,
+  duration: 0.4,
+  ease: 'power4.out'
+}, "-=0.2")
+.from('.timer .time-box', {
+  x: -1000,
+  rotateZ: -360,
+  borderRadius: 50,
+  duration: 1,
+  ease: 'power4.out',
+  stagger: true
+}, "-=0.4");
+
+let t4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".testimonial-sec",
+    start: "top 85%",
+    end:"bottom 60%",
+    scroller:'#locomotive-scroll',
+    scrub:1,
+  }
+});
+t4.from('.testimonial-sec h2', {
+  y: 100,
+  opacity: 0,
+  duration:.4
+})
+.from('.testimonial-sec .slide', {
+  y: 200,
+  borderRadius:"50%",
+  scale:0,
+  duration: 1,
+  ease: "elastic.out(.1,0.6)",
+  stagger:.5
+}, "-=0.5")
+
+let t5 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".gain-sec",
+    start: "top 85%",
+    end:"bottom 60%",
+    scroller:'#locomotive-scroll',
+    scrub:1,
+  }
+});
