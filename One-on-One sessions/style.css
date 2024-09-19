@@ -21,6 +21,7 @@ a{text-decoration: none;}
 
 }
 body{background: #ffffff;}
+/* ***************************Common css start************************** */
 .md-container{max-width: 1000px; margin: 0 auto;}
 .lg-container{max-width: 1300px; margin: 0 auto;}
 .bg-blue-gradient{background: linear-gradient(180deg, #3A83F6 0%, #1E4EC6 100%);}
@@ -33,7 +34,7 @@ body{background: #ffffff;}
 .bg-pattern-blue::before{position: absolute; content: ""; width: 100%; height: 100%; background-color: #1E4EC61A; top: 0; left: 0; z-index: -1;}
 .bg-light{background-color: var(--light) !important;}
 
-/* Sec padding and margin */
+/* *******************Sec padding and margin******************** */
 .sec-p-lg{padding: 80px 40px;}
 .sec-p-md{padding: 60px 40px;}
 
@@ -62,32 +63,25 @@ body{background: #ffffff;}
 .theme-btn{padding:18px; display: inline-block; width: 100%; max-width: 500px; font-size: 18px; line-height: 16px; font-weight: 700; text-decoration: none; text-align: center; background: var(--theme-blue); color: var(--light); border: none !important; border-radius: 6px;}
 .theme-btn.alter{background:#3A83F61A; color: var(--theme-blue);}
 .circle-border-btn{width: 40px; height: 40px; border: 1px solid #D3D3D3; background-color: var(--light); border-radius: 50%;}
-
-
 /* ImgFixer */
 .imgfix{width: 100%; height: 100%; object-fit: cover; object-position: top;}
-/* Wrapper */
+/* *****************************Common css end**************************** */
+
+/* *****************************Fisrt section start********************************** */
 .wrapper{max-width: 580px; margin: 100px 50px;}
 .img-wrapper{height: 77vw; max-height: 800px; overflow: hidden;}
-/* .imgage-wrapper{background-color: red !important;} */
 .imgage-wrapper img {min-width: 300px; aspect-ratio: 3/2; mix-blend-mode: color-burn; }
 .custom-input{display: block; border: none; padding: 15px; line-height: 16px; font-size: 16px; background: #E3C025; width: 100%; max-width: 500px; font-weight: 600;}
 .custom-input:focus{border: none; outline: none;}
-
 .content{padding: 30px; padding-right: 25px; border-radius: 20px; height: 100%;}
 .content.alter{padding: 30px; padding-right: 30px; border-radius: 10px;}
-
 .card-head{position: relative;}
 .card-head::before{content: ""; position: absolute; left: -30px; top: 0; height: 100%; width: 5px; background-color: var(--theme-blue);}
+/* *****************************First sec end here !****************************** */
 
-/* Sec 3 */
-.border-dash-blue{width: fit-content; margin: 0 auto; padding: 10px 35px; border: 1px dashed var(--theme-blue); border-radius: 100px;}
+/* *************************Currency timer sec start**************************** */
+.border-dash-blue{width: fit-content; width: -moz-fit-content; width: -webkit-fit-content; margin: 0 auto; padding: 10px 35px; border: 1px dashed var(--theme-blue); border-radius: 100px;}
 .custom-margin{margin-right: -40px;}
-
-/* Company logo slider */
-.logo-container{max-width: 1400px;}
-/* .c-logo{height: 60px;} */
-.c-logo img{ width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(.8);}
 .hand-img{margin-right: -40px !important; margin-left: 30px;}
 .img-wrapper.alter{max-height: 582px; overflow: visible;}
 .banner-fix{position: relative; z-index: -1; object-position: bottom;}
@@ -96,6 +90,12 @@ body{background: #ffffff;}
 .list{list-style: none; list-style-position: outside;}
 .list li{display: flex; align-items: flex-start; gap: 5px; font-weight: 500; margin: 15px auto;}
 .list li>i{color: var(--theme-blue); margin-top: 5px;}
+/* *************************Currency timer sec end**************************** */
+
+/* ****************************Company logo slider start********************************* */
+.logo-container{max-width: 1400px;}
+.c-logo img{ width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(.8);}
+/* *****************************Company log slider sec end************************** */
 
 /* ***********************Gain section start************************ */
 .content-sm{padding: 20px; background-color: var(--light); border-radius: 12px;}
