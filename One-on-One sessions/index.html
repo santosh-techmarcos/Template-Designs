@@ -20,27 +20,31 @@
 
     <!-- Calendly badge widget begin -->
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
    <!-- Main style -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <main>
-    <div class="bg-blue-gradient p-4 text-center">
+  <main id="scroll">
+    <header class="bg-blue-gradient p-4 text-center">
       <p class="text-md alter text-white">Want to transform your life the way you want? JOIN NOW!</p>
-    </div>
+    </header>
 
     <!-- Main page -->
      <section>
       <div class="row g-0">
-        <div class="col-md-6 bg-blue-gradient">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
           <div class="img-wrapper">
             <img class="imgfix img-fluid" src="./images/banner.png" alt="Men in black Outfit">
           </div>
         </div>
-        <div class="col-md-6 bg-yellow">
-          <div class="wrapper d-flex flex-column gap-3">
+        <div class="col-lg-6 bg-yellow position-relative" data-aos="fade-left" data-aos-duration="1000">
+          <div class="wrapper d-flex flex-column gap-3" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="500">
             <h1 class="head-md alter">Transform Your Life with Personalized <span class="text-blue">One-on-One</span> Coaching</h1>
             <p class="head-sm fw-semibold">Get tailored support to achieve your personal and professional goals.</p>
             <form action="" class="form-wrapper">
@@ -50,40 +54,44 @@
             </form>
             <p class="fw-light">*Our individual coaching sessions are designed to address your unique challenges and goals, offering personalized guidance and support.</p>
           </div>
+          <!-- scroll btn -->
+          <a class="scroll-btn" title="Scroll down" href="#scrollTraget">
+            <img src="./icons/scrollbtn.svg" alt="Scroll Button">
+          </a>
         </div>
       </div>
      </section>
 
      <!-- Section 2 -->
-      <section class="sec-p-lg">
-        <div class="lg-container">
+      <section class="sec-p-lg" id="scrollTraget">
+        <div class="lg-container" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500">
           <div class="head-md fw-bold">Exclusive Benefits of Personalized Coaching</div>
           <div class="row gy-3 mb-5 mt-3">
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="flip-left">
               <div class="content bg-blue-alpha">
-                <h3 class="text-md alter fw-bold mb-4">Customized Strategies</h3>
+                <h3 class="text-md alter fw-bold mb-4 card-head">Customized Strategies</h3>
+                <p>This personalized support allows for deep, transformative conversations that can address root issues and inspire lasting change.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in" >
+              <div class="content bg-blue-alpha">
+                <h3 class="text-md alter fw-bold mb-4 card-head">One-on-One Support</h3>
+                <p>Whether you prefer morning, afternoon, or evening sessions, we’ll work with you to ensure that your coaching fits seamlessly into your life.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in-up">
+              <div class="content bg-blue-alpha">
+                <h3 class="text-md alter fw-bold mb-4 card-head">Flexible Scheduling</h3>
                 <p>Each session is tailored to your unique needs, whether you're aiming to enhance your career, improve relationships, or achieve personal growth.</p>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="flip-right">
               <div class="content bg-blue-alpha">
-                <h3 class="text-md alter fw-bold mb-4">Customized Strategies</h3>
-                <p>Each session is tailored to your unique needs, whether you're aiming to enhance your career, improve relationships, or achieve personal growth.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="content bg-blue-alpha">
-                <h3 class="text-md alter fw-bold mb-4">Customized Strategies</h3>
-                <p>Each session is tailored to your unique needs, whether you're aiming to enhance your career, improve relationships, or achieve personal growth.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="content bg-blue-alpha">
-                <h3 class="text-md alter fw-bold mb-4">Customized Strategies</h3>
-                <p>Each session is tailored to your unique needs, whether you're aiming to enhance your career, improve relationships, or achieve personal growth.</p>
+                <h3 class="text-md alter fw-bold mb-4 card-head">Holistic Approach</h3>
+                <p>By addressing both personal and professional areas of your life, our holistic approach ensures that you experience comprehensive growth.</p>
               </div>
             </div>
 
@@ -95,35 +103,35 @@
       </section>
 
       <section class="sec-p-lg bg-light-cream">
-        <div class="md-container text-center">
+        <div class="md-container text-center" data-aos="fade-up" data-aos-duration="1000">
           <h2 class="head-md fw-bold mb-5">Real Stories of Transformation and Success</h2>
           <div class="whatsapp-slider">
 
-            <div class="slide">
+            <div class="slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <div class="p-2">
                 <img class="imgFix" src="./images/whatsapp_slide/image 62.png" width="233" height="414" alt="Whatsapp chat">
               </div>
             </div>
 
-            <div class="slide">
+            <div class="slide" data-aos="flip-right" data-aos-duration="500" data-aos-delay="200">
               <div class="p-2">
                 <img class="imgFix" src="./images/whatsapp_slide/image-1.png" width="233" height="414" alt="Whatsapp chat">
               </div>
             </div>
 
-            <div class="slide">
+            <div class="slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
               <div class="p-2">
                 <img class="imgFix" src="./images/whatsapp_slide/image-2.png" width="233" height="414" alt="Whatsapp chat">
               </div>
             </div>
 
-            <div class="slide">
+            <div class="slide" data-aos="flip-right" data-aos-duration="500" data-aos-delay="400">
               <div class="p-2">
                 <img class="imgFix" src="./images/whatsapp_slide/image.png" width="233" height="414" alt="Whatsapp chat">
               </div>
             </div>
 
-            <div class="slide">
+            <div class="slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="500">
               <div class="p-2">
                 <img class="imgFix" src="./images/whatsapp_slide/image.png" width="233" height="414" alt="Whatsapp chat">
               </div>
@@ -138,11 +146,40 @@
       </section>
 
       <section class="sec-p-md">
-        <div class="">
-          <div class="text-center mb-5">
-            <h2 class="text-lg">Total Value : <span class="text-linethrough">$7,486/</span></h2>
-            <div class="border-dash-blue my-3"><p class="text-md">Today's Price : <span class="text-blue">$99/-</span></p></div>
-            <p class="text-md">REGISTER in NEXT <span class="text-blue">20:00 MIN</span></p>
+        <div class="row align-items-center">
+
+          <div class="col-md-3">
+            <div class="img-wrapper h-100">
+              <img class="img-fluid" src="./images/currency3d.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="text-center mb-5">
+              <h2 class="text-lg fw-semibold">Total Value : <span class="text-linethrough red">$7,486/</span></h2>
+              <div class="border-dash-blue my-3 fw-semibold"><p class="text-md">Today's Price : <span class="text-blue">$99/-</span></p></div>
+              <p class="text-md fw-semibold">REGISTER in NEXT <span class="text-blue">20:00 MIN</span></p>
+            </div>
+            <div class="d-flex gap-4 justify-content-center flex-wrap my-5">
+              <div class="timer text-blue text-center bg-blue-alpha">
+                  <span id="minutesDisplay1" class="text-4xl">00</span>
+                  <p class="text-md">Minutes</p>
+              </div>
+              <div class="timer text-blue text-center bg-blue-alpha">
+                  <span id="secondsDisplay1" class="text-4xl">00</span>
+                  <p class="text-md">Seconds</p>
+              </div>
+            </div>
+            <p class="head-sm text-center">Unlock Bonus worth <span class="text-blue text-lg fw-semibold d-block">$2,000</span></p>
+            <div class="text-center mt-4">
+              <a class="theme-btn" href="#" title="Register Now @99 Only">Register Now @99 Only</a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="img-wrapper hand-img h-100">
+              <img class="img-fluid" src="./images/handcurrency.png" alt="">
+            </div>
           </div>
 
         </div>
@@ -192,17 +229,17 @@
       </section>
 
       <!-- Gain section -->
-       <section class="sec-p-lg">
+       <section class="sec-p-lg pb-0">
         <div class="lg-container">
           <h2 class="text-center head-md mb-5">What will you gain from your one-on-one coaching sessions?</h2>
           <div class="row">
-            <div class="col-md-5 bg-shadow position-relative">
-              <div class="img-wrapper">
-                <img src="./images/men_in_black.png" alt="Men in Black">
+            <div class="col-md-5 order-2 order-md-1 position-relative">
+              <div class="img-wrapper bg-shadow alter">
+                <img class="banner-fix" src="./images/men_in_black.png" alt="Men in Black">
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="list-wrapper shadow">
+            <div class="col-md-6 order-1 order-md-2">
+              <div class="list-wrapper shadow bg-light">
                 <ul class="list">
                   <li><i class="fa-solid fa-circle-check"></i> <p>7 personalized strategies from successful entrepreneurs that you can apply to build a stable and scalable business through this.</p></li>
                   <li><i class="fa-solid fa-circle-check"></i> <p>Three essential ingredients to focus on for building a business that thrives independently.</p></li>
@@ -217,10 +254,10 @@
        </section>
 
        <section class="sec-p-lg bg-pattern">
-        <div class="md-container">
+        <div class="md-container" data-aos="fade-up">
           <h2 class="head-md mb-5 text-center">What clients are saying?</h2>
           <div class="row g-4">
-            <div class="col-md-6">
+            <div class="col-sm-6" data-aos="zoom-in-down" data-aos-duration="600">
               <div class="content-sm shadow">
                 <div class="user d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center gap-2">
@@ -249,7 +286,7 @@
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-sm-6" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="100">
               <div class="content-sm shadow">
                 <div class="user d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center gap-2">
@@ -278,7 +315,7 @@
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-sm-6" data-aos="zoom-in-left" data-aos-duration="600" data-aos-delay="150">
               <div class="content-sm shadow">
                 <div class="user d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center gap-2">
@@ -307,7 +344,7 @@
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-sm-6" data-aos="zoom-in-right" data-aos-duration="600" data-aos-delay="200">
               <div class="content-sm shadow">
                 <div class="user d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center gap-2">
@@ -343,11 +380,11 @@
 
        <!-- Video section -->
        <section class="sec-p-lg">
-        <div class="lg-container">
+        <div class="lg-container" data-aos="fade-up">
           <h2 class="head-md text-center fw-bold mb-4">Watch our previous sessions</h2>
           <div class="row video-slider">
 
-            <div class="col-lg-3 video-slide">
+            <div class="col-lg-3 video-slide" data-aos="flip-right" data-aos-duration="500" data-aos-delay="100">
               <div class="video-wrapper position-relative">
                 <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/096a/b084/23c0a457f4f336f171199310f453d374?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D7bSADyThK30k5sHr~P29QhL58BA4brdHSM00dx~qZq90FAHUEv~Xo~TXYgSjhVyq7h0uoNrBKbiNXRfOQBsoyMtCwRZrTHCPCKZBa1BorqxdH0GeFyjWhzECehBZD5xPUdyWWSz8SL2Q7V0TLXvFO1THKA9a3QOrLwXDP8s5FpM3pLvX~IZN6hmdtgvEfAulHU~I6oVDmxBVafGhjhNlTAO7zDTHRYbkIOBF2rhMb8YTD-38Tgw0ffHeZJMqXVeEaVToy6jAEjvsXtrLzz8moMBkk3TJlDxXTnlHkJ21l14ffvvP1gIOFTSHTm2MFt8vBKXZLDfvVC20MN-bzaYKw__" alt="smile face">
                 <div class="control position-absolute">
@@ -356,7 +393,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 video-slide">
+            <div class="col-lg-3 video-slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="150">
               <div class="video-wrapper position-relative">
                 <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/096a/b084/23c0a457f4f336f171199310f453d374?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D7bSADyThK30k5sHr~P29QhL58BA4brdHSM00dx~qZq90FAHUEv~Xo~TXYgSjhVyq7h0uoNrBKbiNXRfOQBsoyMtCwRZrTHCPCKZBa1BorqxdH0GeFyjWhzECehBZD5xPUdyWWSz8SL2Q7V0TLXvFO1THKA9a3QOrLwXDP8s5FpM3pLvX~IZN6hmdtgvEfAulHU~I6oVDmxBVafGhjhNlTAO7zDTHRYbkIOBF2rhMb8YTD-38Tgw0ffHeZJMqXVeEaVToy6jAEjvsXtrLzz8moMBkk3TJlDxXTnlHkJ21l14ffvvP1gIOFTSHTm2MFt8vBKXZLDfvVC20MN-bzaYKw__" alt="smile face">
                 <div class="control position-absolute">
@@ -365,7 +402,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 video-slide">
+            <div class="col-lg-3 video-slide" data-aos="flip-right" data-aos-duration="500" data-aos-delay="200">
               <div class="video-wrapper position-relative">
                 <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/096a/b084/23c0a457f4f336f171199310f453d374?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D7bSADyThK30k5sHr~P29QhL58BA4brdHSM00dx~qZq90FAHUEv~Xo~TXYgSjhVyq7h0uoNrBKbiNXRfOQBsoyMtCwRZrTHCPCKZBa1BorqxdH0GeFyjWhzECehBZD5xPUdyWWSz8SL2Q7V0TLXvFO1THKA9a3QOrLwXDP8s5FpM3pLvX~IZN6hmdtgvEfAulHU~I6oVDmxBVafGhjhNlTAO7zDTHRYbkIOBF2rhMb8YTD-38Tgw0ffHeZJMqXVeEaVToy6jAEjvsXtrLzz8moMBkk3TJlDxXTnlHkJ21l14ffvvP1gIOFTSHTm2MFt8vBKXZLDfvVC20MN-bzaYKw__" alt="smile face">
                 <div class="control position-absolute">
@@ -374,7 +411,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 video-slide">
+            <div class="col-lg-3 video-slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="250">
               <div class="video-wrapper position-relative">
                 <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/096a/b084/23c0a457f4f336f171199310f453d374?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D7bSADyThK30k5sHr~P29QhL58BA4brdHSM00dx~qZq90FAHUEv~Xo~TXYgSjhVyq7h0uoNrBKbiNXRfOQBsoyMtCwRZrTHCPCKZBa1BorqxdH0GeFyjWhzECehBZD5xPUdyWWSz8SL2Q7V0TLXvFO1THKA9a3QOrLwXDP8s5FpM3pLvX~IZN6hmdtgvEfAulHU~I6oVDmxBVafGhjhNlTAO7zDTHRYbkIOBF2rhMb8YTD-38Tgw0ffHeZJMqXVeEaVToy6jAEjvsXtrLzz8moMBkk3TJlDxXTnlHkJ21l14ffvvP1gIOFTSHTm2MFt8vBKXZLDfvVC20MN-bzaYKw__" alt="smile face">
                 <div class="control position-absolute">
@@ -383,7 +420,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 video-slide">
+            <div class="col-lg-3 video-slide" data-aos="flip-right" data-aos-duration="500" data-aos-delay="300">
               <div class="video-wrapper position-relative">
                 <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/096a/b084/23c0a457f4f336f171199310f453d374?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D7bSADyThK30k5sHr~P29QhL58BA4brdHSM00dx~qZq90FAHUEv~Xo~TXYgSjhVyq7h0uoNrBKbiNXRfOQBsoyMtCwRZrTHCPCKZBa1BorqxdH0GeFyjWhzECehBZD5xPUdyWWSz8SL2Q7V0TLXvFO1THKA9a3QOrLwXDP8s5FpM3pLvX~IZN6hmdtgvEfAulHU~I6oVDmxBVafGhjhNlTAO7zDTHRYbkIOBF2rhMb8YTD-38Tgw0ffHeZJMqXVeEaVToy6jAEjvsXtrLzz8moMBkk3TJlDxXTnlHkJ21l14ffvvP1gIOFTSHTm2MFt8vBKXZLDfvVC20MN-bzaYKw__" alt="smile face">
                 <div class="control position-absolute">
@@ -401,54 +438,54 @@
 
       <!-- Timeline sec -->
       <section class="bg-yellow sec-p-lg">
-        <div class="md-container">
+        <div class="md-container" data-aos="fade-up" data-aos-duration="600">
           <h2 class="head-md text-center mb-5">How this session will impact?</h2>
           <div class="timeline position-relative">
             <div class="progress-bar"></div>
             <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="content-sm bg-light">
+              <div class="col-6">
+                <div class="content-sm bg-light" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
                   <p>Learn actionable strategies to improve employee satisfaction and reduce turnover.</p>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="count">
+              <div class="col-6">
+                <div class="count" data-aos="fade-in" data-aos-duration="500" data-aos-delay="150">
                   <span>01</span>
                 </div>
               </div>
             </div>
             <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="content-sm bg-light">
+              <div class="col-6">
+                <div class="content-sm bg-light" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
                   <p>Learn actionable strategies to improve employee satisfaction and reduce turnover.</p>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="count">
+              <div class="col-6">
+                <div class="count" data-aos="fade-in" data-aos-duration="500" data-aos-delay="250">
                   <span>02</span>
                 </div>
               </div>
             </div>
             <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="content-sm bg-light">
+              <div class="col-6">
+                <div class="content-sm bg-light" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
                   <p>Learn actionable strategies to improve employee satisfaction and reduce turnover.</p>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="count">
+              <div class="col-6">
+                <div class="count" data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
                   <span>03</span>
                 </div>
               </div>
             </div>
             <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="content-sm bg-light">
+              <div class="col-6">
+                <div class="content-sm bg-light" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">
                   <p>Learn actionable strategies to improve employee satisfaction and reduce turnover.</p>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="count">
+              <div class="col-6">
+                <div class="count" data-aos="fade-in" data-aos-duration="500" data-aos-delay="300">
                   <span>04</span>
                 </div>
               </div>
@@ -462,7 +499,7 @@
 
       <!-- Meet Your Coach section -->
        <section class="sec-p-lg">
-        <div class="md-container">
+        <div class="md-container" data-aos="fade-up" data-aos-duration="500">
           <h2 class="head-md text-center fw-bold mb-5">Watch our previous sessions</h2>
           <div class="row justify-content-between">
             <div class="col-md-4">
@@ -482,24 +519,24 @@
                   <span class="mt-2 mb-4">I am on a mission to help women find their identity, become financially free and earn the respect they always deserved.</span>
                   <span>As a certified Life Coach, Emyth Business Coach and author I’ve trained over 10,000 women each year across corporates, colleges, schools and various forums such as YPO, Rotary, FICCI and so on.</span>
                 </p>
-                <div class="d-flex justify-content-evenly mt-3">
+                <div class="count-wrapper d-flex justify-content-evenly mt-3">
                   <div class="count-box">
-                    <span class="head-lg fw-bold">16</span>
+                    <span class="head-lg fw-bold" data-target="16" data-suffix="">0</span>
                     <p class="text-semi-md text-semilight">Years of <br> Experience</p>
                   </div>
 
                   <div class="count-box">
-                    <span class="head-lg fw-bold">50M</span>
+                    <span class="head-lg fw-bold" data-target="50" data-suffix="M">0</span>
                     <p class="text-semi-md text-semilight">Entrepreneurs <br> Reached</p>
                   </div>
 
                   <div class="count-box">
-                    <span class="head-lg fw-bold">50k</span>
+                    <span class="head-lg fw-bold" data-target="50" data-suffix="k">0</span>
                     <p class="text-semi-md text-semilight">Social <br> media</p>
                   </div>
 
                   <div class="count-box">
-                    <span class="head-lg fw-bold">20+</span>
+                    <span class="head-lg fw-bold" data-target="20" data-suffix="+">0</span>
                     <p class="text-semi-md text-semilight">In-house <br> Business Coaches</p>
                   </div>
                 </div>
@@ -512,12 +549,12 @@
           </div>
           <div class="d-flex gap-4 justify-content-center flex-wrap my-5">
             <div class="timer text-blue text-center bg-blue-alpha">
-              <span class="text-3xl">15</span>
-              <p>Minutes</p>
+                <span id="minutesDisplay" class="text-3xl">00</span>
+                <p>Minutes</p>
             </div>
             <div class="timer text-blue text-center bg-blue-alpha">
-              <span class="text-3xl">15</span>
-              <p>Minutes</p>
+                <span id="secondsDisplay" class="text-3xl">00</span>
+                <p>Seconds</p>
             </div>
           </div>
           <div class="text-center">
@@ -527,40 +564,40 @@
        </section>
        <!-- Glimpse of Our Seminars -->
        <section class="sec-p-md">
-        <div class="md-container">
+        <div class="md-container" data-aos="fade-up">
           <h2 class="head-md fw-bold text-center">Glimpse of Our Seminars</h2>
           <div class="row my-5 g-4">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12" data-aos="flip-up" data-aos-duration="500" data-aos-delay="100">
               <div class="content-wrapper">
-                <img src="./images/video screen.png" alt="">
+                <img class="imgfix" src="./images/video screen.png" alt="">
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="img-container">
-                <img src="./images/videocall.png" alt="">
+            <div class="col-md-3 col-sm-6" data-aos="flip-right" data-aos-duration="500" data-aos-delay="150">
+              <div class="content-wrapper">
+                <img class="imgfix" src="./images/videocall.png" alt="">
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <div class="content-wrapper bg-blue">
                 <span class="head-lg alter fw-bold">200K</span>
                 <p class="text-semi-md">Students have already Joined</p>
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6" data-aos="flip-down" data-aos-duration="500" data-aos-delay="250">
               <div class="content-wrapper bg-yellow">
                 <span class="head-lg alter fw-bold">50+</span>
                 <p class="text-semi-md">Seminars Happened till date</p>
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6" data-aos="flip-up" data-aos-duration="500" data-aos-delay="200">
               <div class="content-wrapper">
-                <img src="./images/videocall.png" alt="">
+                <img class="imgfix" src="./images/videocall.png" alt="">
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6" data-aos="flip-down" data-aos-duration="500" data-aos-delay="250">
               <div class="content-wrapper bg-blue-alpha">
                 <h3 class="text-semi-md fw-bold">EXCLUSIVE OFFER</h3>
                 <p>Priced at</p>
@@ -569,9 +606,9 @@
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6" data-aos="flip-up" data-aos-duration="500" data-aos-delay="300">
               <div class="content-wrapper">
-                <img src="./images/videocall.png" alt="">
+                <img class="imgfix" src="./images/videocall.png" alt="">
               </div>
             </div>
 
@@ -581,11 +618,11 @@
 
        <!-- Bonus sections -->
        <section class="sec-p-md bg-blue">
-        <div class="lg-container">
+        <div class="lg-container" data-aos="fade-up">
           <h2 class="head-md text-center fw-bold">Here’s other bonuses to avail</h2>
-          <div class="row my-5">
+          <div class="row g-4 my-5">
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="100">
               <div class="content-wrapper text-center bg-light text-dark">
                 <h3 class="text-md fw-bold">3 Hours of <br> Training Worth</h3>
                 <p class="mt-4 text-semilight">Priced at</p>
@@ -593,7 +630,7 @@
                 <span class="text-semi-md text-linethrough">$9999</span>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="150">
               <div class="content-wrapper text-center bg-light text-dark">
                 <h3 class="text-md fw-bold">3 Bonuses <br> Worth</h3>
                 <p class="mt-4 text-semilight">Priced at</p>
@@ -601,7 +638,7 @@
                 <span class="text-semi-md text-linethrough">$9999</span>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="200">
               <div class="content-wrapper text-center bg-light text-dark">
                 <h3 class="text-md fw-bold">Regular <br> Price</h3>
                 <p class="mt-4 text-semilight">Priced at</p>
@@ -609,7 +646,7 @@
                 <span class="text-semi-md text-linethrough">$9999</span>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="250">
               <div class="content-wrapper text-center bg-light text-dark">
                 <h3 class="text-md fw-bold">Today’s <br> Price</h3>
                 <p class="mt-4 text-semilight">Priced at</p>
@@ -627,11 +664,11 @@
 
       <!-- Stemp sec -->
        <section class="sec-p-md bg-pattern-blue">
-        <div class="md-container">
-          <h2 class="head-md fw-bold text-center">100% Success Guaranteed</h2>
+        <div class="md-container" data-aos="fade-up" data-aos-duration="500">
+          <h2 class="head-md fw-bold text-center mb-4">100% Success Guaranteed</h2>
           <div class="row align-items-center justify-content-center">
             <div class="col-md-4">
-              <div class="img-container">
+              <div class="img-container guaranteed" data-aos="zoom-out" data-aos-delay="100">
                 <img class="img-fluid" src="./images/stemp.png" alt="Guaranteed Stemp">
               </div>
             </div>
@@ -649,23 +686,23 @@
          <div class="lg-container">
           <ul class="nav nav-pills justify-content-center gap-3 mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="theme-btn" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Hubspot</button>
+              <button class="theme-btn alter" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Hubspot</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="theme-btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Calendly</button>
+              <button class="theme-btn alter" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Calendly</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="theme-btn" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Zoom Meeting</button>
+              <button class="theme-btn alter" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Zoom Meeting</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="theme-btn" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Zoho Meeting</button>
+              <button class="theme-btn alter" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Zoho Meeting</button>
             </li>
           </ul>
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-              <div class="calendly-inline-widget" id="my-calendly-embed" style="min-width:320px;height:700px;"></div>
+              <div class="calendly-inline-widget" id="my-calendly-embed" style="min-width:320px;height:700px; background-color: #fff;"></div>
             </div>
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
           </div>
@@ -723,7 +760,8 @@
           </div>
         </div>
        </section>
-       <div class="bg-light shadow py-3">
+
+       <footer class="bg-light shadow p-3">
         <div class="md-container d-flex align-items-center justify-content-between">
           <div>
             <p><span class="head-lg text-blue fw-bold">$99</span> <span class="text-md text-linethrough">$999</span> </p>
@@ -733,7 +771,7 @@
             <a class="theme-btn" href="#" title="Register Now @99 Only">Register Now @99 Only</a>
           </div>
          </div>
-       </div>
+       </footer>
 
   </main>
 
@@ -741,6 +779,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- locomotive js -->
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
   <!-- Main js -->
    <script src="script.js"></script>
 </body>

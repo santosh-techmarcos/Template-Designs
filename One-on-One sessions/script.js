@@ -158,3 +158,83 @@ Calendly.initInlineWidget({
     utmTerm: getURLParameter('utm_term'),
   }
 });
+
+
+// Locomotive js
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('#scroll'),
+  smooth: true,
+  smartphone:true,
+  tablet:true,
+});
+
+// AOS Animetions
+AOS.init();
+
+let observer = new IntersectionObserver( (entries, observer) => {  entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('aos-animate'); }else{ entry.target.classList.remove('aos-animate'); } }); }); document.querySelectorAll('[data-aos]').forEach(aosElem => { observer.observe(aosElem) });
+
+
+// jQuery function to animate the counter
+function animateCounter($element, target, suffix = "") {
+  let start = 0;
+  const duration = 2000;
+  const stepTime = Math.abs(Math.floor(duration / target));
+
+  const counter = setInterval(() => {
+      start += 1;
+      $element.text(start + suffix);
+      if (start >= target) {
+          clearInterval(counter);
+      }
+  }, stepTime);
+}
+
+// jQuery function to check if an element is in view (Locomotive Scroll handles it differently)
+function isInViewport($element, scroll) {
+  const top = $element.offset().top;
+  const bottom = top + $element.outerHeight();
+  const scrollTop = scroll.scroll.instance.scroll.y;
+  const scrollBottom = scrollTop + window.innerHeight;
+  return (top <= scrollBottom && bottom >= scrollTop);
+}
+
+// Hook into Locomotive Scroll's scroll event
+scroll.on('scroll', (instance) => {
+  $('.count-box .head-lg').each(function() {
+      const $el = $(this);
+      const target = parseInt($el.data('target'));
+      const suffix = $el.data('suffix') || "";
+
+      if (isInViewport($el, scroll) && $el.text() === "0") {
+          animateCounter($el, target, suffix);
+      }
+  });
+});
+
+
+// Timer
+let timer;
+    
+function startTimer(hours) {
+    let totalSeconds = hours * 3600; // Convert hours to seconds
+
+    clearInterval(timer); // Clear any existing timer
+
+    timer = setInterval(function() {
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+
+        $('#minutesDisplay, #minutesDisplay1').text(String(minutes).padStart(2, '0'));
+        $('#secondsDisplay, #secondsDisplay1').text(String(seconds).padStart(2, '0'));
+
+        if (totalSeconds <= 0) {
+            clearInterval(timer);
+            alert('Time is up!');
+        }
+
+        totalSeconds--;
+    }, 1000);
+
+  }
+
+startTimer(.5);

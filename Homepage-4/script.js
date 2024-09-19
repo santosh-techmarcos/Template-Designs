@@ -91,10 +91,7 @@ $('.rotor-group').each(function() {
 
 // Locomotive js
 const scroll = new LocomotiveScroll({
-  el: document.querySelector('#locomotive-scroll'),
-  smooth: true,
-  smartphone:true,
-  tablet:true,
+  el: document.querySelector('#scroll'),
 });
 
 // AOS Animetions
