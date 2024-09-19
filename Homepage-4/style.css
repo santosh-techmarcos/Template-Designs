@@ -402,6 +402,7 @@ background-color: var(--T4-alter);
   background-color: var(--T4-prime);
   padding: 8px;
   border-radius: 50%;
+  margin-left: auto;
 }
 .outer-circle::before{
   content: "";
@@ -445,32 +446,22 @@ background-color: var(--T4-alter);
 box-shadow: 0px 0px 17px -5px rgb(26, 26, 26);
 }
 .dot-1{
-  top: -5px;
-  right: 0;
+  top: 11px;
+  right: -11px;
 }
 
 .dot-2{
-  top: 50%;
+  top: 44.5%;
   right: -60px;
 }
 .dot-3{
-  bottom: 0;
-  right: -5px;
+  bottom: 18px;
+  right: -9px;
 }
 .dash-line{z-index: -1; position: absolute;    width: 92px;
-  top: 1px; border: 1px dashed #1D1D1D;}
-.dot p{position: absolute; width: 400px; left: 100px; top: -50%;}
-.dot p::before{
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: rgb(122, 122, 122);
-  position: absolute;
-  border-radius: 50%;
-  left: -12px;
-  top: 13%;
-}
-
+  top: 7.5px; border: 1px dashed #1D1D1D;}
+.my-list{display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 100%; list-style-type: disc;}
+.my-list li:nth-child(2){margin-left: 55px;}
 .bg-theme-dark{
   background-color: var(--T4-secondary);
 }
