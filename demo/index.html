@@ -4,78 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+        <!-- Slick slider css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- jQuery and jQuery UI CDN -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!-- Jquery cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
-<style>
-    .circle-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Adjust height as necessary */
-}
-
-.main-circle {
-    border: 5px solid red;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: red;
-    font-weight: bold;
-    font-size: 20px; /* Adjust size as necessary */
-    margin-bottom: 20px; /* Spacing between circle and text */
-}
-
-.exclusions {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-.exclusions li {
-    margin: 10px 0;
-    position: relative;
-    font-size: 16px; /* Adjust size as necessary */
-}
-
-.exclusions li:before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background: red;
-    border-radius: 50%;
-    position: absolute;
-    left: -20px; /* Adjust as necessary */
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-@media (max-width: 600px) {
-    .main-circle {
-        width: 150px;
-        height: 150px;
-        font-size: 16px;
-    }
-
-    .exclusions li {
-        font-size: 14px;
-    }
-}
-
-</style>
 <body>
-    <div class="circle-container">
-        <div class="main-circle">
-            <p>DON'T JOIN IF</p>
-        </div>
-        <ul class="exclusions">
-            <li>You are not a business owner</li>
-            <li>You are not an action taker</li>
-            <li>You are not serious about your business</li>
-        </ul>
+    <style>
+        body{background-color: #000;}
+        .logo-container{max-width: 1200px; max-height: 140px; overflow: hidden;}
+        .logo-container img{ height: 100%; aspect-ratio: 3/2; object-fit:contain; mix-blend-mode: screen; }
+    </style>
+
+    <div class="logo-container">
+        <img src="../Homepage-4/images/logoipsum.png" alt="">
+        <img src="../Homepage-4/images/plogo.png" alt="">
+        <img src="../Homepage-4/images/factory.png" alt="">
+        <img src="../Homepage-4/images/circle.png" alt="">
+        <img src="../Homepage-4/images/amara.png" alt="">
     </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+    <script>
+
+        // Logo slider
+$('.logo-container').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  arrows:false,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
+});
+
+    </script>
 </body>
 </html>
