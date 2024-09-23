@@ -3,70 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>jQuery UI Accordion with + - Toggle</title>
-  
-  <!-- jQuery and jQuery UI CDN -->
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
+  <title>Flip Countdown Timer</title>
+  <link href="https://unpkg.com/@pqina/flip/dist/flip.min.css" rel="stylesheet">
   <style>
-    .ui-accordion .ui-accordion-header {
-      background-color: rgb(155, 154, 87);
-      padding: 15px 10px;
-      font-size: 22px;
-      cursor: pointer;
-      color: #fff;
-      font-weight: bold;
-      position: relative;
+    .tick {
+      font-size: 1rem;
+      white-space: nowrap;
+      font-family: arial, sans-serif;
     }
 
-    .ui-accordion .ui-accordion-header::after {
-      content: '+';
-      position: absolute;
-      right: 20px;
-      font-size: 24px;
-      transition: transform 0.3s ease;
+    .tick-flip,
+    .tick-text-inline {
+      font-size: 2.5em;
     }
 
-    .ui-accordion .ui-accordion-header.ui-accordion-header-active::after {
-      content: '-';
-      transform: rotate(0deg);
+    .tick-label {
+      margin-top: 1em;
+      font-size: 1em;
     }
 
-    .ui-accordion .ui-accordion-content {
-      padding: 15px;
-      background-color: #f5f5f5;
+    .tick-char {
+      width: 1.5em;
+    }
+
+    .tick-text-inline {
+      display: inline-block;
+      text-align: center;
+      min-width: 1em;
+    }
+
+    .tick-text-inline+.tick-text-inline {
+      margin-left: -0.325em;
+    }
+
+    .tick-group {
+      margin: 0 0.5em;
+      text-align: center;
+    }
+
+    body {
+      background-color: rgb(255, 238, 191) !important;
+    }
+
+    .tick-text-inline {
+      color: rgb(41, 43, 46) !important;
+    }
+
+    .tick-label {
+      color: rgb(41, 43, 46) !important;
+    }
+
+    .tick-flip-panel {
+      color: rgb(255, 255, 255) !important;
+    }
+
+    .tick-flip {
+      font-family: clearsans-regular, sans-serif !important;
+    }
+
+    .tick-flip-panel-text-wrapper {
+      line-height: 1.45 !important;
+    }
+
+    .tick-flip-panel {
+      background-color: rgb(45, 46, 45) !important;
+    }
+
+    .tick-flip {
+      border-radius: 0.07em !important;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      .tick-flip {
+        font-size: 1.5em;
+      }
+
+      .tick-label {
+        font-size: 0.8em;
+      }
     }
   </style>
 </head>
 <body>
 
-<div id="accordion">
-  <h3>Lorem ipsum dolor sit amet.</h3>
-  <div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-  </div>
-  <h3>Lorem ipsum dolor sit amet.</h3>
-  <div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore magnam, nobis consequuntur nemo cupiditate.</p>
-  </div>
-  <h3>Lorem ipsum dolor sit amet.</h3>
-  <div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corporis sequi, recusandae culpa quibusdam doloremque fugiat consectetur.</p>
-  </div>
-</div>
 
-<!-- Initialize the jQuery UI Accordion -->
-<script>
-  $(function() {
-    $("#accordion").accordion({
-      icons: false, // Disable default icons
-      collapsible: true, // Allow collapsing all panels
-      heightStyle: "content" // Adjust height to content
-    });
-  });
-</script>
+  <script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
+  <script>
+    function handleTickInit(tick) {
+      // Customize your target date and time
+      const targetDate = new Date('2024-09-25T18:00:00'); // Year-Month-DayTHour:Minute:Second (24-hour format)
+      
+      // Start countdown based on the given target date
+      const counter = Tick.count.down(targetDate, { format: ['d', 'h', 'm', 's'] });
 
+      // Update the tick values in real-time
+      counter.onupdate = function(value) {
+        tick.value = value;
+      };
+
+      counter.onended = function() {
+        // Countdown finished, do something here if needed
+        console.log('Countdown finished!');
+      };
+    }
+  </script>
 </body>
 </html>
