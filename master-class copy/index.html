@@ -31,7 +31,17 @@
     
     <!-- Main style -->
     <link rel="stylesheet" href="css/style.css" />
+<style>
+/* Top Bar */
+.top-bar-container {
+  position: relative; /* Retain sticky behavior */
+  top: 0; /* Initially stick to the top */
+  z-index: 999;
+   /* Smooth transition for showing/hiding */
+}
 
+
+</style>
   </head>
   <body>
     <div class="bg-light pt-4 sec-px top-bar-container">
@@ -42,7 +52,7 @@
     <main class="locomotive-scroll">
       <!-- Header sec start -->
       <header class="header-sec bg-light sec-px">
-        <div class="sm-container text-center">
+        <div class="sm-container text-center" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
           <h1 class="head-md mb-2">Join and Become Like The Top 1% Successful Business Owners & Entrepreneurs</h1>
           <p class="fw-normal">Discover the power of WhatsApp Class Funnel Used by India's Top Coaches Who Scale their Business to 8 Figures+ in Revenue without tiring Webinars or Sales Calls</p>
         </div>
@@ -54,7 +64,7 @@
         <div class="lg-container">
           <div class="row g-4">
 
-            <div class="col-lg-3 order-3 order-lg-1 workshop-wrapper">
+            <div class="col-lg-3 order-3 order-lg-1 workshop-wrapper" data-aos="fade-left" data-aos-duration="1000">
               <h2 class="head-sm text-uppercase"><span class="text-red">1 CR COACH PLAN</span> WORKSHOP</h2>
               <h3 class="head-sm alter text-uppercase text-red mt-3 mb-1">Emily Clark</h3>
               <p class="text-sm fw-normal">Asia’s Leading Business Success Coach</p>
@@ -107,7 +117,7 @@
 
               </div>
             </div>
-            <div class="col-lg-6 order-1 order-lg-2">
+            <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in-down" data-aos-duration="1000">
               <div class="video-container">
                 <img class="imgfix" src="images/main-banner.png" alt="">
                 <div class="control">
@@ -120,7 +130,7 @@
               </div>
               <p class="text-sm fw-light text-center mt-4">Transformed 200+ Coaches to Scale their Digital Coaching Business to 1 Cr+ in revenue</p>
             </div>
-            <div class="col-lg-3 order-2 order-lg-3">
+            <div class="col-lg-3 order-2 order-lg-3" data-aos="fade-right" data-aos-duration="1000">
               <div class="text-center">
                 <!-- Flipcount timer -->
                 <div class="tick" data-did-init="handleTickInit">
@@ -142,8 +152,8 @@
           </div>
         </div>
         <div class="logo-container">
-          <h3 class="head-md text-center">Featured In</h3>
-          <div class="logo-wrapper">
+          <h3 class="head-md text-center" data-aos="fade-up" data-aos-duration="700">Featured In</h3>
+          <div class="logo-wrapper" data-aos="fade-in" data-aos-duration="700">
             <div class="logo">
               <img src="images/plogo.png" alt="Plogo">
             </div>
@@ -168,32 +178,32 @@
       <!-- Banner sec end-->
 
       <!-- Card sec start -->
-       <section class="card-sec sec-px">
+       <section class="card-sec sec-px" data-aos="fade-up" data-aos-duration="500">
         <div class="lg-container">
           <h2 class="head-md text-center f1 fw-bold">What you will learn in Masterclass?</h2>
           <div class="row g-4">
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-sm-6 col-lg-3" data-aos="flip-left" data-aos-duration="1000">
               <div class="my-card">
                 <img src="images/alarm-icon.svg" alt="Alarm">
                 <h3 class="head-sm alter mt-4 mb-3">Unlock Secrets</h3>
                 <p class="f1">You Unlock Secrets To Create Time & Wealth in Business in better way</p>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-sm-6 col-lg-3" data-aos="flip-up" data-aos-duration="1000">
               <div class="my-card">
                 <img src="images/alarm-icon.svg" alt="Alarm">
                 <h3 class="head-sm alter mt-4 mb-3">Win in Business</h3>
                 <p class="f1">You Learn Strong Foundational Activites To Win in Your Business</p>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-sm-6 col-lg-3" data-aos="flip-down" data-aos-duration="1000">
               <div class="my-card">
                 <img src="images/alarm-icon.svg" alt="Alarm">
                 <h3 class="head-sm alter mt-4 mb-3">Increase Revenue</h3>
                 <p class="f1">Your Business Growth with Increased Revenue & Cashflow</p>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-sm-6 col-lg-3" data-aos="flip-right" data-aos-duration="1000">
               <div class="my-card">
                 <img src="images/alarm-icon.svg" alt="Alarm">
                 <h3 class="head-sm alter mt-4 mb-3">Scale Guaranteed</h3>
@@ -206,11 +216,11 @@
       <!-- Card sec end -->
 
       <!-- Timeline sec start -->
-       <section class="timeline-sec sec-px">
+       <section class="timeline-sec sec-px" data-aos="fade-up" data-aos-duration="500">
         <div class="md-container">
           <h2 class="head-md text-center f1 fw-bold">What you will learn in Masterclass?</h2>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1000">
               <div class="outer-circle">
                 <div class="inner-circle d-flex align-items-center justify-content-center">
                   <h3 class="head-md mb-0 fw-bolder f1">DON’T <br> JOIN IF</h3>
@@ -220,7 +230,7 @@
             <div class="col-lg-6">
               <div class="timeline-container">
                 <div class="progress-bar"></div>
-                <div class="row align-items-center">
+                <div class="row align-items-center" data-aos="fade-right" data-aos-duration="700">
                   <div class="col-6 col-lg-2">
                     <div class="dot"></div>
                   </div>
@@ -228,7 +238,7 @@
                     <p class="head-sm alter">Lorem ipsum dolor sit amet.</p>
                   </div>
                 </div>
-                <div class="row align-items-center">
+                <div class="row align-items-center" data-aos="fade-right" data-aos-duration="700" data-aos-delay="100">
                   <div class="col-6 col-lg-2">
                     <div class="dot"></div>                
                   </div>
@@ -236,7 +246,7 @@
                     <p class="head-sm alter">Lorem ipsum dolor sit amet.</p>
                   </div>
                 </div>
-                <div class="row align-items-center">
+                <div class="row align-items-center" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200">
                   <div class="col-6 col-lg-2">
                     <div class="dot"></div>      
                   </div>
@@ -255,31 +265,31 @@
       <!-- Timeline sec end -->
 
       <!-- Achievment sec start -->
-       <section class="bg-darkbrown achivment-sec sec-px">
+       <section class="bg-darkbrown achivment-sec sec-px achievement-counter" data-aos="fade-up" data-aos-duration="500">
         <div class="md-container">
           <h2 class="head-md text-center text-white">Our Achievements of 10+ Years</h2>
           <div class="row mt-5">
             <div class="col-6 col-md-3">
               <div class="wrapper text-center">
-                <span class="count">500+</span>
+                <span class="count"  data-target="500" data-suffix="+">00</span>
                 <p class="text-sm f3 fw-normal">Individuals Empowered</p>
               </div>
             </div>
             <div class="col-6 col-md-3">
               <div class="wrapper text-center">
-                <span class="count">98%</span>
+                <span class="count" data-target="98" data-suffix="%">00</span>
                 <p class="text-sm f3 fw-normal">High Satisfaction</p>
               </div>
             </div>
             <div class="col-6 col-md-3">
               <div class="wrapper text-center">
-                <span class="count">10+</span>
+                <span class="count" data-target="10" data-suffix="+">00</span>
                 <p class="text-sm f3 fw-normal">Years of Experience</p>
               </div>
             </div>
             <div class="col-6 col-md-3">
               <div class="wrapper text-center">
-                <span class="count">200+</span>
+                <span class="count" data-target="200" data-suffix="+">00</span>
                 <p class="text-sm f3 fw-normal">Real Stories</p>
               </div>
             </div>
@@ -289,7 +299,7 @@
       <!-- Achievment sec end -->
 
       <!-- Flipcount deal sec start -->
-       <section class="flipcount-sec bg-theme-red sec-px">
+       <section class="flipcount-sec bg-theme-red sec-px" data-aos="fade-up" data-aos-duration="500">
         <div class="bubble">
           <img class="img-fluid" src="images/black-bubble.png" alt="Black bubble">
         </div>
@@ -301,7 +311,7 @@
             <span class="head-md mb-1 text-white">Hurry Up!</span>
             <h2 class="head-lg">BOOK YOUR SEATS NOW</h2>
             <!-- Flipcount timer -->
-            <div class="tick" data-did-init="handleTickInit">
+            <div class="tick" data-did-init="handleTickInit" data-aos="fade-up" data-aos-duration="700">
               <div class="leaf-container" data-repeat="true" data-layout="horizontal fit" data-transform="preset(d, h, m, s) -> delay">
                 <div class="tick-group">
                   <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
@@ -320,15 +330,15 @@
       <!-- Flipcount deal sec end -->
 
       <!-- check list sec start -->
-       <section class="sec-px sec-py">
+       <section class="sec-px sec-py" data-aos="fade-up" data-aos-duration="500">
         <div class="sm-container">
           <h2 class="head-md text-center">Why to join in the Masterclass?</h2>
           <ul class="check-list-container shadow f2">
-            <li><i class="fa-solid fa-circle-check"></i><p><strong>7 Foundational Activities</strong> used by successful entrepreneurs Which You can COPY to build a Stable and Scalable Business.</p></li>
-            <li><i class="fa-solid fa-circle-check"></i><p>3 ingredients you need to focus on to build a <strong>business</strong> that can grow without you.</p></li>
-            <li><i class="fa-solid fa-circle-check"></i><p>How To Build Your <strong>Front-Line Leaders:</strong> Understand the step-by-step process of building your second line of leaders that you can implement immediately</p></li>
-            <li><i class="fa-solid fa-circle-check"></i><p>More Profit, More Freedom, <strong>More Scale</strong> Is Guaranteed</p></li>
-            <li><i class="fa-solid fa-circle-check"></i><p>How to retain employees: <strong>strategies and systems</strong> that you can implement to make sure you create an environment for employees to work longer so that you can focus on strategic business growth.</p></li>
+            <li><i class="fa-solid fa-circle-check" data-aos="fade-right" data-aos-duration="700"></i><p><strong>7 Foundational Activities</strong> used by successful entrepreneurs Which You can COPY to build a Stable and Scalable Business.</p></li>
+            <li><i class="fa-solid fa-circle-check" data-aos="fade-right" data-aos-duration="700" data-aos-delay="100"></i><p>3 ingredients you need to focus on to build a <strong>business</strong> that can grow without you.</p></li>
+            <li><i class="fa-solid fa-circle-check" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200"></i><p>How To Build Your <strong>Front-Line Leaders:</strong> Understand the step-by-step process of building your second line of leaders that you can implement immediately</p></li>
+            <li><i class="fa-solid fa-circle-check" data-aos="fade-right" data-aos-duration="700" data-aos-delay="300"></i><p>More Profit, More Freedom, <strong>More Scale</strong> Is Guaranteed</p></li>
+            <li><i class="fa-solid fa-circle-check" data-aos="fade-right" data-aos-duration="700" data-aos-delay="400"></i><p>How to retain employees: <strong>strategies and systems</strong> that you can implement to make sure you create an environment for employees to work longer so that you can focus on strategic business growth.</p></li>
           </ul>
           <div class="text-center mt-5">
             <a class="theme-btn btn-red theme-btn-md" href="#" title="Register Now for ₹99 ONLY">Register Now for ₹99 ONLY</a>
@@ -338,10 +348,10 @@
       <!-- check list sec end-->
       
       <!-- Testimonial sec start -->
-       <section class="testimonial-sec sec-px">
+       <section class="testimonial-sec sec-px" data-aos="fade-up" data-aos-duration="500">
         <div class="md-container">
           <div class="row g-4">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="zoom-in-down" data-aos-duration="700">
               <div class="img-container position-relative">
                 <div class="content">
                   <h2 class="heading">Feedbacks from Our Happy Customers</h2>
@@ -354,7 +364,7 @@
                 <div class="swiper mySwiper">
                   <div class="swiper-wrapper">
                     <!-- Testimonial 1 -->
-                    <div class="testimonial swiper-slide">
+                    <div class="testimonial swiper-slide" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="100">
                       <div class="rank">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -374,7 +384,7 @@
                       </div>
                     </div>
   
-                    <div class="testimonial swiper-slide">
+                    <div class="testimonial swiper-slide" data-aos="zoom-out-up" data-aos-duration="700" data-aos-delay="200">
                       <div class="rank">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -394,7 +404,7 @@
                       </div>
                     </div>
   
-                    <div class="testimonial swiper-slide">
+                    <div class="testimonial swiper-slide" data-aos="zoom-in-down" data-aos-duration="700" data-aos-delay="300">
                       <div class="rank">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -460,7 +470,7 @@
       <!-- Testimonial sec end -->
       
       <!-- Video gallery section start -->
-       <section class="bg-img video-gallery-sec">
+       <section class="bg-img video-gallery-sec" data-aos="fade-up" data-aos-duration="500">
         <div class="bg-dark-alpha sec-px sec-py-lg">
           <div class="md-container">
             <div class="row">
@@ -472,7 +482,7 @@
               </div>
               <div class="col-md-6 d-flex order-1 order-md-2">
                 <div class="video-wrapper">
-                  <div class="box">
+                  <div class="box" data-aos="zoom-in-down" data-aos-duration="700" data-aos-delay="100">
                     <img class="imgFix" src="./images/men-with-smile-sofa.png" alt="Men in yello" width="1000" height="500">
                     <div class="control">
                       <div class="btn-wrapper">
@@ -482,7 +492,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="box">
+                  <div class="box" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="200">
                     <!-- media -->
                     <img class="imgFix" src="./images/girl-with-currly-hair.png" alt="Girl with Smile" width="800" height="800">
                     <!-- Control -->
@@ -501,7 +511,7 @@
                 </div>
 
                 <div class="video-wrapper">
-                  <div class="box">
+                  <div class="box" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="300">
                     <!-- media -->
                     <img class="imgFix" src="./images/men-in-glass.png" alt="Men with hello" width="1124" height="591">
                     <!-- control -->
@@ -517,7 +527,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="box">
+                  <div class="box" data-aos="zoom-in-down" data-aos-duration="700" data-aos-delay="400">
                     <!-- Media -->
                     <img class="imgFix" src="./images/men-with-say-hii.png" alt="Men in white dress" width="955" height="539">
                     <!-- control -->
@@ -543,40 +553,40 @@
       <!-- Video gallery section end -->
 
       <!-- Portfolio sec start -->
-       <section class="portfolio-sec sec-px sec-py-md">
+       <section class="portfolio-sec sec-px sec-py-md portfolio-counter" data-aos="fade-up" data-aos-duration="500">
          <div class="md-container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-in" data-aos-duration="700" data-aos-delay="200">
               <div class="img-container">
                 <img class="imgfix" src="images/women-in-gogle.png" alt="Women in goggle">
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="700" data-aos-delay="300">
               <h2 class="head-md">Hi, I’m Emily Clark</h2>
               <p class="fw-normal">I am on a mission to help women find their identity, become financially free and earn the respect they always deserved.</p>
               <p class="fw-normal my-3">As a certified Life Coach, Emyth Business Coach and author I’ve trained over 10,000 women each year across corporates, colleges, schools and various forums such as YPO, Rotary, FICCI and so on.</p>
               <div class="row mb-5">
                 <div class="col-6 col-md-3">
                   <div class="wrapper text-center">
-                    <span class="count">15</span>
+                    <span class="count" data-target="15" data-suffix="">00</span>
                     <p class="text-xs fw-normal">National Awards</p>
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
                   <div class="wrapper text-center">
-                    <span class="count">50</span>
+                    <span class="count" data-target="50" data-suffix="">00</span>
                     <p class="text-xs fw-normal">Entrepreneurs Reached</p>
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
                   <div class="wrapper text-center">
-                    <span class="count">25</span>
+                    <span class="count" data-target="25" data-suffix="">00</span>
                     <p class="text-xs fw-normal">Targets Achieved</p>
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
                   <div class="wrapper text-center">
-                    <span class="count">32</span>
+                    <span class="count" data-target="32" data-suffix="">00</span>
                     <p class="text-xs fw-normal">Lakh Students covered</p>
                   </div>
                 </div>
@@ -589,11 +599,11 @@
       <!-- Portfolio sec end -->
       
       <!-- Bonus sec start -->
-       <section class="bonus-sec sec-px sec-py-md">
+       <section class="bonus-sec sec-px sec-py-md" data-aos="fade-up" data-aos-duration="500">
         <div class="sm-container">
           <h2 class="head-md text-center">Register and Unlock Bonus Worth <span class="text-red">₹3,998</span></h2>
           <div class="row g-4">
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
               <div class="wrapper text-center d-flex flex-column align-items-center justify-content-between">
                 <span class="icon mb-4">
                   <img src="images/gift-box.svg" alt="Gift">
@@ -602,7 +612,7 @@
                 <span class="text-lg alter">Worth <span class="text-red">₹1,999</span></span>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="fade-right" data-aos-duration="700" data-aos-delay="300">
               <div class="wrapper text-center d-flex flex-column align-items-center justify-content-between">
                 <span class="icon mb-4">
                   <img src="images/gift-box.svg" alt="Gift">
@@ -611,7 +621,7 @@
                 <span class="text-lg alter">Worth <span class="text-red">₹2,999</span></span>
               </div>
             </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12" data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">
               <div class="wrapper text-center d-flex flex-column align-items-center justify-content-between">
                 <p class="head-sm">Regular Price :₹999/</p>
                 <h3 class="head-md mb-0">Today's Price : <span class="text-red">₹99/-</span></h3>
@@ -625,45 +635,45 @@
       <!-- Bonus sec end -->
       
       <!-- Gallery sec start -->
-       <section class="gallery-sec sec-px">
+       <section class="gallery-sec sec-px" data-aos="fade-up" data-aos-duration="500">
         <div class="md-container">
           <div class="row g-3">
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3" data-aos="zoom-in-down" data-aos-duration="700" data-aos-delay="200">
               <div class="wrapper-sm">
                 <p class="head-md text-white mb-0">Our <br> Presence</p>
               </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-3" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="300">
               <div class="wrapper-sm">
                 <img class="imgfix" src="images/seminar.png" alt="auditorium">
               </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-3" data-aos="zoom-out-up" data-aos-duration="700" data-aos-delay="400">
               <div class="wrapper-sm">
                 <img class="imgfix" src="images/class-room.png" alt="auditorium">
               </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="500">
               <div class="wrapper-sm">
                 <img class="imgfix" src="images/meeting.png" alt="auditorium">
               </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-3" data-aos="zoom-out" data-aos-duration="700" data-aos-delay="600">
               <div class="wrapper-sm">
                 <img class="imgfix" src="images/stage-with-audiance.png" alt="auditorium">
               </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-3" data-aos="zoom-in-down" data-aos-duration="700" data-aos-delay="700">
               <div class="wrapper-sm">
                 <img class="imgfix" src="images/auditorium.png" alt="auditorium">
               </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-3" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="800">
               <div class="wrapper-sm">
                 <img class="imgfix" src="images/black-coat-men.png" alt="auditorium">
               </div>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3" data-aos="zoom-out-up" data-aos-duration="700" data-aos-delay="900">
               <div class="wrapper-sm">
                 <p class="head-md text-white mb-0">Wanna <br> Join too?</p>
                 <span class="text-underline">Hell Yeah!</span>
@@ -675,15 +685,15 @@
       <!-- Gallery sec end -->
 
       <!-- stamp sec start -->
-       <section class="sec-px sec-py-md bg-light alter stemp-sec">
+       <section class="sec-px sec-py-md bg-light alter stemp-sec" data-aos="fade-up" data-aos-duration="500">
           <div class="sm-container">
             <div class="row align-items-center">
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
                 <div class="wrapper">
                   <img class="img-fluid" src="images/stemp.png" alt="Guaranteed">
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="fade-in" data-aos-duration="700" data-aos-delay="300">
                 <h2 class="head-md">At the end of this 3 day Weekend workshop</h2>
                 <p class="fw-light text-sm">We value your time & money, like our own. If you don’t understand or you’re not able to learn the techniques I teach in 3 days, even after attending all the five day sessions without fail, I don’t need your money. You can ask for a refund after explaining to me what exactly you’re not able to learn in 7 days of enrolling for the program.</p>
                 <a class="theme-btn theme-btn-md btn-red mt-5" href="#" title="REGISTER NOW @ JUST ₹99/-">REGISTER NOW @ JUST ₹99/-</a>
@@ -694,27 +704,27 @@
       <!-- stamp sec end -->
 
       <!-- FAQ section start here -->
-       <section class="sec-py pb-0 sec-px">
+       <section class="sec-py pb-0 sec-px" data-aos="fade-up" data-aos-duration="500">
          <div class="md-container">
           <h2 class="text-center head-md">Frequently Asked Questions</h2>
           <!-- Accordion start -->
           <div id="accordion">
-            <h3>How will I get the link to attend the program? <span class="icon"><i class="fa-solid fa-angle-down"></i></span></h3>
+            <h3 data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">How will I get the link to attend the program? <span class="icon"><i class="fa-solid fa-angle-down"></i></span></h3>
             <div class="acc-content">
               <p class="text-sm fw-lighter">Your life, your health, your achievements, and your skills are influenced by the sheer power of your mind. Once you learn how to control and train your mind, you can achieve your desired goal in your life.</p>
             </div>
       
-            <h3>When is the workshop? <span class="icon"><i class="fa-solid fa-angle-down"></i></span></h3>
+            <h3 data-aos="fade-left" data-aos-duration="700" data-aos-delay="300">When is the workshop? <span class="icon"><i class="fa-solid fa-angle-down"></i></span></h3>
             <div class="acc-content">
               <p class="text-sm fw-lighter">Your life, your health, your achievements, and your skills are influenced by the sheer power of your mind. Once you learn how to control and train your mind, you can achieve your desired goal in your life.</p>
             </div>
       
-            <h3> How will I get the link to attend the program?<span class="icon"><i class="fa-solid fa-angle-down"></i></span></h3>
+            <h3 data-aos="fade-left" data-aos-duration="700" data-aos-delay="400"> How will I get the link to attend the program?<span class="icon"><i class="fa-solid fa-angle-down"></i></span></h3>
             <div class="acc-content">
               <p class="text-sm fw-lighter">Your life, your health, your achievements, and your skills are influenced by the sheer power of your mind. Once you learn how to control and train your mind, you can achieve your desired goal in your life.</p>
             </div>
 
-            <h3>I made the payment but didn’t receive any email<span class="icon"><i class="fa-solid fa-angle-down"></i></span></h3>
+            <h3 data-aos="fade-left" data-aos-duration="700" data-aos-delay="500">I made the payment but didn’t receive any email<span class="icon"><i class="fa-solid fa-angle-down"></i></span></h3>
             <div class="acc-content">
               <p class="text-sm fw-lighter">Your life, your health, your achievements, and your skills are influenced by the sheer power of your mind. Once you learn how to control and train your mind, you can achieve your desired goal in your life.</p>
             </div>
@@ -724,7 +734,7 @@
        </section>
       <!-- FAQ sections end here -->
 
-      <div class="lifecoach text-center sec-py-md">
+      <div class="lifecoach text-center sec-py-md" data-aos="fade-up" data-aos-duration="700">
         <img src="images/lifecoach.svg" alt="Life Coach">
       </div>
 

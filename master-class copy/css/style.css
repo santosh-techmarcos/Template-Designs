@@ -81,8 +81,8 @@ button:focus, .form-control:focus, input:focus {outline: none;}
 .bg-img{background-image: url('../images/bg-video.png'); background-position: center; background-repeat: no-repeat; background-size: cover;}
 .bg-dark-alpha{background-color: #000000D9; color: var(--light);}
 /* ***********************Top bar ******************* */
+.top-bar-container{transition: top 0.3s ease-in-out;}
 .top-bar{background: var(--T4-secondary); color: var(--light); padding: 10px 65px; max-width: 700px; margin: 0 auto; border-radius: 6px;}
-.top-bar-container{position: sticky; top: 0; z-index: 999;}
 
 /* *********************Header css start********************* */
 .header-sec{padding-top: 50px; padding-bottom: 20px;}
@@ -234,8 +234,8 @@ button:focus, .form-control:focus, input:focus {outline: none;}
 /* ******************FAQ end here******************** */
 
 /* *********************Footer sec start******************************* */
-.footer-sec{padding-top: 20px; padding-bottom: 20px;}
-.bottom-bar{padding: 10px 20px; background-color: var(--T4-secondary); color: var(--light); border-radius: 10px;}
+.footer-sec{padding-top: 20px; padding-bottom: 20px; width: 100%;}
+.bottom-bar{ position: fixed; bottom: -200px; width: 100%; z-index: 999; transition: bottom 0.3s ease-in-out; padding: 10px 20px; left: 50%; transform: translateX(-50%); background-color: var(--T4-secondary); color: var(--light); border-radius: 10px;}
 .bottom-bar .text-xl{font-size: 50px; font-family: "Open Sans"; font-weight: 700; line-height: normal;}
 /* *********************Footer sec end******************************* */
 
