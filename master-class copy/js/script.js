@@ -18,7 +18,7 @@ function handleTickInit(tick) {
 }
 /********************Flipcount timer end************************* */
 
-// Logo
+/********************Logo slider js start************************* */
 $('.logo-wrapper').slick({
   dots: false,
   infinite: true,
@@ -49,6 +49,7 @@ $('.logo-wrapper').slick({
     }
   ]
 });
+/********************Logo slider js end************************* */
 
 /********************Testimonal js start******************************* */
 var swiper = new Swiper(".mySwiper", {
@@ -101,7 +102,6 @@ $(document).ready(function() {
 /***********************FAQ Accordion js end****************************** */
 
 /***********************Locomotive scroll js start****************************** */
-// Locomotive js
 const scroll = new LocomotiveScroll({
   el: document.querySelector('.locomotive-scroll'),  // Ensure the element exists
   smooth: true,  // Enable smooth scrolling
@@ -171,7 +171,8 @@ scroll.on('scroll', (instance) => {
   });
 });
 /***************************Counter Animation End*********************************** */
-// Get elements
+
+/***************************Top and bottom scroll Animation start*********************************** */
 const topBar = document.querySelector('.top-bar-container');
 const bottomBar = document.querySelector('.bottom-bar');
 
@@ -195,3 +196,4 @@ scroll.on('scroll', (instance) => {
   // Update the last scroll position
   lastScrollY = currentScrollY;
 });
+/***************************Top and bottom scroll Animation end*********************************** */
