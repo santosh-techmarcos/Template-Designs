@@ -3,786 +3,819 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-   <!-- Bootstrap cdn -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>One-on-One Session</title>
+  <!-- font awesom -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap 5 css -->
+  <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+  <!-- Slick slider CSS -->
+  <link rel="stylesheet" href="css/plugins/slick.css"/>
+  <link rel="stylesheet" href="css/plugins/slick-theme.css" />
 
-    <!-- font awesom -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Slick slider css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- jQuery and jQuery UI CDN -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <!-- Jquery cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- jQuery UI CSS -->
+  <link rel="stylesheet" href="css/plugins/jquery-ui.min.css">
 
-    <!-- Calendly badge widget begin -->
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-    <!-- AOS Animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- AOS Animations CSS -->
+  <link rel="stylesheet" href="css/plugins/aos.css">
 
-   <!-- Main style -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Locomotive smooth scrolling CSS -->
+  <link rel="stylesheet" href="css/plugins/locomotive-scroll.css">
+
+  <!-- Main style -->
+  <link rel="stylesheet" href="css/style.css" />
+
 </head>
 <body>
-
   <main id="scroll">
+    <!-- Header start -->
     <header class="bg-blue-gradient p-4 text-center">
       <p class="text-md alter text-white">Want to transform your life the way you want? JOIN NOW!</p>
     </header>
+    <!-- Header end -->
 
-    <!-- Main page -->
-     <section>
-      <div class="row g-0">
-        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-          <div class="img-wrapper">
-            <img class="imgfix img-fluid" src="./images/banner.png" alt="Men in black Outfit">
-          </div>
-        </div>
-        <div class="col-lg-6 bg-yellow position-relative" data-aos="fade-left" data-aos-duration="1000">
-          <div class="wrapper d-flex flex-column gap-3" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="500">
-            <h1 class="head-md alter">Transform Your Life with Personalized <span class="text-blue">One-on-One</span> Coaching</h1>
-            <p class="head-sm fw-semibold">Get tailored support to achieve your personal and professional goals.</p>
-            <form action="" class="form-wrapper">
-              <input type="text" name="full_name" class="custom-input" placeholder="Enter Full Name">
-              <input type="email" class="custom-input mt-3" placeholder="name@example.com">
-              <button type="submit" class="theme-btn mt-3 d-block">ENROLL NOW!</button>
-            </form>
-            <p class="fw-light">*Our individual coaching sessions are designed to address your unique challenges and goals, offering personalized guidance and support.</p>
-          </div>
-          <!-- scroll btn -->
-          <a class="scroll-btn" title="Scroll down" href="#scrollTraget">
-            <img src="./icons/scrollbtn.svg" alt="Scroll Button">
-          </a>
+    <!-- Banner section start -->
+    <section>
+    <div class="row g-0">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+        <div class="img-wrapper">
+          <img class="imgfix img-fluid" src="images/banner.png" alt="Men in black Outfit">
         </div>
       </div>
-     </section>
-
-     <!-- Section 2 -->
-      <section class="sec-p-lg" id="scrollTraget">
-        <div class="lg-container" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500">
-          <div class="head-md fw-bold">Exclusive Benefits of Personalized Coaching</div>
-          <div class="row gy-3 mb-5 mt-3">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="flip-left">
-              <div class="content bg-blue-alpha">
-                <h3 class="text-md alter fw-bold mb-4 card-head">Customized Strategies</h3>
-                <p>This personalized support allows for deep, transformative conversations that can address root issues and inspire lasting change.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in" >
-              <div class="content bg-blue-alpha">
-                <h3 class="text-md alter fw-bold mb-4 card-head">One-on-One Support</h3>
-                <p>Whether you prefer morning, afternoon, or evening sessions, we’ll work with you to ensure that your coaching fits seamlessly into your life.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in-up">
-              <div class="content bg-blue-alpha">
-                <h3 class="text-md alter fw-bold mb-4 card-head">Flexible Scheduling</h3>
-                <p>Each session is tailored to your unique needs, whether you're aiming to enhance your career, improve relationships, or achieve personal growth.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="flip-right">
-              <div class="content bg-blue-alpha">
-                <h3 class="text-md alter fw-bold mb-4 card-head">Holistic Approach</h3>
-                <p>By addressing both personal and professional areas of your life, our holistic approach ensures that you experience comprehensive growth.</p>
-              </div>
-            </div>
-
-          </div>
-          <div class="text-center">
-            <a class="theme-btn" href="#" title="Register Now @99 Only">Register Now @99 Only</a>
-          </div>
+      <div class="col-lg-6 bg-yellow position-relative" data-aos="fade-left" data-aos-duration="1000">
+        <div class="wrapper d-flex flex-column gap-3" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="500">
+          <h1 class="head-md alter">Transform Your Life with Personalized <span class="text-blue">One-on-One</span> Coaching</h1>
+          <p class="head-sm fw-semibold">Get tailored support to achieve your personal and professional goals.</p>
+          <form action="#" class="form-wrapper">
+            <input type="text" name="full_name" class="custom-input" placeholder="Enter Full Name">
+            <input type="email" class="custom-input mt-3" placeholder="name@example.com">
+            <button type="submit" class="theme-btn mt-3 d-block">ENROLL NOW!</button>
+          </form>
+          <p class="fw-light">*Our individual coaching sessions are designed to address your unique challenges and goals, offering personalized guidance and support.</p>
         </div>
-      </section>
+        <!-- scroll btn -->
+        <a class="scroll-btn" title="Scroll down" href="#scrollTraget">
+          <img src="images/scrollbtn.svg" alt="Scroll Button">
+        </a>
+      </div>
+    </div>
+    </section>
+    <!-- Banner section end -->
 
-      <section class="sec-p-lg bg-light-cream">
-        <div class="md-container text-center" data-aos="fade-up" data-aos-duration="1000">
-          <h2 class="head-md fw-bold mb-5">Real Stories of Transformation and Success</h2>
-          <div class="whatsapp-slider">
-
-            <div class="slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
-              <div class="p-2">
-                <img class="imgFix" src="./images/whatsapp_slide/image 62.png" width="233" height="414" alt="Whatsapp chat">
-              </div>
-            </div>
-
-            <div class="slide" data-aos="flip-right" data-aos-duration="500" data-aos-delay="200">
-              <div class="p-2">
-                <img class="imgFix" src="./images/whatsapp_slide/image-1.png" width="233" height="414" alt="Whatsapp chat">
-              </div>
-            </div>
-
-            <div class="slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
-              <div class="p-2">
-                <img class="imgFix" src="./images/whatsapp_slide/image-2.png" width="233" height="414" alt="Whatsapp chat">
-              </div>
-            </div>
-
-            <div class="slide" data-aos="flip-right" data-aos-duration="500" data-aos-delay="400">
-              <div class="p-2">
-                <img class="imgFix" src="./images/whatsapp_slide/image.png" width="233" height="414" alt="Whatsapp chat">
-              </div>
-            </div>
-
-            <div class="slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="500">
-              <div class="p-2">
-                <img class="imgFix" src="./images/whatsapp_slide/image.png" width="233" height="414" alt="Whatsapp chat">
-              </div>
-            </div>
-
-          </div>
-          <div class="d-flex justify-content-center gap-3 mt-2">
-            <button class="circle-border-btn" type="button" id="Whatsapp-prev" title="Previous"><i class="fa-solid fa-arrow-left"></i></button>
-            <button class="circle-border-btn" type="button" id="Whatsapp-next"  title="Next"><i class="fa-solid fa-arrow-right"></i></button>
-          </div>
-        </div>
-      </section>
-
-      <section class="sec-p-md">
-        <div class="row align-items-center">
-
-          <div class="col-md-3">
-            <div class="img-wrapper currency-img h-100">
-              <img class="img-fluid" src="./images/currency3d.png" alt="">
+    <!-- Cards section start -->
+    <section class="sec-p-lg" id="scrollTraget">
+      <div class="lg-container" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500">
+        <div class="head-md fw-bold">Exclusive Benefits of Personalized Coaching</div>
+        <div class="row gy-3 mb-5 mt-3">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="flip-left">
+            <div class="content bg-blue-alpha">
+              <h3 class="text-md alter fw-bold mb-4 card-head">Customized Strategies</h3>
+              <p>This personalized support allows for deep, transformative conversations that can address root issues and inspire lasting change.</p>
             </div>
           </div>
 
-          <div class="col-md-6">
-            <div class="text-center mb-5">
-              <h2 class="text-lg fw-semibold">Total Value : <span class="text-linethrough red">$7,486/</span></h2>
-              <div class="border-dash-blue my-3 fw-semibold"><p class="text-md">Today's Price : <span class="text-blue">$99/-</span></p></div>
-              <p class="text-md fw-semibold">REGISTER in NEXT <span class="text-blue">20:00 MIN</span></p>
-            </div>
-            <div class="d-flex gap-4 justify-content-center flex-wrap my-5">
-              <div class="timer text-blue text-center bg-blue-alpha">
-                  <span id="minutesDisplay1" class="text-4xl">00</span>
-                  <p class="text-md">Minutes</p>
-              </div>
-              <div class="timer text-blue text-center bg-blue-alpha">
-                  <span id="secondsDisplay1" class="text-4xl">00</span>
-                  <p class="text-md">Seconds</p>
-              </div>
-            </div>
-            <p class="head-sm text-center">Unlock Bonus worth <span class="text-blue text-lg fw-semibold d-block">$2,000</span></p>
-            <div class="text-center mt-4">
-              <a class="theme-btn" href="#" title="Register Now @99 Only">Register Now @99 Only</a>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in" >
+            <div class="content bg-blue-alpha">
+              <h3 class="text-md alter fw-bold mb-4 card-head">One-on-One Support</h3>
+              <p>Whether you prefer morning, afternoon, or evening sessions, we’ll work with you to ensure that your coaching fits seamlessly into your life.</p>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div class="img-wrapper currency-img hand-img h-100">
-              <img class="img-fluid" src="./images/handcurrency.png" alt="">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in-up">
+            <div class="content bg-blue-alpha">
+              <h3 class="text-md alter fw-bold mb-4 card-head">Flexible Scheduling</h3>
+              <p>Each session is tailored to your unique needs, whether you're aiming to enhance your career, improve relationships, or achieve personal growth.</p>
             </div>
           </div>
 
-        </div>
-      </section>
-
-      <section class="sec-p-md bg-light-cream">
-        <h2 class="text-center head-md">Featured in</h2>
-        <!-- Logo slider -->
-        <div class="logo-container mx-auto my-5">           
-          <div class="logo-slider">
-            <div class="logoslide">
-              <div class="c-logo">
-                <img src="./images/company_logo/Plogo.png" alt="Plogo" width="225" height="225">
-              </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="flip-right">
+            <div class="content bg-blue-alpha">
+              <h3 class="text-md alter fw-bold mb-4 card-head">Holistic Approach</h3>
+              <p>By addressing both personal and professional areas of your life, our holistic approach ensures that you experience comprehensive growth.</p>
             </div>
-            <div class="logoslide">
-              <div class="c-logo">
-                <img src="./images/company_logo/logoipsum.png" width="300" height="150" alt="Logoipsum">
-              </div>
-            </div>
-            <div class="logoslide">
-              <div class="c-logo">
-                <img src="./images/company_logo/circle.png" width="425" height="118" alt="Circle">
-              </div>
-            </div>
-            <div class="logoslide">
-              <div class="c-logo">
-                <img src="./images/company_logo/Plogo.png" alt="Plogo" width="225" height="225">
-              </div>
-            </div>
-            <div class="logoslide">
-              <div class="c-logo">
-                <img src="./images/company_logo/Factory.png" width="333" height="151" alt="Factory">
-              </div>
-            </div>
-            <div class="logoslide">
-              <div class="c-logo">
-                <img src="./images/company_logo/amara.png" width="438" height="115" alt="Amara">
-              </div>
-            </div>
-
           </div>
+
         </div>
         <div class="text-center">
-          <a class="theme-btn" href="#" title="Join NOW!">Join NOW!</a>
+          <a class="theme-btn" href="#" title="Register Now @99 Only">Register Now @99 Only</a>
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- Cards section end -->
 
-      <!-- Gain section -->
-       <section class="sec-p-lg pb-0">
-        <div class="lg-container">
-          <h2 class="text-center head-md mb-5">What will you gain from your one-on-one coaching sessions?</h2>
-          <div class="row">
-            <div class="col-md-5 order-2 order-md-1 position-relative">
-              <div class="img-wrapper bg-shadow alter">
-                <img class="banner-fix" src="./images/men_in_black.png" alt="Men in Black">
-              </div>
-            </div>
-            <div class="col-md-7 order-1 order-md-2">
-              <div class="list-wrapper shadow bg-light">
-                <ul class="list">
-                  <li><i class="fa-solid fa-circle-check"></i> <p>7 personalized strategies from successful entrepreneurs that you can apply to build a stable and scalable business through this.</p></li>
-                  <li><i class="fa-solid fa-circle-check"></i> <p>Three essential ingredients to focus on for building a business that thrives independently.</p></li>
-                  <li><i class="fa-solid fa-circle-check"></i> <p>How to build your front-line leaders: Discover the step-by-step process for developing your second line of leaders, ready for immediate implementation.</p></li>
-                  <li><i class="fa-solid fa-circle-check"></i> <p>Guaranteed: More profit, more freedom, and more scale for your business.</p></li>
-                  <li><i class="fa-solid fa-circle-check"></i> <p>How to Retain Employees: Strategies and systems to create an environment that encourages long-term commitment, allowing you to focus on strategic business growth.</p></li>
-                </ul>
-              </div>
+    <!-- whatsapp slider section start -->
+    <section class="sec-p-lg bg-light-cream">
+      <div class="md-container text-center" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="head-md fw-bold mb-5">Real Stories of Transformation and Success</h2>
+        <div class="whatsapp-slider">
+
+          <div class="slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
+            <div class="p-2">
+              <img class="imgFix" src="images/image-62.png" width="233" height="414" alt="Whatsapp chat">
             </div>
           </div>
+
+          <div class="slide" data-aos="flip-right" data-aos-duration="500" data-aos-delay="200">
+            <div class="p-2">
+              <img class="imgFix" src="images/image-1.png" width="233" height="414" alt="Whatsapp chat">
+            </div>
+          </div>
+
+          <div class="slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
+            <div class="p-2">
+              <img class="imgFix" src="images/image-2.png" width="233" height="414" alt="Whatsapp chat">
+            </div>
+          </div>
+
+          <div class="slide" data-aos="flip-right" data-aos-duration="500" data-aos-delay="400">
+            <div class="p-2">
+              <img class="imgFix" src="images/image.png" width="233" height="414" alt="Whatsapp chat">
+            </div>
+          </div>
+
+          <div class="slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="500">
+            <div class="p-2">
+              <img class="imgFix" src="images/image.png" width="233" height="414" alt="Whatsapp chat">
+            </div>
+          </div>
+
         </div>
-       </section>
+        <div class="d-flex justify-content-center gap-3 mt-2">
+          <button class="circle-border-btn" type="button" id="Whatsapp-prev" title="Previous"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="circle-border-btn" type="button" id="Whatsapp-next"  title="Next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+    <!-- whatsapp slider section end -->
 
-       <section class="sec-p-lg bg-pattern">
-        <div class="md-container" data-aos="fade-up">
-          <h2 class="head-md mb-5 text-center">What clients are saying?</h2>
-          <div class="row g-4">
-            <div class="col-sm-6" data-aos="zoom-in-down" data-aos-duration="600">
-              <div class="content-sm shadow">
-                <div class="user d-flex align-items-center justify-content-between">
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="avtar">
-                      <span>SH</span>
-                    </div>
-                    <div>
-                      <p class="text-xs fw-bold">Surekha Nair</p>
-                      <p class="text-xs alter">1 review<span class="mx-2"><i class="fa-solid fa-location-dot"></i> IN</span></p>
-                    </div>
-                  </div>
+    <!-- Timer section start -->
+    <section class="sec-p-md">
+      <div class="row align-items-center">
 
-                  <div class="ranks">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center justify-content-between my-2">
-                  <h3 class="text-xs fw-bold">Absolutely Amazing</h3>
-                  <span class="text-xs alter">Feb 06, 2024</span>
-                </div>
-                <p class="text-xs alter text-theme-dark fw-normal">If after attending the workshop, you still don’t find enough value for some reason, I take complete responsibility and ownership of that and hence, I promise to give a complete refund of the workshop amount of Rs 99. </p>
-              </div>
-            </div>
-
-            <div class="col-sm-6" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="100">
-              <div class="content-sm shadow">
-                <div class="user d-flex align-items-center justify-content-between">
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="avtar">
-                      <span>SH</span>
-                    </div>
-                    <div>
-                      <p class="text-xs fw-bold">Surekha Nair</p>
-                      <p class="text-xs alter">1 review<span class="mx-2"><i class="fa-solid fa-location-dot"></i> IN</span></p>
-                    </div>
-                  </div>
-
-                  <div class="ranks">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center justify-content-between my-2">
-                  <h3 class="text-xs fw-bold">Absolutely Amazing</h3>
-                  <span class="text-xs alter">Feb 06, 2024</span>
-                </div>
-                <p class="text-xs alter text-theme-dark fw-normal">If after attending the workshop, you still don’t find enough value for some reason, I take complete responsibility and ownership of that and hence, I promise to give a complete refund of the workshop amount of Rs 99. </p>
-              </div>
-            </div>
-
-            <div class="col-sm-6" data-aos="zoom-in-left" data-aos-duration="600" data-aos-delay="150">
-              <div class="content-sm shadow">
-                <div class="user d-flex align-items-center justify-content-between">
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="avtar">
-                      <span>SH</span>
-                    </div>
-                    <div>
-                      <p class="text-xs fw-bold">Surekha Nair</p>
-                      <p class="text-xs alter">1 review<span class="mx-2"><i class="fa-solid fa-location-dot"></i> IN</span></p>
-                    </div>
-                  </div>
-
-                  <div class="ranks">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center justify-content-between my-2">
-                  <h3 class="text-xs fw-bold">Absolutely Amazing</h3>
-                  <span class="text-xs alter">Feb 06, 2024</span>
-                </div>
-                <p class="text-xs alter text-theme-dark fw-normal">If after attending the workshop, you still don’t find enough value for some reason, I take complete responsibility and ownership of that and hence, I promise to give a complete refund of the workshop amount of Rs 99. </p>
-              </div>
-            </div>
-
-            <div class="col-sm-6" data-aos="zoom-in-right" data-aos-duration="600" data-aos-delay="200">
-              <div class="content-sm shadow">
-                <div class="user d-flex align-items-center justify-content-between">
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="avtar">
-                      <span>SH</span>
-                    </div>
-                    <div>
-                      <p class="text-xs fw-bold">Surekha Nair</p>
-                      <p class="text-xs alter">1 review<span class="mx-2"><i class="fa-solid fa-location-dot"></i> IN</span></p>
-                    </div>
-                  </div>
-
-                  <div class="ranks">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center justify-content-between my-2">
-                  <h3 class="text-xs fw-bold">Absolutely Amazing</h3>
-                  <span class="text-xs alter">Feb 06, 2024</span>
-                </div>
-                <p class="text-xs alter text-theme-dark fw-normal">If after attending the workshop, you still don’t find enough value for some reason, I take complete responsibility and ownership of that and hence, I promise to give a complete refund of the workshop amount of Rs 99. </p>
-              </div>
-            </div>
-
+        <div class="col-md-3">
+          <div class="img-wrapper currency-img h-100">
+            <img class="img-fluid" src="images/currency3d.png" alt="currency3d">
           </div>
         </div>
 
-       </section>
-
-       <!-- Video section -->
-       <section class="sec-p-lg">
-        <div class="lg-container" data-aos="fade-up">
-          <h2 class="head-md text-center fw-bold mb-4">Watch our previous sessions</h2>
-          <div class="row video-slider">
-
-            <div class="col-lg-3 video-slide" data-aos="flip-right" data-aos-duration="500" data-aos-delay="100">
-              <div class="video-wrapper position-relative">
-                <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/096a/b084/23c0a457f4f336f171199310f453d374?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D7bSADyThK30k5sHr~P29QhL58BA4brdHSM00dx~qZq90FAHUEv~Xo~TXYgSjhVyq7h0uoNrBKbiNXRfOQBsoyMtCwRZrTHCPCKZBa1BorqxdH0GeFyjWhzECehBZD5xPUdyWWSz8SL2Q7V0TLXvFO1THKA9a3QOrLwXDP8s5FpM3pLvX~IZN6hmdtgvEfAulHU~I6oVDmxBVafGhjhNlTAO7zDTHRYbkIOBF2rhMb8YTD-38Tgw0ffHeZJMqXVeEaVToy6jAEjvsXtrLzz8moMBkk3TJlDxXTnlHkJ21l14ffvvP1gIOFTSHTm2MFt8vBKXZLDfvVC20MN-bzaYKw__" alt="smile face">
-                <div class="control position-absolute">
-                  <button type="button" title="Play" class="playbtn"><i class="fa-solid fa-play"></i></button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 video-slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="150">
-              <div class="video-wrapper position-relative">
-                <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/096a/b084/23c0a457f4f336f171199310f453d374?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D7bSADyThK30k5sHr~P29QhL58BA4brdHSM00dx~qZq90FAHUEv~Xo~TXYgSjhVyq7h0uoNrBKbiNXRfOQBsoyMtCwRZrTHCPCKZBa1BorqxdH0GeFyjWhzECehBZD5xPUdyWWSz8SL2Q7V0TLXvFO1THKA9a3QOrLwXDP8s5FpM3pLvX~IZN6hmdtgvEfAulHU~I6oVDmxBVafGhjhNlTAO7zDTHRYbkIOBF2rhMb8YTD-38Tgw0ffHeZJMqXVeEaVToy6jAEjvsXtrLzz8moMBkk3TJlDxXTnlHkJ21l14ffvvP1gIOFTSHTm2MFt8vBKXZLDfvVC20MN-bzaYKw__" alt="smile face">
-                <div class="control position-absolute">
-                  <button type="button" title="Play" class="playbtn"><i class="fa-solid fa-play"></i></button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 video-slide" data-aos="flip-right" data-aos-duration="500" data-aos-delay="200">
-              <div class="video-wrapper position-relative">
-                <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/096a/b084/23c0a457f4f336f171199310f453d374?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D7bSADyThK30k5sHr~P29QhL58BA4brdHSM00dx~qZq90FAHUEv~Xo~TXYgSjhVyq7h0uoNrBKbiNXRfOQBsoyMtCwRZrTHCPCKZBa1BorqxdH0GeFyjWhzECehBZD5xPUdyWWSz8SL2Q7V0TLXvFO1THKA9a3QOrLwXDP8s5FpM3pLvX~IZN6hmdtgvEfAulHU~I6oVDmxBVafGhjhNlTAO7zDTHRYbkIOBF2rhMb8YTD-38Tgw0ffHeZJMqXVeEaVToy6jAEjvsXtrLzz8moMBkk3TJlDxXTnlHkJ21l14ffvvP1gIOFTSHTm2MFt8vBKXZLDfvVC20MN-bzaYKw__" alt="smile face">
-                <div class="control position-absolute">
-                  <button type="button" title="Play" class="playbtn"><i class="fa-solid fa-play"></i></button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 video-slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="250">
-              <div class="video-wrapper position-relative">
-                <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/096a/b084/23c0a457f4f336f171199310f453d374?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D7bSADyThK30k5sHr~P29QhL58BA4brdHSM00dx~qZq90FAHUEv~Xo~TXYgSjhVyq7h0uoNrBKbiNXRfOQBsoyMtCwRZrTHCPCKZBa1BorqxdH0GeFyjWhzECehBZD5xPUdyWWSz8SL2Q7V0TLXvFO1THKA9a3QOrLwXDP8s5FpM3pLvX~IZN6hmdtgvEfAulHU~I6oVDmxBVafGhjhNlTAO7zDTHRYbkIOBF2rhMb8YTD-38Tgw0ffHeZJMqXVeEaVToy6jAEjvsXtrLzz8moMBkk3TJlDxXTnlHkJ21l14ffvvP1gIOFTSHTm2MFt8vBKXZLDfvVC20MN-bzaYKw__" alt="smile face">
-                <div class="control position-absolute">
-                  <button type="button" title="Play" class="playbtn"><i class="fa-solid fa-play"></i></button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 video-slide" data-aos="flip-right" data-aos-duration="500" data-aos-delay="300">
-              <div class="video-wrapper position-relative">
-                <img class="imgFix" src="https://s3-alpha-sig.figma.com/img/096a/b084/23c0a457f4f336f171199310f453d374?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D7bSADyThK30k5sHr~P29QhL58BA4brdHSM00dx~qZq90FAHUEv~Xo~TXYgSjhVyq7h0uoNrBKbiNXRfOQBsoyMtCwRZrTHCPCKZBa1BorqxdH0GeFyjWhzECehBZD5xPUdyWWSz8SL2Q7V0TLXvFO1THKA9a3QOrLwXDP8s5FpM3pLvX~IZN6hmdtgvEfAulHU~I6oVDmxBVafGhjhNlTAO7zDTHRYbkIOBF2rhMb8YTD-38Tgw0ffHeZJMqXVeEaVToy6jAEjvsXtrLzz8moMBkk3TJlDxXTnlHkJ21l14ffvvP1gIOFTSHTm2MFt8vBKXZLDfvVC20MN-bzaYKw__" alt="smile face">
-                <div class="control position-absolute">
-                  <button type="button" title="Play" class="playbtn"><i class="fa-solid fa-play"></i></button>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="mt-5 text-center">
-            <a class="theme-btn" href="#" title="BE THE NEXT ONE @ Just 299/-">Register Now @99 Only</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Timeline sec -->
-      <section class="bg-yellow sec-p-lg">
-        <div class="md-container" data-aos="fade-up" data-aos-duration="600">
-          <h2 class="head-md text-center mb-5">How this session will impact?</h2>
-          <div class="timeline position-relative">
-            <div class="progress-bar"></div>
-            <div class="row align-items-center">
-              <div class="col-6">
-                <div class="content-sm bg-light" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
-                  <p>Learn actionable strategies to improve employee satisfaction and reduce turnover.</p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="count" data-aos="fade-in" data-aos-duration="500" data-aos-delay="150">
-                  <span>01</span>
-                </div>
-              </div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-6">
-                <div class="content-sm bg-light" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
-                  <p>Learn actionable strategies to improve employee satisfaction and reduce turnover.</p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="count" data-aos="fade-in" data-aos-duration="500" data-aos-delay="250">
-                  <span>02</span>
-                </div>
-              </div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-6">
-                <div class="content-sm bg-light" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
-                  <p>Learn actionable strategies to improve employee satisfaction and reduce turnover.</p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="count" data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
-                  <span>03</span>
-                </div>
-              </div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-6">
-                <div class="content-sm bg-light" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">
-                  <p>Learn actionable strategies to improve employee satisfaction and reduce turnover.</p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="count" data-aos="fade-in" data-aos-duration="500" data-aos-delay="300">
-                  <span>04</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="text-center">
-            <a class="theme-btn" href="#" title="Register Now @99 Only">Join the Next Session</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Meet Your Coach section -->
-       <section class="sec-p-lg">
-        <div class="md-container" data-aos="fade-up" data-aos-duration="500">
-          <h2 class="head-md text-center fw-bold mb-5">Watch our previous sessions</h2>
-          <div class="row justify-content-between">
-            <div class="col-md-4">
-              <div class="img-container bg-blue-alpha position-relative">
-                <img class="img-fluid" src="./images/men with black small.png" alt="Men with black">
-                <div class="circle-box shadow text-center">
-                  <h3 class="text-md fw-bold text-blue">William Jack</h3>
-                  <span class="text-semi-md fw-bold">Professional Coach</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <!-- <div> -->
-                <p class="paragraph">
-                  <span>Hi,</span>
-                  <span>I’m William.</span>
-                  <span class="mt-2 mb-4">I am on a mission to help women find their identity, become financially free and earn the respect they always deserved.</span>
-                  <span>As a certified Life Coach, Emyth Business Coach and author I’ve trained over 10,000 women each year across corporates, colleges, schools and various forums such as YPO, Rotary, FICCI and so on.</span>
-                </p>
-                <div class="count-wrapper d-flex justify-content-evenly mt-3">
-                  <div class="count-box">
-                    <span class="head-lg fw-bold" data-target="16" data-suffix="">0</span>
-                    <p class="text-semi-md text-semilight">Years of <br> Experience</p>
-                  </div>
-
-                  <div class="count-box">
-                    <span class="head-lg fw-bold" data-target="50" data-suffix="M">0</span>
-                    <p class="text-semi-md text-semilight">Entrepreneurs <br> Reached</p>
-                  </div>
-
-                  <div class="count-box">
-                    <span class="head-lg fw-bold" data-target="50" data-suffix="k">0</span>
-                    <p class="text-semi-md text-semilight">Social <br> media</p>
-                  </div>
-
-                  <div class="count-box">
-                    <span class="head-lg fw-bold" data-target="20" data-suffix="+">0</span>
-                    <p class="text-semi-md text-semilight">In-house <br> Business Coaches</p>
-                  </div>
-                </div>
-              <!-- </div> -->
-            </div>
-          </div>
-          <div class="text-center my-5">
-            <p class="text-md fw-bold">REGISTER in NEXT 20:00 MIN</p>
-            <p class="head-sm fw-bold">to get EXTRA BONUSES <br> worth <span class="text-lg text-red">$100</span></p>
+        <div class="col-md-6">
+          <div class="text-center mb-5">
+            <h2 class="text-lg fw-semibold">Total Value : <span class="text-linethrough red">$7,486/</span></h2>
+            <div class="border-dash-blue my-3 fw-semibold"><p class="text-md">Today's Price : <span class="text-blue">$99/-</span></p></div>
+            <p class="text-md fw-semibold">REGISTER in NEXT <span class="text-blue">20:00 MIN</span></p>
           </div>
           <div class="d-flex gap-4 justify-content-center flex-wrap my-5">
             <div class="timer text-blue text-center bg-blue-alpha">
-                <span id="minutesDisplay" class="text-3xl">00</span>
-                <p>Minutes</p>
+                <span id="minutesDisplay1" class="text-4xl">00</span>
+                <p class="text-md">Minutes</p>
             </div>
             <div class="timer text-blue text-center bg-blue-alpha">
-                <span id="secondsDisplay" class="text-3xl">00</span>
-                <p>Seconds</p>
+                <span id="secondsDisplay1" class="text-4xl">00</span>
+                <p class="text-md">Seconds</p>
             </div>
           </div>
-          <div class="text-center">
+          <p class="head-sm text-center">Unlock Bonus worth <span class="text-blue text-lg fw-semibold d-block">$2,000</span></p>
+          <div class="text-center mt-4">
             <a class="theme-btn" href="#" title="Register Now @99 Only">Register Now @99 Only</a>
           </div>
         </div>
-       </section>
-       <!-- Glimpse of Our Seminars -->
-       <section class="sec-p-md">
-        <div class="md-container" data-aos="fade-up">
-          <h2 class="head-md fw-bold text-center">Glimpse of Our Seminars</h2>
-          <div class="row my-5 g-4">
-            <div class="col-md-6 col-sm-12" data-aos="flip-up" data-aos-duration="500" data-aos-delay="100">
-              <div class="content-wrapper">
-                <img class="imgfix" src="./images/video screen.png" alt="">
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6" data-aos="flip-right" data-aos-duration="500" data-aos-delay="150">
-              <div class="content-wrapper">
-                <img class="imgfix" src="./images/videocall.png" alt="">
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
-              <div class="content-wrapper bg-blue">
-                <span class="head-lg alter fw-bold">200K</span>
-                <p class="text-semi-md">Students have already Joined</p>
-              </div>
-            </div>
 
-            <div class="col-md-3 col-sm-6" data-aos="flip-down" data-aos-duration="500" data-aos-delay="250">
-              <div class="content-wrapper bg-yellow">
-                <span class="head-lg alter fw-bold">50+</span>
-                <p class="text-semi-md">Seminars Happened till date</p>
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6" data-aos="flip-up" data-aos-duration="500" data-aos-delay="200">
-              <div class="content-wrapper">
-                <img class="imgfix" src="./images/videocall.png" alt="">
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6" data-aos="flip-down" data-aos-duration="500" data-aos-delay="250">
-              <div class="content-wrapper bg-blue-alpha">
-                <h3 class="text-semi-md fw-bold">EXCLUSIVE OFFER</h3>
-                <p>Priced at</p>
-                <span class="text-blue head-lg fw-bold">$69</span>
-                <span class="text-xs d-block text-linethrough">$9999</span>
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6" data-aos="flip-up" data-aos-duration="500" data-aos-delay="300">
-              <div class="content-wrapper">
-                <img class="imgfix" src="./images/videocall.png" alt="">
-              </div>
-            </div>
-
+        <div class="col-md-3">
+          <div class="img-wrapper currency-img hand-img h-100">
+            <img class="img-fluid" src="images/handcurrency.png" alt="Currency on hand">
           </div>
         </div>
-       </section>
 
-       <!-- Bonus sections -->
-       <section class="sec-p-md bg-blue">
-        <div class="lg-container" data-aos="fade-up">
-          <h2 class="head-md text-center fw-bold">Here’s other bonuses to avail</h2>
-          <div class="row g-4 my-5">
+      </div>
+    </section>
+    <!-- Timer section end -->
 
-            <div class="col-md-3 col-sm-6" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="100">
-              <div class="content-wrapper text-center bg-light text-dark">
-                <h3 class="text-md fw-bold">3 Hours of <br> Training Worth</h3>
-                <p class="mt-4 text-semilight">Priced at</p>
-                <span class="head-lg fw-bold text-blue">$99</span>
-                <span class="text-semi-md text-linethrough">$9999</span>
-              </div>
+    <!-- Company logo slider section start -->
+    <section class="sec-p-md bg-light-cream">
+      <h2 class="text-center head-md">Featured in</h2>
+      <!-- Logo slider -->
+      <div class="logo-container mx-auto my-5">           
+        <div class="logo-slider">
+          <div class="logoslide">
+            <div class="c-logo">
+              <img src="images/Plogo.png" alt="Plogo" width="225" height="225">
             </div>
-            <div class="col-md-3 col-sm-6" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="150">
-              <div class="content-wrapper text-center bg-light text-dark">
-                <h3 class="text-md fw-bold">3 Bonuses <br> Worth</h3>
-                <p class="mt-4 text-semilight">Priced at</p>
-                <span class="head-lg fw-bold text-blue">$69</span>
-                <span class="text-semi-md text-linethrough">$9999</span>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="200">
-              <div class="content-wrapper text-center bg-light text-dark">
-                <h3 class="text-md fw-bold">Regular <br> Price</h3>
-                <p class="mt-4 text-semilight">Priced at</p>
-                <span class="head-lg fw-bold text-blue">$199</span>
-                <span class="text-semi-md text-linethrough">$9999</span>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="250">
-              <div class="content-wrapper text-center bg-light text-dark">
-                <h3 class="text-md fw-bold">Today’s <br> Price</h3>
-                <p class="mt-4 text-semilight">Priced at</p>
-                <span class="head-lg fw-bold text-blue">$99</span>
-                <span class="text-semi-md text-linethrough">$9999</span>
-              </div>
-            </div>
-      
           </div>
-          <div class="text-center">
-            <a class="theme-btn bg-yellow text-dark" href="#" title="Register Now @99 Only">Register Now @99 Only</a>
+          <div class="logoslide">
+            <div class="c-logo">
+              <img src="images/logoipsum.png" width="300" height="150" alt="Logoipsum">
+            </div>
+          </div>
+          <div class="logoslide">
+            <div class="c-logo">
+              <img src="images/circle.png" width="425" height="118" alt="Circle">
+            </div>
+          </div>
+          <div class="logoslide">
+            <div class="c-logo">
+              <img src="images/Plogo.png" alt="Plogo" width="225" height="225">
+            </div>
+          </div>
+          <div class="logoslide">
+            <div class="c-logo">
+              <img src="images/Factory.png" width="333" height="151" alt="Factory">
+            </div>
+          </div>
+          <div class="logoslide">
+            <div class="c-logo">
+              <img src="images/amara.png" width="438" height="115" alt="Amara">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="text-center">
+        <a class="theme-btn" href="#" title="Join NOW!">Join NOW!</a>
+      </div>
+    </section>
+    <!-- Company logo slider section end -->
+
+    <!-- Banner and list feature section start -->
+    <section class="sec-p-lg pb-0">
+    <div class="lg-container">
+      <h2 class="text-center head-md mb-5">What will you gain from your one-on-one coaching sessions?</h2>
+      <div class="row">
+        <div class="col-md-5 order-2 order-md-1 position-relative">
+          <div class="img-wrapper bg-shadow alter">
+            <img class="banner-fix" src="images/men-in-black.png" alt="Men in Black" width="500" height="542">
           </div>
         </div>
-       </section>
+        <div class="col-md-7 order-1 order-md-2">
+          <div class="list-wrapper shadow bg-light">
+            <ul class="list">
+              <li><i class="fa-solid fa-circle-check"></i> <p>7 personalized strategies from successful entrepreneurs that you can apply to build a stable and scalable business through this.</p></li>
+              <li><i class="fa-solid fa-circle-check"></i> <p>Three essential ingredients to focus on for building a business that thrives independently.</p></li>
+              <li><i class="fa-solid fa-circle-check"></i> <p>How to build your front-line leaders: Discover the step-by-step process for developing your second line of leaders, ready for immediate implementation.</p></li>
+              <li><i class="fa-solid fa-circle-check"></i> <p>Guaranteed: More profit, more freedom, and more scale for your business.</p></li>
+              <li><i class="fa-solid fa-circle-check"></i> <p>How to Retain Employees: Strategies and systems to create an environment that encourages long-term commitment, allowing you to focus on strategic business growth.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Banner and list feature section end -->
 
-      <!-- Stemp sec -->
-       <section class="sec-p-md bg-pattern-blue">
-        <div class="md-container" data-aos="fade-up" data-aos-duration="500">
-          <h2 class="head-md fw-bold text-center mb-4">100% Success Guaranteed</h2>
-          <div class="row align-items-center justify-content-center">
-            <div class="col-md-4">
-              <div class="img-container guaranteed" data-aos="zoom-out" data-aos-delay="100">
-                <img class="img-fluid" src="./images/stemp.png" alt="Guaranteed Stemp">
+    <!-- Client testimonial card section start -->
+    <section class="sec-p-lg bg-pattern">
+    <div class="md-container" data-aos="fade-up">
+      <h2 class="head-md mb-5 text-center">What clients are saying?</h2>
+      <div class="row g-4">
+        <div class="col-sm-6" data-aos="zoom-in-down" data-aos-duration="600">
+          <div class="content-sm shadow">
+            <div class="user d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+                <div class="avtar">
+                  <span>SH</span>
+                </div>
+                <div>
+                  <p class="text-xs fw-bold">Surekha Nair</p>
+                  <p class="text-xs alter">1 review<span class="mx-2"><i class="fa-solid fa-location-dot"></i> IN</span></p>
+                </div>
+              </div>
+
+              <div class="ranks">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
             </div>
-            <div class="col-md-7">
-              <div class="wrapper">
-                <p class="text-semi-md fw-light">Dear Working Professional,I am here to help you grow in your career, and I am here to share extremely valuable secrets and insights which have impacted more than 1,50,000 people overall, and I personally ensure everyone who comes and attends my workshops gets more than they expected.</p>
-                <p class="my-4 text-semi-md fw-light">If after attending the workshop, you still don’t find enough value for some reason, I take complete responsibility and ownership of that and hence, I promise to give a complete refund of the workshop amount of Rs 99. </p>
+            <div class="d-flex align-items-center justify-content-between my-2">
+              <h3 class="text-xs fw-bold">Absolutely Amazing</h3>
+              <span class="text-xs alter">Feb 06, 2024</span>
+            </div>
+            <p class="text-xs alter text-theme-dark fw-normal">If after attending the workshop, you still don’t find enough value for some reason, I take complete responsibility and ownership of that and hence, I promise to give a complete refund of the workshop amount of Rs 99. </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="100">
+          <div class="content-sm shadow">
+            <div class="user d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+                <div class="avtar">
+                  <span>SH</span>
+                </div>
+                <div>
+                  <p class="text-xs fw-bold">Surekha Nair</p>
+                  <p class="text-xs alter">1 review<span class="mx-2"><i class="fa-solid fa-location-dot"></i> IN</span></p>
+                </div>
+              </div>
+
+              <div class="ranks">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between my-2">
+              <h3 class="text-xs fw-bold">Absolutely Amazing</h3>
+              <span class="text-xs alter">Feb 06, 2024</span>
+            </div>
+            <p class="text-xs alter text-theme-dark fw-normal">If after attending the workshop, you still don’t find enough value for some reason, I take complete responsibility and ownership of that and hence, I promise to give a complete refund of the workshop amount of Rs 99. </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6" data-aos="zoom-in-left" data-aos-duration="600" data-aos-delay="150">
+          <div class="content-sm shadow">
+            <div class="user d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+                <div class="avtar">
+                  <span>SH</span>
+                </div>
+                <div>
+                  <p class="text-xs fw-bold">Surekha Nair</p>
+                  <p class="text-xs alter">1 review<span class="mx-2"><i class="fa-solid fa-location-dot"></i> IN</span></p>
+                </div>
+              </div>
+
+              <div class="ranks">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between my-2">
+              <h3 class="text-xs fw-bold">Absolutely Amazing</h3>
+              <span class="text-xs alter">Feb 06, 2024</span>
+            </div>
+            <p class="text-xs alter text-theme-dark fw-normal">If after attending the workshop, you still don’t find enough value for some reason, I take complete responsibility and ownership of that and hence, I promise to give a complete refund of the workshop amount of Rs 99. </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6" data-aos="zoom-in-right" data-aos-duration="600" data-aos-delay="200">
+          <div class="content-sm shadow">
+            <div class="user d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+                <div class="avtar">
+                  <span>SH</span>
+                </div>
+                <div>
+                  <p class="text-xs fw-bold">Surekha Nair</p>
+                  <p class="text-xs alter">1 review<span class="mx-2"><i class="fa-solid fa-location-dot"></i> IN</span></p>
+                </div>
+              </div>
+
+              <div class="ranks">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between my-2">
+              <h3 class="text-xs fw-bold">Absolutely Amazing</h3>
+              <span class="text-xs alter">Feb 06, 2024</span>
+            </div>
+            <p class="text-xs alter text-theme-dark fw-normal">If after attending the workshop, you still don’t find enough value for some reason, I take complete responsibility and ownership of that and hence, I promise to give a complete refund of the workshop amount of Rs 99. </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    </section>
+    <!-- Client testimonial card section end -->
+
+    <!-- Video slider section start-->
+    <section class="sec-p-lg">
+      <div class="lg-container" data-aos="fade-up">
+        <h2 class="head-md text-center fw-bold mb-4">Watch our previous sessions</h2>
+        <div class="row video-slider">
+
+          <div class="col-lg-3 video-slide" data-aos="flip-right" data-aos-duration="500" data-aos-delay="100">
+            <div class="video-wrapper position-relative">
+              <img class="imgFix" src="images/men-sitting-on-sofa.png" alt="Men siting on sofa" width="302" height="224">
+              <div class="control position-absolute">
+                <button type="button" title="Play" class="playbtn"><i class="fa-solid fa-play"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 video-slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="150">
+            <div class="video-wrapper position-relative">
+              <img class="imgFix" src="images/girl-with-smile.png" alt="Girl smiling" width="302" height="224">
+              <div class="control position-absolute">
+                <button type="button" title="Play" class="playbtn"><i class="fa-solid fa-play"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 video-slide" data-aos="flip-right" data-aos-duration="500" data-aos-delay="200">
+            <div class="video-wrapper position-relative">
+              <img class="imgFix" src="images/Jumpshot-CEO.png" alt="CEO" width="302" height="224">
+              <div class="control position-absolute">
+                <button type="button" title="Play" class="playbtn"><i class="fa-solid fa-play"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 video-slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="250">
+            <div class="video-wrapper position-relative">
+              <img class="imgFix" src="images/men-say-hii.png" alt="Men say hii!" width="302" height="224">
+              <div class="control position-absolute">
+                <button type="button" title="Play" class="playbtn"><i class="fa-solid fa-play"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 video-slide" data-aos="flip-left" data-aos-duration="500" data-aos-delay="150">
+            <div class="video-wrapper position-relative">
+              <img class="imgFix" src="images/girl-with-smile.png" alt="Girl smile" width="302" height="224">
+              <div class="control position-absolute">
+                <button type="button" title="Play" class="playbtn"><i class="fa-solid fa-play"></i></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="mt-5 text-center">
+          <a class="theme-btn" href="#" title="BE THE NEXT ONE @ Just 299/-">Register Now @99 Only</a>
+        </div>
+      </div>
+    </section>
+    <!-- Video slider section end-->
+
+    <!-- Timeline section start -->
+    <section class="bg-yellow sec-p-lg">
+      <div class="md-container" data-aos="fade-up" data-aos-duration="600">
+        <h2 class="head-md text-center mb-5">How this session will impact?</h2>
+        <div class="timeline position-relative">
+          <div class="progress-bar"></div>
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="content-sm bg-light" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
+                <p>Learn actionable strategies to improve employee satisfaction and reduce turnover.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="count" data-aos="fade-in" data-aos-duration="500" data-aos-delay="150">
+                <span>01</span>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="content-sm bg-light" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+                <p>Learn actionable strategies to improve employee satisfaction and reduce turnover.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="count" data-aos="fade-in" data-aos-duration="500" data-aos-delay="250">
+                <span>02</span>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="content-sm bg-light" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
+                <p>Learn actionable strategies to improve employee satisfaction and reduce turnover.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="count" data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
+                <span>03</span>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="content-sm bg-light" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">
+                <p>Learn actionable strategies to improve employee satisfaction and reduce turnover.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="count" data-aos="fade-in" data-aos-duration="500" data-aos-delay="300">
+                <span>04</span>
               </div>
             </div>
           </div>
         </div>
-       </section>
+        <div class="text-center">
+          <a class="theme-btn" href="#" title="Register Now @99 Only">Join the Next Session</a>
+        </div>
+      </div>
+    </section>
+    <!-- Timeline section end -->
 
-       <section class="sec-p-lg">
-         <div class="lg-container">
-          <ul class="nav nav-pills justify-content-center gap-3 mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="theme-btn alter" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Hubspot</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="theme-btn alter" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Calendly</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="theme-btn alter" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Zoom Meeting</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="theme-btn alter" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Zoho Meeting</button>
-            </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <!-- Admin Intro section start-->
+    <section class="sec-p-lg">
+    <div class="md-container" data-aos="fade-up" data-aos-duration="500">
+      <h2 class="head-md text-center fw-bold mb-5">Watch our previous sessions</h2>
+      <div class="row justify-content-between">
+        <div class="col-md-4">
+          <div class="img-container bg-blue-alpha position-relative">
+            <img class="img-fluid" src="images/men-with-black-small.png" alt="Men with black Outfit" width="341" height="359">
+            <div class="circle-box shadow text-center">
+              <h3 class="text-md fw-bold text-blue">William Jack</h3>
+              <span class="text-semi-md fw-bold">Professional Coach</span>
             </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-              <div class="calendly-inline-widget" id="my-calendly-embed" style="min-width:320px;height:700px; background-color: #fff;"></div>
-            </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-          </div>
-         </div>
-       </section>
-
-       <!-- FAQ -->
-       <section class="sec-p-md">
-        <div class="md-container">
-          <h2 class="head-md text-center fw-bold mb-4">Frequently Asked Questions</h2>
-          <div class="acc-container">
-            <!-- Absolute -->
-             <div class="question-wrap">
-              <img src="./images/questions.png" alt="Question Mark">
-             </div>
-             <div class="question-wrap">
-              <img src="./images/questions.png" alt="Question Mark">
-             </div>
-            <div class="acc" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-              <div class="acc-head">
-                <h3 class="head-sm">How will I get the link to attend the program?</h3>
-              </div>
-              <div class="acc-content">
-                <p class="text-semi-md fw-light">Your life, your health, your achievements, and your skills are influenced by the sheer power of your mind. Once you learn how to control and train your mind, you can achieve your desired goal in your life.</p>
-              </div>
-            </div>
-            <div class="acc" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-              <div class="acc-head">
-                <h3 class="head-sm">When is the workshop?</h3>
-              </div>
-              <div class="acc-content">
-                <p class="text-semi-md fw-light">Life coaching is a collaborative process where a coach helps you identify your goals, overcome obstacles, and create a plan to achieve personal and professional growth. Through one-on-one sessions, empowering you to gain clarity and confidence in your decisions.</p>
-              </div>
-            </div>
-            <div class="acc" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-              <div class="acc-head">
-                <h3 class="head-sm">How will I get the link to attend the program?</h3>
-              </div>
-              <div class="acc-content">
-                <p class="text-semi-md fw-light">Life coaching is a collaborative process where a coach helps you identify your goals, overcome obstacles, and create a plan to achieve personal and professional growth. Through one-on-one sessions, empowering you to gain clarity and confidence in your decisions.</p>
-              </div>
-            </div>
-            <div class="acc" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-              <div class="acc-head">
-                <h3 class="head-sm">I made the payment but didn’t receive any email</h3>
-              </div>
-              <div class="acc-content">
-                <p class="text-semi-md fw-light">Life coaching is a collaborative process where a coach helps you identify your goals, overcome obstacles, and create a plan to achieve personal and professional growth. Through one-on-one sessions, empowering you to gain clarity and confidence in your decisions.</p>
-              </div>
-            </div>
-
-          </div>
-          <div class="main-logo text-center">
-            <img src="./images/lifecoach.svg" alt="Lifecoach">
           </div>
         </div>
-       </section>
+        <div class="col-md-8">
+          <!-- <div> -->
+            <p class="paragraph">
+              <span>Hi,</span>
+              <span>I’m William.</span>
+              <span class="mt-2 mb-4">I am on a mission to help women find their identity, become financially free and earn the respect they always deserved.</span>
+              <span>As a certified Life Coach, Emyth Business Coach and author I’ve trained over 10,000 women each year across corporates, colleges, schools and various forums such as YPO, Rotary, FICCI and so on.</span>
+            </p>
+            <div class="count-wrapper d-flex justify-content-evenly mt-3">
+              <div class="count-box">
+                <span class="head-lg fw-bold" data-target="16" data-suffix="">0</span>
+                <p class="text-semi-md text-semilight">Years of <br> Experience</p>
+              </div>
 
-       <footer class="bg-light shadow p-3">
-        <div class="md-container d-flex align-items-center justify-content-between">
-          <div>
-            <p><span class="head-lg text-blue fw-bold">$99</span> <span class="text-md text-linethrough">$999</span> </p>
-            <span class="fw-light text-semilight">Offer Expires in : 11:20 min</span>  
-          </div>
-          <div class="text-center">
-            <a class="theme-btn" href="#" title="Register Now @99 Only">Register Now @99 Only</a>
-          </div>
-         </div>
-       </footer>
+              <div class="count-box">
+                <span class="head-lg fw-bold" data-target="50" data-suffix="M">0</span>
+                <p class="text-semi-md text-semilight">Entrepreneurs <br> Reached</p>
+              </div>
 
+              <div class="count-box">
+                <span class="head-lg fw-bold" data-target="50" data-suffix="k">0</span>
+                <p class="text-semi-md text-semilight">Social <br> media</p>
+              </div>
+
+              <div class="count-box">
+                <span class="head-lg fw-bold" data-target="20" data-suffix="+">0</span>
+                <p class="text-semi-md text-semilight">In-house <br> Business Coaches</p>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+      <div class="text-center my-5">
+        <p class="text-md fw-bold">REGISTER in NEXT 20:00 MIN</p>
+        <p class="head-sm fw-bold">to get EXTRA BONUSES <br> worth <span class="text-lg text-red">$100</span></p>
+      </div>
+      <div class="d-flex gap-4 justify-content-center flex-wrap my-5">
+        <div class="timer text-blue text-center bg-blue-alpha">
+            <span id="minutesDisplay" class="text-3xl">00</span>
+            <p>Minutes</p>
+        </div>
+        <div class="timer text-blue text-center bg-blue-alpha">
+            <span id="secondsDisplay" class="text-3xl">00</span>
+            <p>Seconds</p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a class="theme-btn" href="#" title="Register Now @99 Only">Register Now @99 Only</a>
+      </div>
+    </div>
+    </section>
+    <!-- Admin Intro section end-->
+
+    <!-- Seminar gallery section start -->
+    <section class="sec-p-md">
+    <div class="md-container" data-aos="fade-up">
+      <h2 class="head-md fw-bold text-center">Glimpse of Our Seminars</h2>
+      <div class="row my-5 g-4">
+        <div class="col-md-6 col-sm-12" data-aos="flip-up" data-aos-duration="500" data-aos-delay="100">
+          <div class="content-wrapper">
+            <img class="imgfix" src="images/video-screen.png" alt="Video call screen" width="489" height="224">
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6" data-aos="flip-right" data-aos-duration="500" data-aos-delay="150">
+          <div class="content-wrapper">
+            <img class="imgfix" src="images/videocall.png" alt="Girl on video call" width="233" height="224">
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
+          <div class="content-wrapper bg-blue">
+            <span class="head-lg alter fw-bold">200K</span>
+            <p class="text-semi-md">Students have already Joined</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6" data-aos="flip-down" data-aos-duration="500" data-aos-delay="250">
+          <div class="content-wrapper bg-yellow">
+            <span class="head-lg alter fw-bold">50+</span>
+            <p class="text-semi-md">Seminars Happened till date</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6" data-aos="flip-up" data-aos-duration="500" data-aos-delay="200">
+          <div class="content-wrapper">
+            <img class="imgfix" src="images/videocall.png" alt="Video call screen" width="233" height="224">
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6" data-aos="flip-down" data-aos-duration="500" data-aos-delay="250">
+          <div class="content-wrapper bg-blue-alpha">
+            <h3 class="text-semi-md fw-bold">EXCLUSIVE OFFER</h3>
+            <p>Priced at</p>
+            <span class="text-blue head-lg fw-bold">$69</span>
+            <span class="text-xs d-block text-linethrough">$9999</span>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6" data-aos="flip-up" data-aos-duration="500" data-aos-delay="300">
+          <div class="content-wrapper">
+            <img class="imgfix" src="images/videocall.png" alt="Girl on laptop" width="233" height="224">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </section>
+    <!-- Seminar gallery section end -->
+
+    <!-- Bonus sections start-->
+    <section class="sec-p-md bg-blue">
+    <div class="lg-container" data-aos="fade-up">
+      <h2 class="head-md text-center fw-bold">Here’s other bonuses to avail</h2>
+      <div class="row g-4 my-5">
+
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="100">
+          <div class="content-wrapper text-center bg-light text-dark">
+            <h3 class="text-md fw-bold">3 Hours of <br> Training Worth</h3>
+            <p class="mt-4 text-semilight">Priced at</p>
+            <span class="head-lg fw-bold text-blue">$99</span>
+            <span class="text-semi-md text-linethrough">$9999</span>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="150">
+          <div class="content-wrapper text-center bg-light text-dark">
+            <h3 class="text-md fw-bold">3 Bonuses <br> Worth</h3>
+            <p class="mt-4 text-semilight">Priced at</p>
+            <span class="head-lg fw-bold text-blue">$69</span>
+            <span class="text-semi-md text-linethrough">$9999</span>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="200">
+          <div class="content-wrapper text-center bg-light text-dark">
+            <h3 class="text-md fw-bold">Regular <br> Price</h3>
+            <p class="mt-4 text-semilight">Priced at</p>
+            <span class="head-lg fw-bold text-blue">$199</span>
+            <span class="text-semi-md text-linethrough">$9999</span>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="250">
+          <div class="content-wrapper text-center bg-light text-dark">
+            <h3 class="text-md fw-bold">Today’s <br> Price</h3>
+            <p class="mt-4 text-semilight">Priced at</p>
+            <span class="head-lg fw-bold text-blue">$99</span>
+            <span class="text-semi-md text-linethrough">$9999</span>
+          </div>
+        </div>
+  
+      </div>
+      <div class="text-center">
+        <a class="theme-btn bg-yellow text-dark" href="#" title="Register Now @99 Only">Register Now @99 Only</a>
+      </div>
+    </div>
+    </section>
+    <!-- Bonus sections end-->
+
+    <!--Guarantee Stemp section start -->
+    <section class="sec-p-md bg-pattern-blue">
+    <div class="md-container" data-aos="fade-up" data-aos-duration="500">
+      <h2 class="head-md fw-bold text-center mb-4">100% Success Guaranteed</h2>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-4">
+          <div class="img-container guaranteed" data-aos="zoom-out" data-aos-delay="100">
+            <img class="img-fluid" src="images/stemp.png" alt="Guaranteed Stemp" width="416" height="377">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="wrapper">
+            <p class="text-semi-md fw-light">Dear Working Professional,I am here to help you grow in your career, and I am here to share extremely valuable secrets and insights which have impacted more than 1,50,000 people overall, and I personally ensure everyone who comes and attends my workshops gets more than they expected.</p>
+            <p class="my-4 text-semi-md fw-light">If after attending the workshop, you still don’t find enough value for some reason, I take complete responsibility and ownership of that and hence, I promise to give a complete refund of the workshop amount of Rs 99. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!--Guarantee Stemp section end -->
+
+    <!-- Schedule meetings section start -->
+    <section class="sec-p-lg">
+      <div class="lg-container">
+        <h2 class="head-md fw-bold text-center mb-4">Book a Meeting</h2>
+        <ul class="nav nav-pills justify-content-center gap-3 mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="theme-btn alter" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Hubspot</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="theme-btn alter" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Calendly</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="theme-btn alter" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Zoom Meeting</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="theme-btn alter" id="pills-contact-tab1" data-bs-toggle="pill" data-bs-target="#pills-contact1" type="button" role="tab" aria-controls="pills-contact1" aria-selected="false">Zoho Meeting</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="calendly-inline-widget" id="my-calendly-embed" style="min-width:320px;height:700px; background-color: #fff;"></div>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+          <div class="tab-pane fade" id="pills-contact1" role="tabpanel" aria-labelledby="pills-contact-tab1">...</div>
+        </div>
+      </div>
+    </section>    
+    <!-- Schedule meetings section end -->
+
+    <!-- FAQ start-->
+    <section class="sec-p-md">
+    <div class="md-container">
+      <h2 class="head-md text-center fw-bold mb-4">Frequently Asked Questions</h2>
+      <div class="acc-container">
+        <!-- Absolute -->
+          <div class="question-wrap">
+          <img src="images/questions.png" alt="Question Mark" width="270" height="261">
+          </div>
+          <div class="question-wrap">
+          <img src="images/questions.png" alt="Question Mark" width="270" height="261">
+          </div>
+        <div class="acc" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+          <div class="acc-head">
+            <h3 class="head-sm">How will I get the link to attend the program?</h3>
+          </div>
+          <div class="acc-content">
+            <p class="text-semi-md fw-light">Your life, your health, your achievements, and your skills are influenced by the sheer power of your mind. Once you learn how to control and train your mind, you can achieve your desired goal in your life.</p>
+          </div>
+        </div>
+        <div class="acc" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+          <div class="acc-head">
+            <h3 class="head-sm">When is the workshop?</h3>
+          </div>
+          <div class="acc-content">
+            <p class="text-semi-md fw-light">Life coaching is a collaborative process where a coach helps you identify your goals, overcome obstacles, and create a plan to achieve personal and professional growth. Through one-on-one sessions, empowering you to gain clarity and confidence in your decisions.</p>
+          </div>
+        </div>
+        <div class="acc" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+          <div class="acc-head">
+            <h3 class="head-sm">How will I get the link to attend the program?</h3>
+          </div>
+          <div class="acc-content">
+            <p class="text-semi-md fw-light">Life coaching is a collaborative process where a coach helps you identify your goals, overcome obstacles, and create a plan to achieve personal and professional growth. Through one-on-one sessions, empowering you to gain clarity and confidence in your decisions.</p>
+          </div>
+        </div>
+        <div class="acc" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+          <div class="acc-head">
+            <h3 class="head-sm">I made the payment but didn’t receive any email</h3>
+          </div>
+          <div class="acc-content">
+            <p class="text-semi-md fw-light">Life coaching is a collaborative process where a coach helps you identify your goals, overcome obstacles, and create a plan to achieve personal and professional growth. Through one-on-one sessions, empowering you to gain clarity and confidence in your decisions.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="main-logo text-center">
+        <img src="images/lifecoach.svg" alt="Lifecoach" width="257" height="43">
+      </div>
+    </div>
+    </section>
+    <!-- FAQ end-->
+
+    <!-- Footer start -->
+    <footer class="bg-light shadow p-3">
+    <div class="md-container d-flex align-items-center justify-content-between">
+      <div>
+        <p><span class="head-lg text-blue fw-bold">$99</span> <span class="text-md text-linethrough">$999</span> </p>
+        <span class="fw-light text-semilight">Offer Expires in : 11:20 min</span>  
+      </div>
+      <div class="text-center">
+        <a class="theme-btn" href="#" title="Register Now @99 Only">Register Now @99 Only</a>
+      </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
   </main>
+  
+  <!-- jQuery script -->
+  <script src="js/plugins/jquery-3.7.1.min.js"></script>
 
-  <!-- Slick slider jquery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <!-- locomotive js -->
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <!-- jQuery UI  -->
+  <script src="js/plugins/jquery-ui.min.js"></script>
 
-  <!-- Main js -->
-   <script src="script.js"></script>
+  <!-- Slick slider jQuery -->
+  <script src="js/plugins/slick.min.js"></script>
+
+  <!-- Locomotive scroll -->
+  <script src="js/plugins/locomotive-scroll.js"></script>
+
+  <!-- AOS Animations -->
+  <script src="js/plugins/aos.js"></script>
+
+  <!-- Calendly badge widget begin -->
+  <script src="js/plugins/calendly-widget.js"></script>
+  
+  <!-- Main script -->
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,24 +1,20 @@
-
-/* Manrope font */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ****************************************Manrope font setup**********************************************88 */
+@font-face { font-family: 'Manrope'; src: url('../fonts/Manrope-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal;}
+@font-face { font-family: 'Manrope'; src: url('../fonts/Manrope-Medium.ttf') format('truetype'); font-weight: 500; font-style: normal;}
+@font-face { font-family: 'Manrope'; src: url('../fonts/Manrope-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal;}
+@font-face { font-family: 'Manrope'; src: url('../fonts/Manrope-Light.ttf') format('truetype'); font-weight: 300; font-style: normal;}
+/* ****************************************Manrope font setup**********************************************88 */
+*{ margin: 0; padding: 0; box-sizing: border-box;}
 html , body{height: 100%; max-width: 100vw; overflow-x: hidden; font-family: "Manrope"; font-optical-sizing: auto; font-size: 16px;  font-weight: 500; font-style: normal; box-sizing: border-box;}
 p,h1,h2,h3,h4,h5,h6,ul{margin-bottom: 0;}
 a{text-decoration: none;}
 .form-control:focus{outline: unset !important; border-color: unset; box-shadow: unset !important;}
-
 /* Use colors */
 :root{
   --theme-color: #F8D849;
   --theme-blue: #3A83F6;
   --blue-alpha: rgba(58, 130, 246, 0.1);
   --light: #FFFFFF;
-
-
 }
 body{background: #ffffff;}
 /* ***************************Common css start************************** */
@@ -29,15 +25,17 @@ body{background: #ffffff;}
 .bg-yellow{background: var(--theme-color) !important;}
 .bg-blue-alpha{background-color: var(--blue-alpha);}
 .bg-light-cream{background-color: #F7F7F7;}
-.bg-pattern{background-image: url('./images/cremy_pattern.svg');}
+.bg-pattern{background-image: url('../images/cremy_pattern.svg');}
 .bg-pattern-blue{position: relative; background-image: url('./images/pattern-blue.png');}
 .bg-pattern-blue::before{position: absolute; content: ""; width: 100%; height: 100%; background-color: #1E4EC61A; top: 0; left: 0; z-index: -1;}
 .bg-light{background-color: var(--light) !important;}
 
-/* *******************Sec padding and margin******************** */
+/* *******************Sec padding and margin start******************** */
 .sec-p-lg{padding: 80px 40px;}
 .sec-p-md{padding: 60px 40px;}
+/* *******************Sec padding and margin end******************** */
 
+/* *************************Typography css start****************************** */
 .text-4xl{font-size: 170px; line-height: 1; font-weight: 800;}
 .text-3xl{font-size: 130px; line-height: 1; font-weight: 800;}
 .head-lg.alter{font-size: 58px;}
@@ -53,21 +51,23 @@ body{background: #ffffff;}
 .text-xs.alter{font-size: 12px; color: rgba(29, 29, 29, 0.5);}
 .text-linethrough{text-decoration: line-through;}
 .text-linethrough.red{text-decoration-color: red;}
-/* Text color */
 .text-blue{color: var(--theme-blue) !important;}
 .text-theme-dark{color: #1D1D1D !important;}
 .text-semilight{color: hsla(0, 0%, 11%, 0.7) !important;}
 .text-red{color: #F40F0F !important;}
+/* *************************Typography css end****************************** */
 
-/* Buttons */
+/* **************************Buttons css start************************************/
 .theme-btn{padding:18px; display: inline-block; width: 100%; max-width: 500px; font-size: 18px; line-height: 16px; font-weight: 700; text-decoration: none; text-align: center; background: var(--theme-blue); color: var(--light); border: none !important; border-radius: 6px;}
 .theme-btn.alter{background:#3A83F61A; color: var(--theme-blue);}
 .circle-border-btn{width: 40px; height: 40px; border: 1px solid #D3D3D3; background-color: var(--light); border-radius: 50%;}
+/* **************************Buttons css start************************************/
+
 /* ImgFixer */
 .imgfix{width: 100%; height: 100%; object-fit: cover; object-position: top;}
 /* *****************************Common css end**************************** */
 
-/* *****************************Fisrt section start********************************** */
+/* *****************************Banner css start********************************** */
 .wrapper{max-width: 580px; margin: 100px 50px;}
 .img-wrapper{height: 77vw; max-height: 800px; overflow: hidden;}
 .imgage-wrapper img {min-width: 300px; aspect-ratio: 3/2; mix-blend-mode: color-burn; }
@@ -77,9 +77,9 @@ body{background: #ffffff;}
 .content.alter{padding: 30px; padding-right: 30px; border-radius: 10px;}
 .card-head{position: relative;}
 .card-head::before{content: ""; position: absolute; left: -30px; top: 0; height: 100%; width: 5px; background-color: var(--theme-blue);}
-/* *****************************First sec end here !****************************** */
+/* *****************************Banner css end here !****************************** */
 
-/* *************************Currency timer sec start**************************** */
+/* *************************Currency timer css start**************************** */
 .border-dash-blue{width: fit-content; width: -moz-fit-content; width: -webkit-fit-content; margin: 0 auto; padding: 10px 35px; border: 1px dashed var(--theme-blue); border-radius: 100px;}
 .custom-margin{margin-right: -40px;}
 .hand-img{margin-right: -40px !important; margin-left: 30px;}
@@ -90,22 +90,22 @@ body{background: #ffffff;}
 .list{list-style: none; list-style-position: outside;}
 .list li{display: flex; align-items: flex-start; gap: 5px; font-weight: 500; margin: 15px auto;}
 .list li>i{color: var(--theme-blue); margin-top: 5px;}
-/* *************************Currency timer sec end**************************** */
+/* *************************Currency timer css end**************************** */
 
-/* ****************************Company logo slider start********************************* */
+/* ****************************Company logo slider css start********************************* */
 .logo-container{max-width: 1400px;}
 .c-logo img{ width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(.8);}
-/* *****************************Company log slider sec end************************** */
+/* *****************************Company log slider css end************************** */
 
-/* ***********************Gain section start************************ */
+/* ***********************Banner and list feature css start************************ */
 .content-sm{padding: 20px; background-color: var(--light); border-radius: 12px;}
 .user{padding-bottom: 15px; border-bottom: 1px solid #0000001A;}
 .avtar{width: 40px; height: 40px; border-radius: 50%; background-color: #FFF6E0; display: flex; align-items: center; justify-content: center;}
 .avtar:has(span){font-size: 15px; font-weight: 800; text-transform: uppercase;}
 .ranks i {color: #FF9736;}
-/* ***********************Gain section end************************ */
+/* ***********************Banner and list feature css start************************ */
 
-/* *************************************Video slider sec start************************************ */
+/* *************************************Video slider css start************************************ */
 .imgFix{width: 100%; height: 100%; object-fit: cover;}
 .video-slide{padding: 10px;}
 .video-wrapper{border-radius: 5px; overflow: hidden; height: 41vw; max-height: 220px;} 
@@ -121,9 +121,9 @@ body{background: #ffffff;}
 .slick-next {right: 4px;}
 .slick-prev {left: -20px;}
 .slick-arrow.slick-disabled svg{fill: var(--theme-blue); opacity: 30%;}
-/* *************************************Video slider sec end************************************ */
+/* *************************************Video slider css end************************************ */
 
-/* *********************Timeline section start********************** */
+/* *********************Timeline css start********************** */
 .timeline{margin-bottom: 40px;}
 .timeline .col-6{padding: 0 35px;}
 .timeline .content-sm{position: relative;}
@@ -140,9 +140,9 @@ body{background: #ffffff;}
 .timeline>.row:nth-child(even) .content-sm, .timeline>.row:nth-child(odd) .count{margin-left: auto;}
 .timeline>.row .col-6 .content-sm{max-width: 70%;}
 .timeline>.row .col-6 .count{max-width: fit-content; max-width: -moz-fit-content; max-width: -webkit-fit-content; color: rgba(29, 29, 29, 0.2);}
-/* *********************Timeline section end********************** */
+/* *********************Timeline css end********************** */
 
-/* **********************Meet Your Coach start********************** */
+/* **********************Admin Intro css start********************** */
 .img-container{border-radius: 20px; position: relative;}
 .img-container .circle-box{position: absolute; bottom: -45px; left: 0; z-index: 99; width: 100%; padding: 10px; border-radius: 100px; background-color: var(--light);}
 .count-box{text-align: center;}
@@ -152,42 +152,42 @@ body{background: #ffffff;}
 .content-wrapper:has(p){padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; text-align: center;}
 .list{padding-left: 0;}
 .scroll-btn{position: absolute; bottom: 20px; right: 80px;}
-/* **********************Meet Your Coach end********************** */
+/* **********************Admin Intro css end********************** */
 
-/* ***********************FAQ sec start******************************** */
+/* ***********************FAQ css start******************************** */
 /* Accordion  */
 .acc-container{position: relative;}
 .acc { margin-bottom: 15px; background-color: #F7F7F7; border-radius: 10px; padding: 18px 24px;}
 .acc-head { position: relative; cursor: pointer; color: #030303;}
-
 /* Styling the plus and minus icons */
 .acc-head::before,
 .acc-head::after { content: ''; position: absolute; top: 50%; background-color: var(--theme-blue); transition: all .3s; border-radius: 100px;}
-
 /* Vertical line of the plus */
 .acc-head::before {right: 9px; width: 2.4px; height: 20px; margin-top: -11px;}
-
 /* Horizontal line of the plus */
 .acc-head::after { right: 0; width: 20px; height: 2.4px; margin-top: -2px}
 .acc-head p { color: #000000; font-weight: bold;}
 .acc-content { margin-top: 18px; display: none;}
 .acc-head.active::before{background-color: var(--theme-blue);}
 .acc-head.active::after{background-color: var(--theme-blue);}
-
 /* When active, rotate the vertical line to make a minus */
 .acc-head.active::before { transform: rotate(90deg);}
 .question-wrap{position: absolute; z-index: -1;}
 .question-wrap:nth-child(1){top: -150px; right: -150px;} 
 .question-wrap:nth-child(2){bottom: -60px; left: -200px;}
 .main-logo{margin-top: 60px;}
-/* ***********************FAQ sec end******************************** */
+/* ***********************FAQ css end******************************** */
 
-/* Calander sec */
+/* **********************Schedule meeting css start****************** */
 .theme-btn.active{background: var(--theme-blue); color: var(--light);}
 /* .lmtWIHO_gkbTeeyuvoJC.mOUYF5ZmuNL6I7t0mSFg{background-color: var(--light);} */
 .lmtWIHO_gkbTeeyuvoJC.mOUYF5ZmuNL6I7t0mSFg { background-color: #ffffff !important;}
 ._cUP1np9gMvFQrcPftuf.xahN8AEzyAvQtVj17TPv { margin-top: 0 !important; margin-bottom: 0 !important;}
-/* Responsive */
+/* **********************Schedule meeting css end****************** */
+
+/* *************************************************************************************** */
+/* *************************************Responsive**************************************** */
+/* *************************************************************************************** */
 @media all and (max-width:991px) {
   .head-md{font-size: 30px;}
   .wrapper{margin: 50px auto; text-align: center; max-width: 600px;}

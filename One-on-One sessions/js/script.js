@@ -1,3 +1,4 @@
+/*********************************Whatsapp slider js start****************************************8 */
 $('.whatsapp-slider').slick({
   dots: false,
   infinite: true,
@@ -21,12 +22,11 @@ $('.whatsapp-slider').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
-// Logo slider
+/*********************************Whatsapp slider js end****************************************8 */
+
+/*********************************Company logo slider js start****************************************8 */
 $('.logo-slider').slick({
   dots: false,
   infinite: true,
@@ -60,7 +60,9 @@ $('.logo-slider').slick({
     }
   ]
 });
+/*********************************Company logo slider js end****************************************8 */
 
+/*********************************Video slider js start****************************************8 */
 $('.video-slider').slick({
   dots: false,
   infinite: true,
@@ -99,10 +101,9 @@ $('.video-slider').slick({
   ]
 
 });
+/*********************************Video slider js start****************************************8 */
 
-
-// Accordian
-
+/*********************************FAQ Accordion js start****************************************8 */
 $(document).ready(function() {
   // Activate the first accordion section by default
   $('.acc-container .acc:nth-child(1) .acc-head').addClass('active');
@@ -120,11 +121,12 @@ $(document).ready(function() {
       $(this).siblings('.acc-content').slideDown();
       $(this).addClass('active');
     }
-    // If it's already active, do nothing to ensure one remains open
   });
 });
+/*********************************FAQ Accordion js end****************************************8 */
 
-// Create function that parses the URL for params
+
+/**********************************Calandly setup start*******************************8 */
 function getURLParameter(sParam){
   var sPageURL = window.location.search.substring(1);
   var sURLVariables = sPageURL.split('&');
@@ -135,7 +137,6 @@ function getURLParameter(sParam){
     }
   }
 }
-
 // Initialize the advanced embed code with your params mapped as the values
 Calendly.initInlineWidget({
   url: `https://calendly.com/coffee-shop/latte-art-training`,
@@ -158,23 +159,26 @@ Calendly.initInlineWidget({
     utmTerm: getURLParameter('utm_term'),
   }
 });
+/**********************************Calandly setup end*******************************8 */
 
 
-// Locomotive js
+/**********************************Locomotive js start*************************************** */
 const scroll = new LocomotiveScroll({
   el: document.querySelector('#scroll'),
   smooth: true,
   smartphone:true,
   tablet:true,
 });
+/**********************************Locomotive js end*************************************** */
 
-// AOS Animetions
+/**********************************AOS Animetions setup start***************************** */
 AOS.init();
-
+// This code responsible for work proper AOS animetion with locomotive js
 let observer = new IntersectionObserver( (entries, observer) => {  entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('aos-animate'); }else{ entry.target.classList.remove('aos-animate'); } }); }); document.querySelectorAll('[data-aos]').forEach(aosElem => { observer.observe(aosElem) });
+/**********************************AOS Animetions setup end***************************** */
 
 
-// jQuery function to animate the counter
+/**********************************jQuery function to animate the counter***************************************8 */
 function animateCounter($element, target, suffix = "") {
   let start = 0;
   const duration = 2000;
@@ -210,11 +214,10 @@ scroll.on('scroll', (instance) => {
       }
   });
 });
+/**********************************jQuery function to animate the end***************************************8 */
 
-
-// Timer
+/**********************************jQuery function to Timer the start***************************************8 */
 let timer;
-    
 function startTimer(hours) {
     let totalSeconds = hours * 3600; // Convert hours to seconds
 
@@ -236,5 +239,5 @@ function startTimer(hours) {
     }, 1000);
 
   }
-
-startTimer(.5);
+startTimer(.5); // give hour now set on 30 min.
+/**********************************jQuery function to Timer the end***************************************8 */
