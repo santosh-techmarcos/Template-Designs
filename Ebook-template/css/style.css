@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 /* Manrope */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* **************************************Common css start*************************************************** */
 *{box-sizing: border-box;}
 html , body{height: 100%; max-width: 100vw; overflow-x: hidden; font-family: "Outfit"; line-height: 1.6 ; font-optical-sizing: auto; font-size: 16px;  font-weight: normal; font-style: normal; box-sizing: border-box;}
 p,h1,h2,h3,h4,h5,h6{margin-bottom: 0;}
@@ -59,16 +61,7 @@ a{text-decoration: none;}
 /* Buttons */
 .circle-btn{width: 40px; height: 40px; border: none; border-radius: 50%; box-shadow: 0px 4px 4px 0px #00000017; color: var(--dark-green); font-size: 20px;}
 .btn-wrapper{width: fit-content; margin: 0 auto; margin-bottom: -40px;}
-.theme-btn{
-  text-decoration: none;
-  cursor: pointer;
-  font-family: "DM sans";
-  font-weight: 700;
-  font-size: 1rem;
-  background-color: var(--yello);
-  color: #141414;
-  border-radius: 3px;
-}
+.theme-btn{ text-decoration: none; cursor: pointer; font-family: "DM sans"; font-weight: 700; font-size: 1rem; background-color: var(--yello); color: #141414; border-radius: 3px;}
 .theme-btn:hover{color: var(--light); background-color: var(--orange);}
 .btn-lg{padding: 20px 90px;}
 .btn-lg.alter{padding: 20px 70px;}
@@ -76,46 +69,35 @@ a{text-decoration: none;}
 .btn-md.alter{padding: 20px 50px;}
 .btn-sm{padding: 20px 30px;}
 .btn-sm.alter{width: 100%; padding: 15px;}
-/* Mouse */
-#cursor{
-  pointer-events: none;
-  width: 45px;
-  height: 45px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: 99;
-  border: 1px solid #719a86a1;
-  background-color: rgba(0, 0, 0, 0.096);
-  transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
-  
-}
-/* Timer */
+/* **************************************Common css end*************************************************** */
+
+/* **********************************Circle mouse css start************************************* */
+#cursor{ pointer-events: none; width: 45px; height: 45px; position: fixed; top: 0; left: 0; transform: translate(-50%, -50%); border-radius: 50%; z-index: 99; border: 1px solid #719a86a1; background-color: rgba(0, 0, 0, 0.096); transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;}
+/* **********************************Circle mouse css end************************************* */
+
+/* **********************************Timer css start******************************************* */
 .timer{display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;}
 .time-box{background-color: var(--dark-green); color: var(--light); min-width: 80px; height: 80px; border-radius: 4px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
 .time-box .number{font-size: 34px; font-weight: 600; line-height: normal;}
 .time-box .time-text{font-size: 13px; font-weight: 400;}
+/* **********************************Timer css start******************************************* */
 
+/* ****************************client testimonial sec start**************************** */
 .slider{margin-top: 40px; position: relative;}
 .slide{padding: 35px 25px; background-color: var(--light); border-radius: 15px;}
 .user-info{line-height: normal; display: flex; gap: 10px; margin-top: 25px; margin-bottom: 20px;}
 .user-info .avtar{width: 40px; height: 40px; border-radius: 50%; overflow: hidden;}
 .ranks{color: var(--orange);}
+/* ****************************client testimonial sec start**************************** */
 
-.landing-sec{
-  width: 100%;
-  padding: 20px 40px;
-
-}
+/* ***************************Landing page css start********************************* */
+.landing-sec{ width: 100%; padding: 20px 40px;}
 .book-bg{position: relative; margin: 0 auto; width: fit-content; height: fit-content;}
 .book-bg .booksimg { max-width: 600px;} 
 .books-content{position: absolute; top: 11%; left: 36%; transform: translateX(-50%);}
 .mobile .mobile-body{max-width: 300px; height: auto; max-height: 500px;}
 .mobile{position: absolute; width: fit-content; height: fit-content;}
 .mobile-screen{width: 91%; height: 80% !important; bottom: 47px; left: 13px;}
-
 .mobile:nth-child(2){transform: rotateZ(-10deg); transform-origin: bottom left;}
 .mobile:nth-child(1){transform: rotateZ(-20deg); transform-origin: bottom left;}
 .best-seller-stemp{position: absolute; z-index: 999; top: -5%; right: -10%; width: 100px;}
@@ -125,50 +107,37 @@ a{text-decoration: none;}
 .circle-modal .circle-img:nth-child(1){margin-right: -10px;}
 .circle-modal .circle-img:nth-child(2){margin-right: -10px;}
 .responsive{width: fit-content;}
-/* Company logo slider */
+/* ***************************Landing page css start********************************* */
+
+/* *************************** Company logo slider css start********************************* */
+
 .c-logo{height: 60px;}
-.c-logo img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  transform: scale(.8);
-  /* opacity: .5; */
-}
+.c-logo img{ width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(.8);}
 .logo-container{ margin-top: 4rem; margin-bottom: 2rem;} 
 .svg-line{margin-top: -20px; width: 100%; height: 100px; fill: transparent;}
 .svg-line path {stroke: white; stroke-width: 1; stroke-opacity: .5;}
 /* Slider */
-.slick-prev, .slick-next {
-  font-size: 18px;
-  cursor: pointer;
-  height: unset;
-  z-index: 99;
-}
+.slick-prev, .slick-next {  font-size: 18px;  cursor: pointer;  height: unset;  z-index: 99;}
 .slick-arrow svg{fill: var(--dark-green);}
 .slick-next:before{display: none;}
 .slick-prev:before{display: none;}
 .slick-next {right: 4px;}
 .slick-prev {left: -20px;}
 .slick-arrow.slick-disabled svg{fill: var(--dark-green); opacity: 30%;}
+/* *************************** Company logo slider css end********************************* */
 
-/* Gain Control sec */
+/* ****************************banner css start*************************************** */
 .banner-lg{width: 100%; height: 43.154vw; max-height: 560px; overflow: hidden; border-radius: 10px 10px 0px 0px;}
 .gain-sec .content{padding: 35px 30px; color: var(--light);}
 .bg-selector:nth-child(1) .content{background: #718E7F; border-radius: 0px 0px 0px 10px;}
 .bg-selector:nth-child(2) .content{background: #719A86;}
 .bg-selector:nth-child(3) .content{background: #618674;}
 .bg-selector:nth-child(4) .content{background: #4E705F; border-radius: 0px 0px 10px 0px;}
+/* .bg-green-random{background-color: red;} */
+/* ****************************banner css start*************************************** */
 
-.bg-green-random{background-color: red;}
-
-
-
-/* Purchase now sec */
-.banner-bg{
-  background: linear-gradient(205.49deg, #1C1C1C -1.85%, #3B3B3B 99.58%);
-  color: var(--light);
-}
+/* *************************************Single book purchase start************************************ */
+.banner-bg{ background: linear-gradient(205.49deg, #1C1C1C -1.85%, #3B3B3B 99.58%); color: var(--light);}
 .banner-bg.bg-alter{background: linear-gradient(205.49deg, #4E705F -1.85%, #22382D 99.58%);}
 .banner-md{padding: 35px 50px;}
 .banner-md.alter{color: var(--light); padding: 10px 25px;}
@@ -180,9 +149,10 @@ a{text-decoration: none;}
 .banner-content .head-conent .text-underline{text-decoration: underline;}
 .banner-md.banner-content .text-xs.alter.f1{color: #F4F4F4; bottom: 15px; right: 20px;}
 .banner-md.alter.banner-content .text-xs.alter.f1{font-size: 8px; color: #F4F4F4; bottom: 6px; right: 6px;}
+/* *************************************Single book purchase end************************************ */
 
 
-/* Video slider sec */
+/* ******************************Video slider css start******************************** */
 .imgFix{width: 100%; height: 100%; object-fit: cover;}
 .video-slide{padding: 10px;}
 .video-wrapper{border-radius: 5px; overflow: hidden; height: 41vw; max-height: 220px;} 
@@ -190,146 +160,59 @@ a{text-decoration: none;}
 .control .playbtn{ background: rgba(78, 112, 95, 0.7); border: none;  width: 70px; height: 70px; border-radius: 0 5px 0 5px; color: var(--light);}
 .video-slider .slick-arrow{opacity: 0; transition: all ease-in-out .3s;}
 .video-slider:hover .slick-arrow{opacity: 1;}
+/* ******************************Video slider css end******************************** */
 
-/* Get The Book sec */
-.logo{
-  max-width: 144px;
-  height: 59px;
-}
+/* *****************************buy book sec css start***************************************** */
+.logo{ max-width: 144px; height: 59px;}
+/* *****************************buy book sec css start***************************************** */
 
-
-/* Banner img sections */
+/* **************************************Template info sec css start****************************** */
 .banner-wrapper{width: fit-content; margin: 0 auto;}
 .banner-box{position: relative; width: fit-content; height: fit-content;}
 .banner-box:nth-child(1){z-index: 2;}
 .banner-box:nth-child(2){z-index: 1; margin-left: 150px; margin-top: -200px; } 
 .banner{ max-width: 360px; height: 55.714vw; max-height: 390px; border: 6px solid var(--light); border-radius: 20px; object-fit: cover; object-position: top;}
-.banner-shadow::before{
-  content: "";
-  position: absolute;
-  width: 110%;
-  height: 90%;
-  top: 25%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  background-color: hsla(0, 0%, 100%, 0.1);
-  border-radius: 20px;
-}
+.banner-shadow::before{content: ""; position: absolute; width: 110%; height: 90%; top: 25%; left: 30%; transform: translate(-50%, -50%); z-index: -1; background-color: hsla(0, 0%, 100%, 0.1); border-radius: 20px;}
 .tag-bar{top: 92%; left: 5%; position: absolute; padding: 10px 20px; z-index: 999; background-color: var(--light); border-radius: 100px;}
+/* **************************************Template info sec css end****************************** */
 
+/* **************************************Check list sec css start****************************** */
 .dot{width: 14px; height: 14px; border-radius: 20px; background-color: #CECECE;}
-.dot::after{
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  content: "";
-  height:50px;
-  border: 1px dashed rgb(170, 170, 170);
-  z-index: -1;
-}
-
-.dot::before{
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  content: "";
-  height:50px;
-  border: 1px dashed rgb(170, 170, 170);
-  z-index: -1;
-}
+.dot::after{ position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); content: ""; height:50px; border: 1px dashed rgb(170, 170, 170); z-index: -1;}
+.dot::before{ position: absolute; top: 0; left: 50%; transform: translateX(-50%); content: ""; height:50px; border: 1px dashed rgb(170, 170, 170); z-index: -1;}
 .box-list{position: relative; margin-bottom: 60px; list-style: none; display: flex; align-items: center; padding: 0 10px; min-height: 60px; border-radius: 6px; gap: 5px;  color: var(--light);}
 .box-list i{color: var(--grass-green); font-size: 24px; color: var(--light);}
-.box-list::before{
-  position: absolute;
-  content: "";
-  height: 60px;
-  border: 1px dashed #CECECE;
-  z-index: -1;
-  top: 100%;
-  left: 50%;
-}
-
-.box-list::after{
-  position: absolute;
-  content: "";
-  height: 14px;
-  width: 14px;
-  border-radius: 20px;
-  background-color: #CECECE;
-  z-index: -1;
-  bottom: -45px;
-  left: calc(50% + 1px);
-  transform: translate(-50% , -50%);
-}
+.box-list::before{ position: absolute; content: ""; height: 60px; border: 1px dashed #CECECE; z-index: -1; top: 100%; left: 50%;}
+.box-list::after{  position: absolute;  content: "";  height: 14px;  width: 14px;  border-radius: 20px;  background-color: #CECECE;  z-index: -1;  bottom: -45px;  left: calc(50% + 1px);  transform: translate(-50% , -50%);}
 .box-list:last-child::after , .box-list:last-child::before{display: none;}
 .box-list p{line-height: normal;}
+/* **************************************Check list sec css end****************************** */
 
+/* **************************************Counter sec css start****************************** */
 .content.count{border: 1px solid #585858; padding: 20px; border-radius: 10px; transition: all ease-in-out .2s; cursor: pointer; text-align: center;}
-.content.count:hover{background-color: var(--light); border-color: var(--light);
-  .head-lg.fw-bold{color: var(--dark-green);}
-}
+.content.count:hover{background-color: var(--light); border-color: var(--light) .head-lg.fw-bold{color: var(--dark-green);}}
 .rounded-box{background-color: var(--light); border-radius: 10px; margin-bottom: -120px;}
 .rounded-box .banner-md{height: 250px;}
 .sec-mt{margin-top: 5rem;}
+/* **************************************Counter sec css start****************************** */
+
+/* **************************************stemp sec css start****************************** */
 .stamp{max-width: 300px; margin: 0 auto;}
+/* **************************************stemp sec css start****************************** */
+
+/* ********************************Accordion sec css start************************************************* */
 /* Accordion */
-#accordion h3 {
-  position: relative;
-  padding-right: 20px; /* Add space for the icon */
-  cursor: pointer;
-  background-color: var(--light);
-  color: var(--text-dark-secondary);
-}
-
-#accordion .icon {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background: url('icon-right-arrow.png') no-repeat center center;
-  background-size: contain;
-  transition: transform 0.3s ease;
-  color: var(--dark-green);
-
-}
-
-
-.ui-accordion .ui-accordion-header{
-font-family: "Outfit";
-font-size: 20px;
-text-align: left;
-background-color: var(--light);
-border: none;
-border-radius: 10px;
-margin-top: 10px;
-padding-left: 20px;
-}
+#accordion h3 {  position: relative;  padding-right: 20px; /* Add space for the icon */  cursor: pointer;  background-color: var(--light);  color: var(--text-dark-secondary);}
+#accordion .icon {  position: absolute; right: 20px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; background: url('icon-right-arrow.png') no-repeat center center; background-size: contain; transition: transform 0.3s ease;  color: var(--dark-green);}
+.ui-accordion .ui-accordion-header{ font-family: "Outfit";font-size: 20px; text-align: left; background-color: var(--light); border: none; border-radius: 10px;margin-top: 10px;padding-left: 20px;}
 #accordion .ui-accordion-header-active{border-radius:10px 10px 0 0;}
-#accordion .ui-accordion-header-active .icon {
-  transform: translateY(-50%) rotate(180deg);
-  right: 24px;
+#accordion .ui-accordion-header-active .icon {  transform: translateY(-50%) rotate(180deg);  right: 24px;}
+.ui-accordion .ui-accordion-content{ font-size: 18px; font-weight: 400; text-align: left; font-family: "DM Sans"; background-color: var(--light); padding: 20px; padding-top: 0; border: none; border-radius: 0 0 10px 10px;}
+.ebook .btn-md { padding: 10px;
 }
+/* ********************************Accordion sec css start************************************************* */
 
-.ui-accordion .ui-accordion-content{
-  font-size: 18px;
-  font-weight: 400;
-  text-align: left;
-  font-family: "DM Sans";
-  background-color: var(--light);
-  padding: 20px;
-  padding-top: 0;
-  border: none;
-  border-radius: 0 0 10px 10px;
-}
-.ebook .btn-md {
-    padding: 10px;
-}
-/* Responsive */
+/* *******************************Responsive css start***************************************** */
 @media all and (max-width:1400px) {
   .book-bg .booksimg { max-width: 500px;} 
   .mobile .mobile-body{max-width: 250px;}
@@ -342,8 +225,6 @@ padding-left: 20px;
 }
 @media all and (max-width:1200px) {
   .banner-wrapper{margin-left: -6vw;}
-/* .book-bg .booksimg { max-width: 600px;}  */
-  /* .mobile .mobile-body{max-width: 250px;} */
   .mobile-screen { height: 81% !important; left: 12px; top: 33px;}
 }
 
@@ -473,3 +354,4 @@ padding-left: 20px;
 .slick-next { right: 16px;}
 .slick-prev { left: 7px;}
 }
+/* *******************************Responsive css end***************************************** */

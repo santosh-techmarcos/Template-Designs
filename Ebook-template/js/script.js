@@ -1,9 +1,11 @@
+/********************************Gsap config start************************************** */
 gsap.registerPlugin(ScrollTrigger);
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector("#locomotive-scroll"),
   smooth: true,
   lerp:.03
 });
+
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
 locoScroll.on("scroll", ScrollTrigger.update);
 
@@ -24,7 +26,9 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
+/********************************Gsap config end************************************** */
 
+/******************************Logo slider js start******************************************* */
 $('.slider').slick({
   dots: false,
   infinite: false,
@@ -62,8 +66,9 @@ $('.slider').slick({
     }
   ]
 });
+/******************************Logo slider js end******************************************* */
 
-
+/******************************Logo slider start start******************************************* */
 $('.video-slider').slick({
   dots: false,
   infinite: true,
@@ -102,6 +107,7 @@ $('.video-slider').slick({
   ]
 
 });
+/******************************Logo slider js start******************************************* */
 
 // Logo slider
 $('.logo-slider').slick({
