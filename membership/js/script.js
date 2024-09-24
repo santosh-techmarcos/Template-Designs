@@ -38,7 +38,9 @@ $('.slider').slick({
   nextArrow: '#next-testimonial',
   prevArrow: '#prev-testimonial',
 });
+/***************************Client Testimonial js end*********************************************** */
 
+/***************************Companylogo slider js start*********************************************** */
 $('.logo-slider').slick({
   dots: false,
   infinite: true,
@@ -67,12 +69,12 @@ $('.logo-slider').slick({
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
       }
     }
   ]
 });
-/***************************Client Testimonial js end*********************************************** */
+/***************************Companylogo slider js end*********************************************** */
 
 /***************************Accordion js start*********************************************** */
 $(document).ready(function() {
