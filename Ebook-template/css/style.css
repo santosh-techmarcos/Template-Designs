@@ -106,7 +106,6 @@ a{text-decoration: none;}
 
 .landing-sec{
   width: 100%;
-  /* min-height: 100vh; */
   padding: 20px 40px;
 
 }
@@ -121,7 +120,7 @@ a{text-decoration: none;}
 .mobile:nth-child(1){transform: rotateZ(-20deg); transform-origin: bottom left;}
 .best-seller-stemp{position: absolute; z-index: 999; top: -5%; right: -10%; width: 100px;}
 .brand-logo{ width: max-content; margin: 0 auto;}
-.circle-modal{position: absolute; bottom: 10%; left: -50%; padding: 15px; background-color: #FFFFFF1F; border-radius: 100px; backdrop-filter: blur(5px); border: 2px solid #FFFFFF1F;}
+.circle-modal{position: absolute; bottom: 10%; left: -50%; padding: 15px; background-color: #FFFFFF1F; border-radius: 100px; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); border: 2px solid #FFFFFF1F;}
 .circle-modal .circle-img{width: 30px; height: 30px; border-radius: 50%; overflow: hidden; border: 1px solid var(--light);}
 .circle-modal .circle-img:nth-child(1){margin-right: -10px;}
 .circle-modal .circle-img:nth-child(2){margin-right: -10px;}
